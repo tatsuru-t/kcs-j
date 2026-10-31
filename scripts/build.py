@@ -1,7 +1,7 @@
 """ページ単位のMarkdown（work/pages）を、章ごとの大きなファイルにまとめる。
 
 使い方: python3 -I scripts/build.py [作業ディレクトリ]   （既定: work）
-出力: work/en/NN-slug.md と work/en/README.md
+出力: en/NN-slug.md と en/README.md
 
 - GROUPS の1要素が1ファイル。intro のページは H1 の直下に見出し無しで置き、
   pages に挙げたページは子孫ごと深さ順に H2, H3 ... として連結する
@@ -128,7 +128,7 @@ def main():
             return f"]({t})" if t else m.group(0)
         return LINK.sub(repl, md)
 
-    outdir = work / "en"
+    outdir = Path("en")
     outdir.mkdir(exist_ok=True)
     index = ["# KCS ドキュメント（英語原文・章ごとにまとめ直したもの）", ""]
     for name, title, lic, entries in files:

@@ -1,10 +1,10 @@
-"""分割して訳したファイル（work/ja/parts/NN*.md）を、章ごとの1ファイルにまとめる。
+"""分割して訳したファイル（ja/parts/NN*.md）を、章ごとの1ファイル（ja/NN-slug.md）にまとめる。
 
-使い方: python3 -I scripts/assemble.py NN [作業ディレクトリ]   （既定: work）
+使い方: python3 -I scripts/assemble.py NN
 例:     python3 -I scripts/assemble.py 01
 
-- work/ja/parts/ の NN で始まるファイルを名前順に連結する
-- 冒頭の「> 元のページ:」の一覧は、英語版（work/en/NN-*.md）からそのまま写す
+- ja/parts/ の NN で始まるファイルを名前順に連結する
+- 冒頭の「> 元のページ:」の一覧は、英語版（en/NN-*.md）からそのまま写す
   （訳文側で一覧を省略・変更していても、原文のページ構成に揃える）
 - 訳文の <a id="page-ID"> が英語版と過不足なく一致するかを検査する
 - 見出しの数が英語版と同じかを検査する（訳し漏れた節を見つけるため）
@@ -27,11 +27,10 @@ def source_list(text: str) -> list[str]:
 
 def main():
     num = sys.argv[1]
-    work = Path(sys.argv[2] if len(sys.argv) > 2 else "work")
-    en = next((work / "en").glob(f"{num}-*.md"))
-    parts = sorted((work / "ja" / "parts").glob(f"{num}*.md"))
+    en = next(Path("en").glob(f"{num}-*.md"))
+    parts = sorted(Path("ja/parts").glob(f"{num}*.md"))
     if not parts:
-        sys.exit(f"訳文が無い: work/ja/parts/{num}*.md")
+        sys.exit(f"訳文が無い: ja/parts/{num}*.md")
     ja = "\n\n".join(p.read_text(encoding="utf-8").strip() for p in parts) + "\n"
 
     en_text = en.read_text(encoding="utf-8")
@@ -48,7 +47,7 @@ def main():
     if n_en != n_ja:
         sys.exit(f"見出しの数が英語版と違う: 英語版 {n_en} / 訳文 {n_ja}")
 
-    out = work / "ja" / en.name
+    out = Path("ja") / en.name
     out.write_text(ja, encoding="utf-8")
     print(f"{out}: {len(ja):,}字（英語版 {len(en_text):,}字）")
 
