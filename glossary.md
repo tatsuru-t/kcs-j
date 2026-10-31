@@ -6,7 +6,9 @@
 ## 表記の決まり
 
 - 文体は常体（である調）
-- 公式用語は初出の見出しと本文で英語を括弧で添える。例: 再利用（Reuse）
+- 方法論の固有名詞は英語のまま書く（KCS と同じ扱い）。Solve Loop・Evolve Loop・役割名など、
+  カタカナにすると音を写すだけになる語が対象。原文や他の資料と突き合わせやすくするため
+- 意味のある日本語に訳せる公式用語は訳し、初出の見出しと本文で英語を括弧で添える。例: 再利用（Reuse）
 - Practice / Technique の見出しは「プラクティス1：再利用（Reuse）」「テクニック1.1：早めに探し、何度も探す（Search Early, Search Often）」
 - KCS®・Consortium for Service Innovation・Cynefin などの固有名詞は英語のまま
 - 図の画像は元のURLを参照する（図中の文字は英語のまま）
@@ -15,13 +17,13 @@
 
 | 英語 | 訳語 |
 | --- | --- |
-| Knowledge-Centered Success (KCS) | ナレッジセンタード・サクセス（KCS） |
+| Knowledge-Centered Success (KCS) | Knowledge-Centered Success（KCS）※英語のまま |
 | Principle | 原則 |
 | Core Concept | コアコンセプト |
 | Practice | プラクティス |
 | Technique | テクニック |
-| Solve Loop | ソルブループ |
-| Evolve Loop | エボルブループ |
+| Solve Loop | Solve Loop ※英語のまま |
+| Evolve Loop | Evolve Loop ※英語のまま |
 | double loop | ダブルループ |
 | KCS article | KCS記事 |
 | knowledge article | ナレッジ記事 |
@@ -111,18 +113,20 @@
 
 ## 役割
 
+役割名は英語のまま書く（説明が要るときは括弧で補う）。
+
 | 英語 | 訳語 |
 | --- | --- |
-| KCS Candidate | KCSキャンディデート |
-| KCS Contributor | KCSコントリビューター |
-| KCS Publisher | KCSパブリッシャー |
+| KCS Candidate | KCS Candidate |
+| KCS Contributor | KCS Contributor |
+| KCS Publisher | KCS Publisher |
 | Coach | コーチ |
-| Knowledge Domain Expert (KDE) | ナレッジドメインエキスパート（KDE） |
-| KCS Council | KCSカウンシル |
+| Knowledge Domain Expert (KDE) | Knowledge Domain Expert（KDE） |
+| KCS Council | KCS Council |
 | licensed user | ライセンスを持つユーザー |
 | proficiency model | 習熟度モデル |
 
-## エボルブループの活動・測定
+## Evolve Loop の活動・測定
 
 | 英語 | 訳語 |
 | --- | --- |
