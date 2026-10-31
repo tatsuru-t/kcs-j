@@ -29,6 +29,7 @@ python3 -I scripts/build.py work     # 章ごとに11ファイルへまとめる
 必要なもの: Python 3、`beautifulsoup4`、`pandoc`。
 
 - 本文は MindTouch の API（`/@api/deki/pages/{id}/contents`）から取る。HTMLの画面は解析しない
+- 訳語と表記の決まりは [glossary.md](glossary.md)
 - ファイルの区切りは `scripts/build.py` の `GROUPS` で決めている（1ファイル1.6万〜8万字）
 - サイト内リンクは、まとめた後のファイルとページのアンカー（`#page-ID`）に書き換える。
   対象外のページ（v6・会員向けwiki）へのリンクは元のURLのまま
