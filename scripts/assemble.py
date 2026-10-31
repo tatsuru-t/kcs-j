@@ -7,6 +7,7 @@
 - 冒頭の「> 元のページ:」の一覧は、英語版（work/en/NN-*.md）からそのまま写す
   （訳文側で一覧を省略・変更していても、原文のページ構成に揃える）
 - 訳文の <a id="page-ID"> が英語版と過不足なく一致するかを検査する
+- 見出しの数が英語版と同じかを検査する（訳し漏れた節を見つけるため）
 """
 import re
 import sys
@@ -41,6 +42,11 @@ def main():
     extra = sorted(set(ANCHOR.findall(ja)) - set(ANCHOR.findall(en_text)))
     if missing or extra:
         sys.exit(f"アンカーが英語版と一致しない: 不足 {missing} / 余分 {extra}")
+
+    heading = re.compile(r"^#{1,6} ", re.M)
+    n_en, n_ja = len(heading.findall(en_text)), len(heading.findall(ja))
+    if n_en != n_ja:
+        sys.exit(f"見出しの数が英語版と違う: 英語版 {n_en} / 訳文 {n_ja}")
 
     out = work / "ja" / en.name
     out.write_text(ja, encoding="utf-8")
