@@ -444,7 +444,7 @@ Across Consortium events and working sessions, Member companies frequently share
 
 We also frequently share public resources via the [Service Innovation Blog](https://www.serviceinnovation.org/blog/) and [ongoing events](https://www.serviceinnovation.org/events).
 
-[![Agentic-AI-Series-Session-3-3.png](https://library.serviceinnovation.org/@api/deki/files/5307/Agentic-AI-Series-Session-3-3.png?revision=1&size=bestfit&width=382&height=215)](https://www.serviceinnovation.org/connecting-agentic-ai-to-kcs-and-intelligent-swarming/) [![Why-AI-Projects-Fail-or-Succeed-1024x576.png](https://library.serviceinnovation.org/@api/deki/files/5308/Why-AI-Projects-Fail-or-Succeed-1024x576.png?revision=1&size=bestfit&width=382&height=215)](https://www.serviceinnovation.org/why-ai-projects-fail-or-succeed/) [![KCSA-Lab-Recap-1024x576.png](https://library.serviceinnovation.org/@api/deki/files/5309/KCSA-Lab-Recap-1024x576.png?revision=1&size=bestfit&width=382&height=215)](https://www.serviceinnovation.org/common-challenges-at-the-intersection-of-kcs-and-ai/)
+[![Agentic-AI-Series-Session-3-3.png](../images/5307-Agentic-AI-Series-Session-3-3.png)](https://www.serviceinnovation.org/connecting-agentic-ai-to-kcs-and-intelligent-swarming/) [![Why-AI-Projects-Fail-or-Succeed-1024x576.png](../images/5308-Why-AI-Projects-Fail-or-Succeed-1024x576.png)](https://www.serviceinnovation.org/why-ai-projects-fail-or-succeed/) [![KCSA-Lab-Recap-1024x576.png](../images/5309-KCSA-Lab-Recap-1024x576.png)](https://www.serviceinnovation.org/common-challenges-at-the-intersection-of-kcs-and-ai/)
 
 #### Common areas of exploration include:
 
@@ -515,7 +515,7 @@ Across recent Consortium events and working sessions, several themes are emergin
 
 A summary of the updates made from KCS v6 to Knowledge-Centered Success.
 
-![KCSDoubleLoop2026tm.png](https://library.serviceinnovation.org/@api/deki/files/5953/KCSDoubleLoop2026tm.png?revision=1)The [Knowledge-Centered Success Practices Guide](02-practices-guide-introduction.md) is focused on the *why* behind each of the Practices and techniques, so that people can make sound decisions about the best way to go about *how*.
+![KCSDoubleLoop2026tm.png](../images/5953-KCSDoubleLoop2026tm.png)The [Knowledge-Centered Success Practices Guide](02-practices-guide-introduction.md) is focused on the *why* behind each of the Practices and techniques, so that people can make sound decisions about the best way to go about *how*.
 
 In light of new AI and automation tools, this documentation provides guidance around how to keep knowledge findable, accurate, and relevant, while providing insights into what is getting used, regardless of who or what is making the request, and who or what is delivering the answer.
 

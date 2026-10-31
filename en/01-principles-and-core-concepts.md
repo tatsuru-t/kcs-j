@@ -20,11 +20,11 @@
 > - [9) Coaching for Success](https://library.serviceinnovation.org/KCS/Principles_and_Core_Concepts/201-Core_Concepts/09_Coaching_for_Success)
 > - [10) Assess Value](https://library.serviceinnovation.org/KCS/Principles_and_Core_Concepts/201-Core_Concepts/10_Assess_Value)
 
-![KCS Principles and Core Concepts](https://library.serviceinnovation.org/@api/deki/files/5140/mindtouch.page%2523thumbnail?revision=2)Principles and Core Concepts create the foundation of Knowledge-Centered Success (KCS).
+Principles and Core Concepts create the foundation of Knowledge-Centered Success (KCS).
 
 KCS is a proven methodology for integrating the use, validation, improvement, and creation of knowledge into the workflow. Inherent in the methodology is continuous improvement that is based on the experience of those doing the work and the patterns that emerge from knowledge reuse. KCS is different from a traditional knowledge engineering approach, which is based on knowledge from a few for the use of many. KCS is a many-to-many model. Its elegance stems from the fact that it is demand-driven and self-correcting, because it is based on the academic concepts of double loop learning.
 
-![principles-core-concepts.png](https://library.serviceinnovation.org/@api/deki/files/5328/principles-core-concepts.png?revision=1&size=bestfit&width=346&height=350)KCS creates tremendous value for any information- or knowledge-intensive business. Four fundamental Principles and the ten Core Concepts form the foundation of KCS. While [KCS Practices](https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide) can seem prescriptive, the techniques listed there are offered as an example of how some organizations have successfully adopted the methodology. These techniques are sometimes mistaken as the only way to implement KCS, when in reality, there are many ways to implement the Principles, Core Concepts, and Practices. The techniques are an example of how KCS works at the operational level and not the only way to be successful with KCS.
+![principles-core-concepts.png](../images/5328-principles-core-concepts.png)KCS creates tremendous value for any information- or knowledge-intensive business. Four fundamental Principles and the ten Core Concepts form the foundation of KCS. While [KCS Practices](https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide) can seem prescriptive, the techniques listed there are offered as an example of how some organizations have successfully adopted the methodology. These techniques are sometimes mistaken as the only way to implement KCS, when in reality, there are many ways to implement the Principles, Core Concepts, and Practices. The techniques are an example of how KCS works at the operational level and not the only way to be successful with KCS.
 
 If we want to maximize our realized [benefits](https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide/020/010), the fundamental Principles and Core Concepts of KCS are not negotiable. These Principles and Concepts provide guidance on whether or not a practice or technique aligns with the intent of KCS. As organizations embrace KCS, they must decide on how to approach certain challenges - some of which may be unique to their environment. The Principles and Core Concepts are the criteria by which we can test how well specific practices and techniques align with the KCS philosophy.
 
@@ -34,7 +34,7 @@ If we want to maximize our realized [benefits](https://library.serviceinnovation
 
 KCS principles apply to multiple practices: principles are the basis for, and manifest themselves in, multiple practices. Principles don’t tell you *how* to do something, they tell you *why* we are doing what we do.
 
-There are four foundational principles for KCS methodology:![KCS Kernel](https://library.serviceinnovation.org/@api/deki/files/3825/principles.png?revision=1&size=bestfit&width=650&height=376)
+There are four foundational principles for KCS methodology:![KCS Kernel](../images/3825-principles.png)
 
 - [Abundance](01-principles-and-core-concepts.md#page-368): Share more, learn more
 - [Create Value](01-principles-and-core-concepts.md#page-369): Work tasks; think big picture.

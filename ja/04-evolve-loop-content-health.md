@@ -9,7 +9,9 @@
 > - [Technique 5.3: Knowledge Optimization](https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/301-Evolve_Loop/Practice_5_Content_Health/Technique_5.3)
 > - [Technique 5.4: Content Health Indicators](https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/301-Evolve_Loop/Practice_5_Content_Health/Technique_5.4)
 
-![KCS Double Loop Process](https://library.serviceinnovation.org/@api/deki/files/5951/loops-practices-title.png?revision=2&size=bestfit&width=500&height=378)
+![KCS Double Loop Process](../images/5951-loops-practices-title.png)
+
+*図：KCSのダブルループのプロセス（KCS Double Loop Process）。Solve Loop の4つのプラクティス（再利用・改善・記録・構造化）と、Evolve Loop の4つのプラクティス（コンテンツの健全性・プロセスの統合・パフォーマンスの把握・チェンジマネジメント）。*
 
 **Evolve Loop は、Solve Loop での活動を定義し、振り返り、そこから学ぶ。**
 
@@ -140,7 +142,9 @@ Solve Loop と Evolve Loop は相互に依存しており、それぞれがも�
 
 #### 記事には再利用できるものを入れる
 
-![The KCS Article](https://library.serviceinnovation.org/@api/deki/files/5952/kcs-article.png?revision=1)
+![The KCS Article](../images/5952-kcs-article.png)
+
+*図：KCS記事（The KCS Article）。依頼者（Requestor）のコンテキスト（Context）、対応者（Responder）の経験（Experience）、組織（Organization）の情報（Information）の3つの視点が、中央の解決策（Resolution）で結び付く。*
 
 明確に定義された単純な記事の構造は、KCSの基本的な要素である。特定の種類の情報をどこで探し、どこに入れるかがわかっていることで、人と機械にとっての効率と使いやすさが高まる。
 
@@ -373,7 +377,7 @@ Consortiumのメンバーは、追加の資料を利用できる（ログイン�
 - **経験に基づく（Experience-based）**：ライセンスを持つKCSの利用者が変更できる記事。
 - **コンプライアンスに基づく（Compliance-based）**：記事の作成と変更が、指定された個人に限られる。
 
-クイックリファレンスは、それぞれの組織のコンテンツ標準に沿ったものになるので、この例とは一致しない。Consortium for Service Innovation のメンバーの資料に基づく追加の例は、ここで閲覧・ダウンロードできる：**[例1](https://library.serviceinnovation.org/@api/deki/files/5430/Article_Quality_Quick_Reference__Example_1.pdf?revision=1)**、**[例2](https://library.serviceinnovation.org/@api/deki/files/5429/Article_Quality_Quick_Reference__Example_2.pdf?revision=1)**
+クイックリファレンスは、それぞれの組織のコンテンツ標準に沿ったものになるので、この例とは一致しない。Consortium for Service Innovation のメンバーの資料に基づく追加の例は、ここで閲覧・ダウンロードできる：**[例1](../images/5430-Article_Quality_Quick_Reference__Example_1.pdf)**、**[例2](../images/5429-Article_Quality_Quick_Reference__Example_2.pdf)**
 
 #### 多言語への配慮
 
@@ -410,10 +414,12 @@ Consortiumのメンバーは、メンバー限定wikiの [KCS and Multimedia の
 
 KCS記事の準備状況を管理するため、記事の確度を使って、それがライフサイクルのどこにあるかを示す。すべての記事は、どの程度の確信を持っているかにかかわらず、誰か別の人が同じ課題に対処している場合に備えて、共有する価値がある。記事が解決され、そして再利用されるにつれて、その質への確信が増していく。ナレッジは決して完成せず、静的でもない。使われるにつれて進化し続ける。この進化の中で、KCS記事のライフサイクルは直線的ではない。KCS記事は、さまざまな質の段階を、多くの異なる道筋で移っていく。
 
-- 作成中（WIP）![article-confidence-2026.png](https://library.serviceinnovation.org/@api/deki/files/5340/article-confidence-2026.png?revision=1&size=bestfit&width=300)
+- 作成中（WIP）![article-confidence-2026.png](../images/5340-article-confidence-2026.png)
 - 未検証
 - 検証済み
 - アーカイブ済み
+
+*図：記事の確度（Article Confidence）。作成中（WIP）→ 未検証（Not Validated）→ 検証済み（Validated）→ アーカイブ済み（Archived）。検証済みの記事は、必要に応じて指摘して未検証に戻し、再び検証済みに移すこともある。*
 
 **作成中（WORK IN PROGRESS、WIP）**：記事に解決策が含まれていない。問題や質問と、環境についての情報がいくらか記録されているが、解決策はまだわかっていない。「枠組みだけの」記事と呼ばれることもある。
 
@@ -484,11 +490,13 @@ KCS記事の準備状況を管理するため、記事の確度を使って、�
 
 誰がどのKCS記事を見られるかを管理するために、記事の公開範囲を使う。組織として、社外の顧客や身元のわからない依頼者が何にアクセスできるかを管理したいと決めることもあるだろう。そうすれば、記事の公開範囲と記事の確度の両方に基づいて業務ルールを定められる。記事が検証済みになると、ある対象者から見えるようになる、といった具合である。あるいは、KCSの実践が成熟するにつれて、公開範囲が広がることもある。公開範囲の選択肢には次のものがある。
 
-- 社内![Article Audience](https://library.serviceinnovation.org/@api/deki/files/5342/article-audience-2026.png?revision=3&size=bestfit&width=350&height=325)
+- 社内![Article Audience](../images/5342-article-audience-2026.png)
 - ドメイン内
 - パートナー
 - 顧客
 - 一般公開
+
+*図：記事の公開範囲（Article Audience）。中心から社内（Internal）、パートナー（Partners）、顧客（Customers）、一般公開（Public）の同心円。パートナー以降が社外向け（External）。左下の扇形はドメイン（Domain）単位の公開範囲。*
 
 **社内（INTERNAL）**：組織内部の対象者だけが記事を見られる。注：社内より広く見えるものはすべて、社外向け（External）と呼ぶ。
 
@@ -502,7 +510,9 @@ KCS記事の準備状況を管理するため、記事の確度を使って、�
 
 KCS記事を見つけて使うときは、それを改善すべきである。再利用はレビューである。「指摘するか、直すか」が文化の一部になるにつれて、私たちは自分が触れるコンテンツに責任を持つようになる。この力学によって、使われているコンテンツが絶えずレビューされ改善されることが確実になる。KCS記事が改善され、使われることで検証されていくにつれて、より広い対象者から見えるようにすべきであり、最終的には社外から見えるようにすべきである。KCS導入の初期には、組織は、さまざまな需要主導のテクニックを通じて、コンテンツを顧客から見えるように移していくという考え方を実践する。成熟したKCSの環境では、コンテンツの公開の大部分がリアルタイムに、つまり必要なときに必要なだけ行われている。（必要なときに必要なだけ公開する実例は、[事例](https://library.serviceinnovation.org/Case_Studies/KCS_Case_Studies)を参照。）
 
-![article-state-matrix-2026.png](https://library.serviceinnovation.org/@api/deki/files/5344/article-state-matrix-2026.png?revision=2&size=bestfit&width=450&height=503)
+![article-state-matrix-2026.png](../images/5344-article-state-matrix-2026.png)
+
+*図：記事の状態のマトリクス（Article State Matrix）。上の表は、KCSのライセンスの段階（Candidate／Contributor／Publisher）ごとに扱える確度と公開範囲。Candidate は作成中・未検証と社内まで、Contributor は検証済みとパートナーまで、Publisher はアーカイブ済みと顧客・一般公開まで扱える。下の表は、確度ごとの公開範囲。作成中は社内のみ、未検証は顧客まで、検証済みは一般公開まで。*
 
 KCS Publisher は、検証済みの記事を変更できる。まだ KCS Publisher ではないが、記事がKCSのコンテンツ標準に準拠していない、あるいはその他の点で改善が必要だと気づいた人は、記事を指摘し、KCS Publisher のレビューを受けるために未検証の印を付けるべきである。ナレッジマネジメントのテクノロジーの中には、まだ KCS Publisher ではない人が、現在の版を見える状態にしたまま、文書の未公開の版を編集できるものがある。KCS Publisher は変更を承認するだけで済み、手戻りが無くなるので、これは望ましい。一般に、公開済みの記事は、指摘されたからといって見えない状態にすべきではない。ただし、公開済みの記事が顧客に害を与える差し迫ったリスクがあるとナレッジワーカーが感じた場合は、その人は直ちにその問題をコーチか Knowledge Domain Expert にエスカレーションすべきである。
 
@@ -529,7 +539,9 @@ KCS Publisher は、検証済みの記事を変更できる。まだ KCS Publish
 
 ###### KCS記事の時間価値
 
-![Pattern of Article Rediscovery](https://library.serviceinnovation.org/@api/deki/files/5348/pattern-of-rediscovery-2026.png?revision=1)
+![Pattern of Article Rediscovery](../images/5348-pattern-of-rediscovery-2026.png)
+
+*図：再発見のパターン：記事の時間価値。横軸が時間、縦軸が再発見の件数。約30日で山を迎え、その後は急に減る。HP と Dell の調査がどちらもこの形の曲線を示した。*
 
 ナレッジベースのコンテンツは、ドキュメント、ホワイトペーパー、マニュアルといった他の種類の技術的なコンテンツとは異なり、異なる方法で管理すべきものである。ナレッジは動的であり、必要なときの正確さと鮮度のために記録され、届けられる必要がある。サポートのナレッジの価値は、課題が最初に発見されてから30日後に下がり始める。KCSを実践していない組織の多くは、新しい記事を見つけ出し、文書化し、公開するのに60〜90日以上かかる。これは費用のかかるやり方であり、コンテンツが役立つ期間の大部分を逃してしまう。確度・公開範囲・ガバナンスのメタデータの欄は、記事を素早く適切に公開できるようにする抑制と均衡の仕組みを提供し、ナレッジが必要とされる期間のうちにそれを活かせるようにする。
 
@@ -549,7 +561,9 @@ KCS導入の「習熟度の構築」の段階に広がりつつあることを�
 
 記事のガバナンスは、機密性が高い、重要な、あるいは規制対象の情報を管理できるようにする、記事の属性である。すべての記事に同じコンプライアンス上のレビューの要件があるわけではない。記事の中には、それを使う人たちの集合的な経験に基づくもの（経験に基づく記事）がある。他の記事には、厳しい管理が必要な方針や法律の情報が入っている（コンプライアンスに基づく記事）。ガバナンスの属性をKCSの役割と組み合わせて使うことで、コンプライアンスの要件に応じて記事とその状態を管理できる。
 
-![article-governance-2026.png](https://library.serviceinnovation.org/@api/deki/files/5347/article-governance-2026.png?revision=2&size=bestfit&width=400)
+![article-governance-2026.png](../images/5347-article-governance-2026.png)
+
+*図：記事のガバナンス（Article Governance）。外側が経験に基づく記事（Experience Based：開かれていて、多くの KCS Contributor と Publisher が扱う）、内側がコンプライアンスに基づく記事（Compliance Based：閉じていて、少人数のグループが更新を管理する）。*
 
 **経験に基づく（Experience Based）**：経験に基づくという属性は、最も開かれたガバナンスの段階であり、管理はコミュニティの一員であり身元が確認されていることによって行われる。サインインが必要である。この段階の権利と特権を持つ人の数は非常に多くなる。その人たちは、経験に基づくという属性を持つ記事を作成し、改善できる。公開範囲の属性（社内、パートナー、社外）と確度の属性（未検証、検証済み）を設定する権利と特権は、その人のKCSの役割によって決まる。
 
@@ -732,7 +746,9 @@ KCSは、コンテンツ標準チェックリストとプロセス整合性レ�
 
 単純に始めよう。以下は、主要な6項目に絞ったコンテンツ標準チェックリストのスプレッドシートの例である。
 
-[![csc-essential.png](https://library.serviceinnovation.org/@api/deki/files/5418/csc-big-six.png?revision=4)](https://library.serviceinnovation.org/@api/deki/files/5418/csc-big-six.png?revision=4)
+[![csc-essential.png](../images/5418-csc-big-six.png)](../images/5418-csc-big-six.png)
+
+*図：コンテンツ標準チェックリストの例（主要6項目）。最後に紐付けた人（Last Linker）ごとに、レビューした記事数と、固有（Unique）・完全（Complete）・内容が明確（Content Clear）・タイトルが記事と結び付いている（Title Relates to Article）・ハイパーリンクが有効（Hyperlinks Valid）・メタデータが正しい（Metadata Correct）を満たした数、合計点と満点、コンテンツ標準を満たした割合を示す。注記：目標は90%。うまくいっている人とそうでない人の差が出るよう、見つかった問題を2倍して割合を計算している。*
 
 *割合は、（満点 −（満点 − 合計点）× 2）÷ 満点 で計算する。Excel では、Al のコンテンツ標準チェックリストの割合の式は 1-(2\*(L5-K5))/L5 となる。*
 
@@ -744,7 +760,9 @@ KCSは、コンテンツ標準チェックリストとプロセス整合性レ�
 
 以下は、成熟したKCSの環境でのコンテンツ標準チェックリストのスプレッドシートの例である。あくまで例として示す（クリックすると原寸で表示される）。
 
-[![csc-expanded.png](https://library.serviceinnovation.org/@api/deki/files/5419/csc-extended-criteria.png?revision=3)](https://library.serviceinnovation.org/@api/deki/files/5419/csc-extended-criteria.png?revision=3)
+[![csc-expanded.png](../images/5419-csc-extended-criteria.png)](../images/5419-csc-extended-criteria.png)
+
+*図：成熟した環境でのコンテンツ標準チェックリストの例（拡張した基準）。記事（症状の多様さ、固有、完全）、内容（単一の記述、環境が課題を反映、環境が標準どおり、修正が完全、完結した考え、適切な依頼者情報、リンクにアクセスできる、ハイパーリンクが正しい）、属性（公開範囲・状態・種類が正しい）の項目ごとに満たした数を示す。注記は主要6項目の例と同じ。*
 
 成熟した例で注目すべき主な点をいくつか挙げる。
 

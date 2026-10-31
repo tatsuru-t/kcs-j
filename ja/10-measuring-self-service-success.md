@@ -10,7 +10,7 @@
 > - [Glossary of Terms](https://library.serviceinnovation.org/KCS/Measuring_Self-Service_Success/50_Glossary_of_Terms)
 > - [Project Acknowledgements](https://library.serviceinnovation.org/KCS/Measuring_Self-Service_Success/70_Project_Acknowledgements)
 
-![Measuring Self-Service Success (2027)](https://library.serviceinnovation.org/@api/deki/files/4409/mindtouch.page%2523thumbnail?revision=1)
+
 
 ナレッジの共有が良くなることによる顧客の成功の向上は、KCSの重要な効果である。複数のチャネルにわたるナレッジの提供、特にセルフサービスとコミュニティの実践の価値を、どうすれば見極められるだろうか。
 
@@ -28,7 +28,9 @@
 - コミュニティとソーシャルメディアの場では、需要は有人のチャネルで目にするものの30倍である。
 - 有人のチャネルが応えているのは、顧客からの需要全体の3%未満である。
 
-![customer-demand-model.png](https://library.serviceinnovation.org/@api/deki/files/5432/customer-demand-model.png?revision=1&size=bestfit&width=700)
+![customer-demand-model.png](../images/5432-customer-demand-model.png)
+
+*図：顧客の需要モデル。需要の量は、有人（Assisted）を X とすると、セルフサービスが10X、コミュニティとソーシャルが30X。検出・予測（Detect or Predict）を含むすべてのチャネルがナレッジ（Knowledge）を中心につながっている。左ほど顧客の労力が低く既知の問題、右ほど労力が高く新しい問題になる。*
 
 つまり、私たちの製品とサービスを使う顧客の成功と生産性を高める非常に大きな機会がある。有人のモデルで学んでいることを、より簡単にアクセスできる他のチャネルにナレッジとして公開することで活かせば、既知の課題の答えを見つけるのに費やす時間と労力を減らし、同時にナレッジワーカーが有人のチャネルで新しい課題に取り組めるようにできる。
 
@@ -40,7 +42,9 @@ Greg Oxton が [この10分間の動画で顧客の需要モデル](https://yout
 
 ここでは、セルフサービスのやり取りを次のように定義する。私たちの製品とサービスを使う顧客の成功と生産性を高める情報（説明、トラブルシューティング、推奨）であって、利用者の意図が、購入・設計・付加価値サービスではなく、課題の解決にあるもの。
 
-![Demand Flow Example](https://library.serviceinnovation.org/@api/deki/files/5986/touch-point-flow.png?revision=3&size=bestfit&width=550)
+![Demand Flow Example](../images/5986-touch-point-flow.png)
+
+*図：需要の流れの例。顧客の課題（需要）のうち、セルフサービスで45%が成功し40%は別の行動か放棄、15%がチャットボットへ。チャットボットでは25%が成功し10%は別の行動か放棄、65%がケースへ。ケースでは80%が成功し20%は別の行動か放棄。*
 
 このプロジェクトで使うその他の定義は、[用語集](10-measuring-self-service-success.md#page-3968)を参照のこと。
 
@@ -113,7 +117,9 @@ Consortiumの取り組みの基礎となる2つの重要な考え方が、価値
 
 セルフサービスをいつ始め、いつ広めるのか。KCS記事が、すでにセルフサービスのチャネルにあるコンテンツを補うものであれば、段階的な取り組み方がうまくいくかもしれない。新しいセルフサービスのナレッジベースを作っているのであれば、40〜50%の成功率を確保できるだけのコンテンツがナレッジベースに集まるのはいつか。ナレッジベースの量が十分であることを示す主な指標の1つは、ある領域で記事の再利用率が作成率と交わることである。チームの作成率と再利用率を時間に沿って描くと、人や機械がナレッジベースで役に立つものを見つける頻度（再利用）と、新しい記事を作成する頻度の感触が得られる。線が交わったら、それは作成するのと同じくらい再利用している、つまり50%の確率で既存の記事に紐付けていることを意味する。今こそセルフサービスのモデルを有効にし、広めるときである。
 
-[![Create vs. Reuse](https://library.serviceinnovation.org/@api/deki/files/5379/create-vs-reuse-graph.png?revision=2)](https://library.serviceinnovation.org/@api/deki/files/5379/create-vs-reuse-graph.png?revision=2)
+[![Create vs. Reuse](../images/5379-create-vs-reuse-graph.png)](../images/5379-create-vs-reuse-graph.png)
+
+*図：月ごとの記事の作成と再利用。破線が作成（Create）、実線が再利用（Reuse）。最初は作成が先行し、5か月目あたりで再利用が作成に追いつき、その後は再利用が上回る。*
 
 作成の活動が再利用の活動と等しくなる時点は、社外の依頼者が50%の確率で役に立つものを見つけられるだけのコンテンツがナレッジベースにあることを示している。
 
@@ -195,11 +201,15 @@ KCSの効果は、一般に3つの段階で語られる。
 
 問い合わせの回避やケースの削減とも呼ばれるが、セルフサービスでの関わりによって解決された課題に伴うコスト削減を評価することには、いくつもの落とし穴がある。
 
-![Demand for Support](https://library.serviceinnovation.org/@api/deki/files/4271/Support_Demand_-_new.png?revision=1&size=bestfit&width=800)
+![Demand for Support](../images/4271-Support_Demand_-_new.png)
+
+*図：顧客のサポートの需要（少しのコンテキスト）。顧客の課題全体の中に、セルフサービス、ユーザーフォーラムやコミュニティ、非公式なピアツーピアがある。有人サポートに報告されたインシデントはその一部にすぎない。セルフサービスで解決されたものの中に、インシデントになっていたかもしれないもの（Potential Incidents Resolved）が含まれる。*
 
 顧客の需要を全体的に見ると、顧客はさまざまな方法で課題の解決を目指している。そうした課題の一部はセルフサービスで解決されるが、セルフサービスでの失敗のうち、有人のモデルでケースやインシデントになるのはごく一部にすぎない。
 
-![Demand Flow Example](https://library.serviceinnovation.org/@api/deki/files/4273/Demand_Flow_-_new.png?revision=1&size=bestfit&width=800)
+![Demand Flow Example](../images/4273-Demand_Flow_-_new.png)
+
+*図：需要の流れの例。顧客の課題（需要）のうち、セルフサービスで45%が成功し40%は別の行動か放棄、15%がチャットボットへ。チャットボットでは25%が成功し10%は別の行動か放棄、65%がケースへ。ケースでは80%が成功し20%は別の行動か放棄。*
 
 需要の流れの例が、これを視覚化する助けになる。顧客がセルフサービスで調べ始め、チャットボットに移り、答えを求めてケースを起票する課題もわずかな割合であるが、顧客が Google であちこち探し、セルフサービスの記事にたどり着くかもしれないが、気が散って、解決するほどの労力をかける価値は無いと判断する課題もたくさんある。
 

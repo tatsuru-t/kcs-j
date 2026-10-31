@@ -20,13 +20,15 @@
 > - [9) Coaching for Success](https://library.serviceinnovation.org/KCS/Principles_and_Core_Concepts/201-Core_Concepts/09_Coaching_for_Success)
 > - [10) Assess Value](https://library.serviceinnovation.org/KCS/Principles_and_Core_Concepts/201-Core_Concepts/10_Assess_Value)
 
-![KCS Principles and Core Concepts](https://library.serviceinnovation.org/@api/deki/files/5140/mindtouch.page%2523thumbnail?revision=2)
+
 
 原則とコアコンセプトは、Knowledge-Centered Success（KCS）の土台を形作っている。
 
 KCSは、ナレッジの利用・検証・改善・作成をワークフローに組み込むための、実績のある方法論である。この方法論には、実際に仕事をしている人たちの経験と、ナレッジの再利用から浮かび上がるパターンに基づく継続的改善が本来的に備わっている。KCSは、少数の人のナレッジを多数の人が使うという考え方に立つ、従来のナレッジエンジニアリングの手法とは異なる。KCSは多対多のモデルである。KCSの洗練された点は、需要主導であり、自己修正的であることにある。それは、KCSがダブルループ学習という学術的な概念に基づいているからである。
 
-![principles-core-concepts.png](https://library.serviceinnovation.org/@api/deki/files/5328/principles-core-concepts.png?revision=1&size=bestfit&width=346&height=350)
+![principles-core-concepts.png](../images/5328-principles-core-concepts.png)
+
+*図：KCSの構成。中心から原則（Principles）、コアコンセプト（Core Concepts）、プラクティス（Practices）、テクニック（Techniques）の順に外側へ広がる。*
 
 KCSは、情報やナレッジを多く扱うあらゆる事業に、非常に大きな価値を生み出す。4つの基本的な原則と10個のコアコンセプトが、KCSの土台を形作っている。[KCSのプラクティス](https://library.serviceinnovation.org/KCS/KCS_v6/KCS_v6_Practices_Guide)は規範的に見えるかもしれないが、そこに挙げたテクニックは、この方法論の導入に成功した組織のやり方を例として示したものである。これらのテクニックは、KCSを導入する唯一の方法だと誤解されることがある。しかし実際には、原則・コアコンセプト・プラクティスを実践する方法はたくさんある。テクニックは、KCSが現場レベルでどう機能するかの一例であり、KCSで成功する唯一の方法ではない。
 
@@ -40,7 +42,9 @@ KCSの原則は、複数のプラクティスにまたがって当てはまる�
 
 KCSの方法論には、4つの基礎となる原則がある。
 
-![KCS Kernel](https://library.serviceinnovation.org/@api/deki/files/3825/principles.png?revision=1&size=bestfit&width=650&height=376)
+![KCS Kernel](../images/3825-principles.png)
+
+*図：KCSの4つの原則。豊かさ（Abundance）：多く共有するほど、多く学ぶ／価値を生む（Create Value）：作業はタスク単位で、思考は全体像で／信頼（Trust）：関与させ、権限を与え、意欲を引き出す／需要主導（Demand Driven）：「念のため」ではなく「必要なときに必要なだけ」。*
 
 - [豊かさ（Abundance）](01-principles-and-core-concepts.md#page-368)：多く共有するほど、多く学ぶ
 - [価値を生む（Create Value）](01-principles-and-core-concepts.md#page-369)：作業はタスク単位で、思考は全体像で

@@ -66,17 +66,17 @@ Having explicit techniques in the workflow not only improves the problem solving
 
 First, we seek to understand the situation in the requestor's context, and we capture it to preserve it. Then we seek to understand what we collectively know about the issue (search the knowledge base). These concepts are not unique to KCS; Charles Kepner and Benjamin Tregoe outline these same problem-solving methodologies in [The Rational Manager](http://www.amazon.com/gp/product/B00B89VP5G/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00B89VP5G&linkCode=as2&tag=customersupportc), as does Stephen R. Covey in [The 7 Habits of Highly Effective People](http://www.amazon.com/gp/product/B00GOZV3TM/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00GOZV3TM&linkCode=as2&tag=customersupportc&linkId=3V3EUQJ42OFKLLHU).  Leverage any existing problem solving processes in your organization!
 
-![structured-problem-solving.png](https://library.serviceinnovation.org/@api/deki/files/5370/structured-problem-solving.png?revision=1&size=bestfit&width=350&height=204)Just as in the crime scene, we start by preserving the perspective the requestor has of what is happening. This is a very literal process. Next, we search the knowledge base to see if this is a known issue or to see what we collectively know about this type of situation.  The "search early, search often" technique is a key part of the Solve Loop. If an article is found that provides the resolution, then we are mostly done (we still need to attach and improve the existing article). If not, then we refine the search by collecting additional information from the requestor.
+![structured-problem-solving.png](../images/5370-structured-problem-solving.png)Just as in the crime scene, we start by preserving the perspective the requestor has of what is happening. This is a very literal process. Next, we search the knowledge base to see if this is a known issue or to see what we collectively know about this type of situation.  The "search early, search often" technique is a key part of the Solve Loop. If an article is found that provides the resolution, then we are mostly done (we still need to attach and improve the existing article). If not, then we refine the search by collecting additional information from the requestor.
 
 Searching will sometimes result in finding articles that describe similar situations. While perhaps not perfect for our situation, articles about similar issues can provide additional insight or prompt qualifying questions that we had not thought of. This complements what we know about analyzing this kind of issue. If an existing article is not found after refining our search a few times, we start the *diagnostic* process. We tap into our problem solving experience and use whatever tools are relevant. We continue to ask clarifying questions. As we build a richer understanding of the issue, we check the knowledge base frequently. If we do not find anything pertinent to the situation in the knowledge base, and we cannot resolve the problem, we then collaborate with others or escalate the issue for more additional *research*.
 
-![different-skills.png](https://library.serviceinnovation.org/@api/deki/files/5371/different-skills.png?revision=1&size=bestfit&width=350)Many responders are too quick to move into the diagnosis phase of problem solving. If we move too quickly into diagnostics, we are likely to jump to conclusions, stop listening to the requestor, miss the fact that there is already a KCS article in the knowledge base, or miss the opportunity to learn from others' experiences in solving similar problems. KCS reinforces the need for the literal step to be the first step in the problem solving process.
+![different-skills.png](../images/5371-different-skills.png)Many responders are too quick to move into the diagnosis phase of problem solving. If we move too quickly into diagnostics, we are likely to jump to conclusions, stop listening to the requestor, miss the fact that there is already a KCS article in the knowledge base, or miss the opportunity to learn from others' experiences in solving similar problems. KCS reinforces the need for the literal step to be the first step in the problem solving process.
 
 ##
 
 ### Managing the Conversation
 
-![Managing the Conversation](https://library.serviceinnovation.org/@api/deki/files/5372/managing-conversation.png?revision=1&size=bestfit&width=350&height=256) In environments where we need to use multiple applications to get the job done - for example, a case or incident management system that keeps track of the events, and a separate knowledge management system that houses the KCS article - it's helpful to design the KCS workflow to manage the conversation in order to minimize the need to jump back and forth between systems.
+![Managing the Conversation](../images/5372-managing-conversation.png) In environments where we need to use multiple applications to get the job done - for example, a case or incident management system that keeps track of the events, and a separate knowledge management system that houses the KCS article - it's helpful to design the KCS workflow to manage the conversation in order to minimize the need to jump back and forth between systems.
 
 Deal with the administrative elements at the beginning (contact initiation) and end of each contact (wrap up) - not interspersed throughout the resolution process. This approach will allow focus on the objective of problem solving.
 
@@ -236,7 +236,7 @@ The Member-only [Process Alignment Workbook](https://library.serviceinnovation.o
 
 This demonstration model shows a PAR framework evaluating Reuse and Relevant Reuse. This is a helpful view for programs (or waves) that are just beginning the KCS journey, and for outsourced environments where coaching opportunities are limited. It provides a sense of whether or not the KCS workflow is being followed, who understands the workflow, and how much we can trust the patterns and trends that are developing.
 
-![par-essential.png](https://library.serviceinnovation.org/@api/deki/files/5389/par-essential.png?revision=1)
+![par-essential.png](../images/5389-par-essential.png)
 
 In this example, we looked at 18 of Al's recently closed cases, and discovered that two of them did not have knowledge opportunities.  Of the remaining 16 cases, 12 of them had opportunities for reuse (the article existed before the case was opened). Of those, Al reused articles for 10 of his cases, and 8 of those were relevant links: 8 cases had a link to a Resolution article that describes the solution to the case.
 
@@ -252,7 +252,7 @@ What kinds of conversations might a coach have with Al about his experience? **I
 
 This demonstration model shows a PAR framework evaluating Solve Loop reuse and create activities. Waiting to add article creation as a part of PAR can help reinforce the fact that creation is not the primary goal of KCS and can help avoid the temptation to put a goal on that particular activity.
 
-![Process Alignment Review Model - Expanded](https://library.serviceinnovation.org/@api/deki/files/6036/par-expanded.png?revision=3)
+![Process Alignment Review Model - Expanded](../images/6036-par-expanded.png)
 
 Extending Al's example, we are now looking at article creation in addition to reuse. Of the 16 cases that had knowledge opportunities, 4 of them were opportunities to create. Al created 2, which brings the total of cases with reuse or create to 12.
 
@@ -264,7 +264,7 @@ Al's Create Rate (Cases with Article Creation divided by Create Opportunities) i
 
 This demonstration model shows a more mature PAR framework evaluating Solve Loop reuse, reuse & improve, and create activities. This view provides visibility to all of the activities of the Solve Loop, and can help pinpoint specifically which parts of the workflow are proving troublesome.
 
-![Process Alignment Review Model - Comprehensive](https://library.serviceinnovation.org/@api/deki/files/6037/par-comprehensive.png?revision=2)
+![Process Alignment Review Model - Comprehensive](../images/6037-par-comprehensive.png)
 
 Now we're looking at all of Al's Solve Loop activity: of all the opportunities Al had to reuse, create, or improve an article, how often did he?
 
@@ -474,7 +474,7 @@ See KCS Roles and Competencies for detailed examples of what each role should un
 
 ### Progression Through the KCS Roles
 
-[![KCS User Development](https://library.serviceinnovation.org/@api/deki/files/5373/kcs-user-development.png?revision=6&size=bestfit&width=650)](https://library.serviceinnovation.org/@api/deki/files/5373/kcs-user-development.png?revision=6)
+[![KCS User Development](../images/5373-kcs-user-development.png)](../images/5373-kcs-user-development.png)
 
 The KCS Contributor and KCS Publisher roles need to have a well-defined path to achieve those levels. Knowledge workers should have to demonstrate proficiency at each level and pass an exam to progress, and a process for renewal should be considered.
 

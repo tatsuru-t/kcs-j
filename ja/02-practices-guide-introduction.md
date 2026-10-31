@@ -6,7 +6,9 @@
 > - [Why KCS Works](https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/101-Why_KCS_Works)
 > - [Output: the KCS Article](https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/102-Output_the_KCS_Article)
 
-[![Knowledge-Centered Success](https://library.serviceinnovation.org/@api/deki/files/5971/knowledge-centered-success-loops.png?revision=1&size=bestfit&width=400)](https://library.serviceinnovation.org/@api/deki/files/5971/knowledge-centered-success-loops.png?revision=1)
+[![Knowledge-Centered Success](../images/5971-knowledge-centered-success-loops.png)](../images/5971-knowledge-centered-success-loops.png)
+
+*図：Knowledge-Centered Success のダブルループ。右の Solve Loop（SOLVE）に再利用（Reuse）・改善（Improve）・記録（Capture）・構造化（Structure）、左の Evolve Loop（EVOLVE）にコンテンツの健全性（Content Health）・プロセスの統合（Process Integration）・パフォーマンスの把握（Performance Insight）・チェンジマネジメント（Change Management）が並ぶ。中央の三角形はKCS記事を表す。*
 
 Knowledge-Centered Success（KCS^(®)）は、単純な考え方でありながら大きな効果を生む。ワークフローの一部として、ナレッジを再利用し、改善し、（まだ無ければ）作成し、それを探している人が使える状態にしておけば、次のことが実現できる。
 
@@ -89,7 +91,9 @@ KCSは生きたシステムであり、完了日のあるプロジェクトで�
 
 ナレッジベースの健全性と組織の能力を最大限に高めるため、KCSの方法論の8つのプラクティスは、互いに強め合うダブルループのプロセスとして構成されている。このSolve LoopとEvolve Loopのプロセスが、システムを構成する日々の運用上の活動である。
 
-![double-loops-complexity-2026.png](https://library.serviceinnovation.org/@api/deki/files/5346/double-loops-complexity-2026.png?revision=1)
+![double-loops-complexity-2026.png](../images/5346-double-loops-complexity-2026.png)
+
+*図：「作業はタスク単位で、思考は全体像で」。小さな4つのループが Solve Loop（受け身。1回のやり取りの中で行うこと）、それを囲む大きなループが Evolve Loop（振り返り。やり取りの集まりに基づいて行うこと）。*
 
 Solve Loopは、対応者（ナレッジワーカー）が依頼者の課題を解決するときの責任を表す。Solve Loopのプラクティスは、受け身で、1件ごとに完結するものである。
 
@@ -99,7 +103,9 @@ Evolve Loopは、リーダーシップの責任と、組織レベルのプロセ
 
 パターンから学び、パターンに影響を与えたいなら、やり取りと活動に気を配る必要がある。Solve LoopとEvolve Loopは、合わさって自己修正するシステムを作り出す。Evolve Loopの分析を可能にするのは、一つひとつが正しく処理された、数多くのSolve Loopの出来事の集積である。出来事の集まりと関連するナレッジ記事を時間をかけて分析することで、Evolve LoopはSolve Loopの改善点を見つけ出す。そしておそらく最も重要なのは、Evolve Loopが事業そのものを改善する機会を見つけ出すことである。Evolve Loopで行う根本原因分析は、ナレッジワーカーと、私たちがサービスを提供する相手の集合的な経験に基づいて、製品・サービス・プロセス・方針の改善を推し進めることができる。
 
-![KCS Double Loop Process](https://library.serviceinnovation.org/@api/deki/files/5951/loops-practices-title.png?revision=2&size=bestfit&width=500&height=378)
+![KCS Double Loop Process](../images/5951-loops-practices-title.png)
+
+*図：KCSのダブルループのプロセス（KCS Double Loop Process）。Solve Loop の4つのプラクティス（再利用・改善・記録・構造化）と、Evolve Loop の4つのプラクティス（コンテンツの健全性・プロセスの統合・パフォーマンスの把握・チェンジマネジメント）。*
 
 ### Solve Loopのワークフローの例
 
@@ -107,13 +113,17 @@ Evolve Loopは、リーダーシップの責任と、組織レベルのプロセ
 
 このSolve Loopの流れに沿って作業すると、Evolve Loopで分析するための利用データが得られる。そこには依頼者（と対応者）の体験についての洞察が含まれ、製品・プロセス・方針の改善といった是正措置が可能になる。
 
-![Sample Solve Loop Workflow](https://library.serviceinnovation.org/@api/deki/files/5199/Screenshot_2025-10-16_at_2.35.22%25E2%2580%25AFPM.png?revision=1)
+![Sample Solve Loop Workflow](../images/5199-Screenshot_2025-10-16_at_2.35.22-PM.png)
+
+*図：Solve Loop のワークフロー（ナレッジワークと問題解決を1つのワークフローに統合する）。依頼者が依頼を送る → ナレッジワーカー（KW）が依頼を確認 → 依頼者のコンテキストを記録 → そのコンテキストでナレッジベースを検索（早めに探し、何度も探す） → 記事が見つかれば依頼に紐付けてナレッジを提供。見つからなければ依頼者に追加情報を尋ねて（解決しようとする前に理解しようとする）検索を続け、検索をやめる場合はナレッジベースの外の資源（人・フォーラム・ドキュメント）を調べ、それでも無ければ調査（協働・エスカレーション）する。解決策が見えたら新しい記事を作成して紐付ける。依頼が解決したら、記事を改善するか判断し、指摘（フィードバック）か修正（編集）を行って依頼を閉じる。解決しなければコンテキストの記録に戻る。*
 
 <a id="page-7099"></a>
 
 ## アウトプット：KCS記事（Output: the KCS Article）
 
-![KCS Double Loop Process](https://library.serviceinnovation.org/@api/deki/files/5951/loops-practices-title.png?revision=2&size=bestfit&width=350&height=264)
+![KCS Double Loop Process](../images/5951-loops-practices-title.png)
+
+*図：KCSのダブルループのプロセス（KCS Double Loop Process）。Solve Loop の4つのプラクティス（再利用・改善・記録・構造化）と、Evolve Loop の4つのプラクティス（コンテンツの健全性・プロセスの統合・パフォーマンスの把握・チェンジマネジメント）。*
 
 KCSの方法論は、3つの要素で構成されている。
 
@@ -127,7 +137,9 @@ KCSの目標は、タイムリーで、見つけられ、使えるナレッジ�
 
 ### KCS記事
 
-![The KCS Article](https://library.serviceinnovation.org/@api/deki/files/5952/kcs-article.png?revision=1&size=bestfit&width=400)
+![The KCS Article](../images/5952-kcs-article.png)
+
+*図：KCS記事（The KCS Article）。依頼者（Requestor）のコンテキスト（Context）、対応者（Responder）の経験（Experience）、組織（Organization）の情報（Information）の3つの視点が、中央の解決策（Resolution）で結び付く。*
 
 KCS記事とは、KCSの方法論を用いて作られるコンテンツである。記事は、単純な質問、複雑な問題、手順など、さまざまな種類のコンテンツに使える。[KCS記事にはわずかな構造があり](04-evolve-loop-content-health.md#page-7118)、依頼者・対応者・組織という3つのグループの視点を統合している。
 
@@ -141,4 +153,7 @@ KCS記事とは、KCSの方法論を用いて作られるコンテンツであ�
 
 どの組織にも、価値ある再利用可能な情報を含む、幅広いコンテンツがある。KCSは、役に立つだけの構造を持ちながら、急速に変化する環境に合わせられるだけの柔軟さも備えた形で、情報を一貫して記録するための方法論と一連のプラクティスを提供する。KCSのプロセスは、多くのコンテンツ源から材料を引き出し、日々使うためのコンテキストに即したナレッジベースを作るだけでなく、新しい資料も生み出す。その資料は既存のコンテンツを参照することもあり、製品設計、マーケティング計画、現場向けの研修、ドキュメントといった他の業務コンテンツにも活かされる。KCSの原則は多くの種類のコンテンツを維持管理するうえで役に立つかもしれないが、KCS記事は、あらゆる用途に合う万能のコンテンツ形式を目指したものではない。
 
-![content-continuum.png](https://library.serviceinnovation.org/@api/deki/files/5368/content-continuum.png?revision=1)
+![content-continuum.png](../images/5368-content-continuum.png)
+
+
+*図：コンテンツの連続体。左ほど非公式で動的（会話、ソーシャルネットワークとコミュニティ、やり取り（依頼・チャット）、ナレッジ（記事））、右ほど公式で静的（方針とプロセス、診断ガイド、設定ガイド、製品マニュアル）。上の帯がKCSの範囲、下の帯が Evolve Loop のアウトプット（製品とサービスを改善する）。*

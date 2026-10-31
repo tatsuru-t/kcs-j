@@ -258,7 +258,7 @@ The impact map is the foundation for a successful KCS adoption because it provid
 
 Here is an example of an impact map expressed in terms of the primary stakeholders and the specific contributions of the KCS program:
 
-[![Example Impact Map](https://library.serviceinnovation.org/@api/deki/files/5391/impact-map-example.png?revision=1)](https://library.serviceinnovation.org/@api/deki/files/5391/impact-map-example.png?revision=1)
+[![Example Impact Map](../images/5391-impact-map-example.png)](../images/5391-impact-map-example.png)
 
 Leaders should select the measures and goals that link to requestor success (the desired outcome), not activities. This is the same message that we deliver for individuals, but the metrics are implemented at a group or organizational level. Some good examples of higher-level metrics that are only measured at the group level include metrics about requestor's frequency of use and success with self-service, as well as internal metrics like time to publish to self-service. If we measure the wrong things or fail to balance them well, we are likely to drive the wrong behaviors and wrong results.
 

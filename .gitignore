@@ -1,3 +1,4 @@
 # 取得した本文HTMLとページ単位の中間ファイル（scripts/fetch.py・convert.py で作り直せる）
 work/
 __pycache__/
+dist/

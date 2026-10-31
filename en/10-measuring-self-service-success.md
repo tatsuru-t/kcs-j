@@ -10,7 +10,7 @@
 > - [Glossary of Terms](https://library.serviceinnovation.org/KCS/Measuring_Self-Service_Success/50_Glossary_of_Terms)
 > - [Project Acknowledgements](https://library.serviceinnovation.org/KCS/Measuring_Self-Service_Success/70_Project_Acknowledgements)
 
-![Measuring Self-Service Success (2027)](https://library.serviceinnovation.org/@api/deki/files/4409/mindtouch.page%2523thumbnail?revision=1)Improved customer success due to better knowledge-sharing is a key benefit of KCS. How can we determine the value of knowledge delivery across multiple channels, particularly for self-service and community implementations?
+Improved customer success due to better knowledge-sharing is a key benefit of KCS. How can we determine the value of knowledge delivery across multiple channels, particularly for self-service and community implementations?
 
 The goal of a service organization is to improve customer success and productivity with our products and services. To do this successfully, we must understand the customer's activity and experience.
 
@@ -26,7 +26,7 @@ The Customer Demand Model is one of the foundational ideas that identifies the v
 - In communities and social media spaces, the demand is thirty times what we see in assisted channels.
 - Assisted channels serve less that 3% of the total demand from our customers.
 
-![Customer Demand Model](https://library.serviceinnovation.org/@api/deki/files/5432/customer-demand-model.png?revision=1&size=bestfit&width=0&height=0)![customer-demand-model.png](https://library.serviceinnovation.org/@api/deki/files/5432/customer-demand-model.png?revision=1&size=bestfit&width=700)
+![Customer Demand Model](../images/5432-customer-demand-model.png)![customer-demand-model.png](../images/5432-customer-demand-model.png)
 
 This means we have a huge opportunity to improve customer success and productivity with our products and services. If we leverage what we are learning in the assisted model by publishing that knowledge to other, more easily-accessible channels, we can reduce time and level of effort spent on finding answers to known issues, while making sure our Knowledge Workers are available in the assisted channel to work on new issues.
 
@@ -38,7 +38,7 @@ Self-service is the mechanism by which anyone can solve an issue or answer a que
 
 For our purposes, self-service interactions are defined as: Information that improves customer success and productivity with our products and services (instructional, troubleshooting, recommendations) where user intent is about solving an issue as opposed to purchase, design, or value-added services.
 
-![Demand Flow Example](https://library.serviceinnovation.org/@api/deki/files/5986/touch-point-flow.png?revision=3&size=bestfit&width=550)
+![Demand Flow Example](../images/5986-touch-point-flow.png)
 
 See [Glossary of Terms](10-measuring-self-service-success.md#page-3968) for more definitions used in this project.
 
@@ -111,7 +111,7 @@ How many articles are visible externally, and how fast?  The primary enabler of 
 
 When do we turn on and promote self-service? If our KCS articles are complementary to content we already have in the self-service channel, then an incremental approach might work.  If we are building a new self-service knowledge base, when do we have enough content in the knowledge base to ensure a 40-50% success rate? One key indicator of sufficient volume in the knowledge base is when the reuse rate of articles intersects with the create rate for a given domain. Plotting the team's create rate against the reuse rate over time gives us a sense of how often people or machines find something useful in the knowledge base (reuse) versus how often they are creating new articles. When the lines cross it means that they are re-using as often as they are creating, or 50% of the time they are linking to an existing article.  It is now time to enable and promote the self-service model.
 
-[![Create vs. Reuse](https://library.serviceinnovation.org/@api/deki/files/5379/create-vs-reuse-graph.png?revision=2)](https://library.serviceinnovation.org/@api/deki/files/5379/create-vs-reuse-graph.png?revision=2)
+[![Create vs. Reuse](../images/5379-create-vs-reuse-graph.png)](../images/5379-create-vs-reuse-graph.png)
 
 The point at which the create activity equals the reuse activity indicates there is sufficient content in the knowledge base to enable external requestors to find something useful 50% of the time.
 
@@ -193,11 +193,11 @@ The [Service Engagement Measures Template](10-measuring-self-service-success.md#
 
 Also known as contact avoidance or case deflection, assessing the cost savings associated with issues solved through self-service engagement includes a number of pitfalls.
 
-![Demand for Support](https://library.serviceinnovation.org/@api/deki/files/4271/Support_Demand_-_new.png?revision=1&size=bestfit&width=800)
+![Demand for Support](../images/4271-Support_Demand_-_new.png)
 
 From a holistic look at customer demand, customers pursue resolution to their issues in a number of ways. Some of these issues are resolved with self-service, but only a small percentage of failed self-service attempts becomes a case or incident in the assisted model.
 
-![Demand Flow Example](https://library.serviceinnovation.org/@api/deki/files/4273/Demand_Flow_-_new.png?revision=1&size=bestfit&width=800)
+![Demand Flow Example](../images/4273-Demand_Flow_-_new.png)
 
 The Demand Flow example helps visualize this. While there is some small percentage of issues that a customer will start researching in self-service, move to a chat bot, and then open a case in pursuit of an answer, there are many others where a customer will poke around in Google, maybe land on a self-service article, get distracted, and then decide it wasn't that it is not worth the effort to resolve.
 

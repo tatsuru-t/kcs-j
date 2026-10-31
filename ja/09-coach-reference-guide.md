@@ -15,7 +15,7 @@
 > - [Doubt: The tools don’t work.](https://library.serviceinnovation.org/KCS/Coach_Reference_Guide/30_Handling_Specific_Doubts/Doubt_The_tools_don%E2%80%99t_work)
 > - [Additional Coaching Resources](https://library.serviceinnovation.org/KCS/Coach_Reference_Guide/40_Additional_Resources)
 
-![KCS Coach Reference Guide](https://library.serviceinnovation.org/@api/deki/files/5948/mindtouch.page%2523thumbnail?revision=1)
+
 
 KCSのコーチの役割は、KCSの習熟を目指すナレッジワーカーを支えることである。KCSのコーチは変革の推進役である。
 
@@ -64,7 +64,9 @@ Beth Haggett 博士は、[KCS Aligned のサービス](https://www.serviceinnova
 
 疑う人がなぜ疑うのか、その疑いにつながっている信念を理解し、あるいは明るみに出すことで、別の視点を示す機会が生まれる。信念は、疑う人自身に認識されていなかったり、はっきり言葉にされていなかったりすることが多い。目標は、根底にある信念を見つけることである。
 
-結果を変えるには、信念を変える必要がある。これを考える1つの方法が、BABRモデルである。![BABR by Dr. Beth Haggett](https://library.serviceinnovation.org/@api/deki/files/4235/babr-2023.png?revision=1&size=bestfit&width=350&height=234)
+結果を変えるには、信念を変える必要がある。これを考える1つの方法が、BABRモデルである。![BABR by Dr. Beth Haggett](../images/4235-babr-2023.png)
+
+*図：BABRモデル（Beth Haggett 博士）。信念（Beliefs）→ 態度（Attitude）→ 行動（Behavior）→ 結果（Results）→ 信念へと循環する。結果は「合理化（Rationalize）」を通じて信念を強めることもある。*
 
 - 信念（Beliefs）が態度に影響し、
 - 態度（Attitude）が行動に影響し、
@@ -173,7 +175,9 @@ KCSの習熟度の進み具合はナレッジワーカーごとに異なり、�
 
 Consortiumのメンバーは、KCSのコーチングについて豊富な経験を持っており、ここに示したコーチングのセッションの指針と、このコーチングのセッションの記録テンプレートの両方を作った。
 
-![KCS Coaching Session Template](https://library.serviceinnovation.org/@api/deki/files/5250/Screenshot_2026-02-05_at_9.45.04%25E2%2580%25AFPM.png?revision=1)
+![KCS Coaching Session Template](../images/5250-Screenshot_2026-02-05_at_9.45.04-PM.png)
+
+*図：コーチングのセッションの記録テンプレート。日付・コーチ・ナレッジワーカー、セッション前の準備（うまくいっていること2つ以上、前回からのフォローアップ、コンテンツ標準チェックリストやPARの結果からのフィードバック（点数ではなく））、ナレッジワーカーの習熟度（検索・紐付け・指摘・記録・作成・改善・コンテンツ標準のそれぞれについて、「新しい」なら Candidate、「練習中」なら Contributor、「習熟」なら Publisher）、セッションのメモ（進歩している領域、取り組む必要がある領域、昇格の準備ができているか、ナレッジワーカーとコーチのフォローアップ、その他）。*
 
 Consortiumのメンバーは、コーチングのセッションで使うための [Google スプレッドシートのワークブック](https://docs.google.com/spreadsheets/d/10ioaG4NWdfXU0jd5NlREjBZlyerkwsCmt5wu8RjYjyQ/edit?gid=0#gid=0)を利用できる。コピーを保存してセッションごとにタブを複製するか、好みのツールに合わせて作り変えてほしい。
 

@@ -9,7 +9,7 @@
 > - [Technique 5.3: Knowledge Optimization](https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/301-Evolve_Loop/Practice_5_Content_Health/Technique_5.3)
 > - [Technique 5.4: Content Health Indicators](https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/301-Evolve_Loop/Practice_5_Content_Health/Technique_5.4)
 
-![KCS Double Loop Process](https://library.serviceinnovation.org/@api/deki/files/5951/loops-practices-title.png?revision=2&size=bestfit&width=500&height=378)
+![KCS Double Loop Process](../images/5951-loops-practices-title.png)
 
 **The Evolve Loop defines, reflects on, and learns from activity in the Solve Loop.**
 
@@ -141,7 +141,7 @@ Content Health techniques maximize the value captured in the interaction process
 
 #### Articles Contain What's Reusable
 
-![The KCS Article](https://library.serviceinnovation.org/@api/deki/files/5952/kcs-article.png?revision=1)
+![The KCS Article](../images/5952-kcs-article.png)
 
 A well-defined and simple article structure is a fundamental element of KCS. Knowing where to look for, and where to put, specific types of information improves efficiency and usability for humans and machines.
 
@@ -374,7 +374,7 @@ Indicates who can make changes to which articles.
 - **Experience-based**: Article is open to modification by licensed KCS users.
 - **Compliance-based**: Article creation and modification is restricted to designated individuals.
 
-Any quick reference will align with your own Content Standard; it will not match this example. View and download additional examples, based on material from Consortium for Service Innovation Members here: **[Example 1](https://library.serviceinnovation.org/@api/deki/files/5430/Article_Quality_Quick_Reference__Example_1.pdf?revision=1)**, **[Example 2](https://library.serviceinnovation.org/@api/deki/files/5429/Article_Quality_Quick_Reference__Example_2.pdf?revision=1)**
+Any quick reference will align with your own Content Standard; it will not match this example. View and download additional examples, based on material from Consortium for Service Innovation Members here: **[Example 1](../images/5430-Article_Quality_Quick_Reference__Example_1.pdf)**, **[Example 2](../images/5429-Article_Quality_Quick_Reference__Example_2.pdf)**
 
 #### Multi-Language Considerations
 
@@ -418,7 +418,7 @@ Article state is comprised of three metadata fields: article confidence, article
 
 To manage the readiness of a KCS article, we use article confidence to indicate where it is in its life cycle. All articles, regardless of the confidence we have in them, are worth sharing in case someone else is dealing with the same issue.  As the article is resolved and then reused, we gain confidence in its quality.  Knowledge is never complete or static; it continues to evolve as it is used. Within this evolution, the KCS article life cycle is non-linear—KCS articles may move through the various qualities in many different ways.
 
-- Work in Progress (WIP)![article-confidence-2026.png](https://library.serviceinnovation.org/@api/deki/files/5340/article-confidence-2026.png?revision=1&size=bestfit&width=300)
+- Work in Progress (WIP)![article-confidence-2026.png](../images/5340-article-confidence-2026.png)
 - Not Validated
 - Validated
 - Archived
@@ -492,7 +492,7 @@ Following are a few examples of quality transitions.
 
 To manage who can see which KCS articles, we use article audience. As an organization, you may decide that you want to control what an external customer or an unidentified requestor has access to.  Business rules can then be established based on both article audience and article confidence.  As an article is designated as Validated, it may become visible to a given audience.  Or, as the KCS implementation matures, the audience may expand. Audience options include:
 
-- Internal![Article Audience](https://library.serviceinnovation.org/@api/deki/files/5342/article-audience-2026.png?revision=3&size=bestfit&width=350&height=325)
+- Internal![Article Audience](../images/5342-article-audience-2026.png)
 - Within a Domain
 - Partners
 - Customers
@@ -510,7 +510,7 @@ To manage who can see which KCS articles, we use article audience. As an organiz
 
 As we find and use KCS articles, we should improve them; reuse is review. As "flag it or fix it" becomes part of the culture, we are taking responsibility for the content that we interact with. This dynamic ensures the content being used is constantly being reviewed and improved. As the KCS articles improve and are validated through use, they should become visible to a broader audience and eventually be made visible externally. Early on in the KCS adoption process, organizations implement the concept of migrating content to be visible to customers through a variety of demand-driven techniques. In a mature KCS environment, a high percentage of content publishing is happening in real-time or just-in-time. (See [case studies](https://library.serviceinnovation.org/Case_Studies/KCS_Case_Studies) for examples of just-in-time publishing in action.)
 
-![article-state-matrix-2026.png](https://library.serviceinnovation.org/@api/deki/files/5344/article-state-matrix-2026.png?revision=2&size=bestfit&width=450&height=503)A KCS Publisher can modify a Validated article.  Those who are not yet KCS Publishers, but who notice that the article does not comply with the KCS content standard, or otherwise requires improvement, should flag the article and mark it as Not Validated for review by a KCS Publisher.  Some knowledge management technologies allow those who are not yet KCS Publishers to edit an unpublished version of the document while the current version stays visible; this is desirable as it removes rework by the KCS Publisher, who need only approve the changes. In general, articles that have been published should not be removed from visibility if they have been flagged, although if the knowledge worker feels a Published article poses an active risk of harming customers, he or she should escalate the issue to a Coach or Knowledge Domain Expert immediately.
+![article-state-matrix-2026.png](../images/5344-article-state-matrix-2026.png)A KCS Publisher can modify a Validated article.  Those who are not yet KCS Publishers, but who notice that the article does not comply with the KCS content standard, or otherwise requires improvement, should flag the article and mark it as Not Validated for review by a KCS Publisher.  Some knowledge management technologies allow those who are not yet KCS Publishers to edit an unpublished version of the document while the current version stays visible; this is desirable as it removes rework by the KCS Publisher, who need only approve the changes. In general, articles that have been published should not be removed from visibility if they have been flagged, although if the knowledge worker feels a Published article poses an active risk of harming customers, he or she should escalate the issue to a Coach or Knowledge Domain Expert immediately.
 
 To manage article audience, and thus appropriate levels of security for the knowledge, create an Article State Matrix (example shown). This reference document maps the audiences (internal, partners, external) against the KCS article attributes that affect visibility (state, knowledge domain, special considerations) and defines access rights.
 
@@ -533,7 +533,7 @@ The flow or movement of articles through the life cycle states is an important i
 
 Some organizations who do a great job at Adopting in Waves and Building Proficiency will realize significant operational improvement, and then see the system slowly die. People lose interest, participation rates drop off, and the benefits decline.  The common underlying theme in these scenarios is KCS stagnation: the flow of articles stops. Either the organization has not created a self-service mechanism, or the rate at which articles are getting made available outside the organization is not sufficient to support success with self-service. A primary motivation for people to create and maintain the knowledge base is the promise of reducing redundant work: not solving the same problem over and over.  If articles are not visible externally, or there is no effective self-service model, the responders will not see a change in the ratio of known vs. new issues they are working on. They will lose interest in the KCS Practices. The flow of articles through the states is critical for the sustainability of the KCS system.
 
-###### The Time Value of a KCS Article![Pattern of Article Rediscovery](https://library.serviceinnovation.org/@api/deki/files/5348/pattern-of-rediscovery-2026.png?revision=1)
+###### The Time Value of a KCS Article![Pattern of Article Rediscovery](../images/5348-pattern-of-rediscovery-2026.png)
 
 Knowledge base content is different from, and should be managed differently from, other types of technical content, such as documentation, white papers, or manuals. Knowledge is dynamic and needs to be captured and delivered for just-in-time accuracy and freshness. The value of support knowledge begins to diminish 30 days after an issue is first discovered. Many non-KCS organizations take 60-90 days or more to identify, document, and release new articles.  This is an expensive proposition that misses a major portion of the content's window of opportunity. The metadata fields of confidence, audience, and governance provide a system of checks and balances that allow us to publish articles quickly and appropriately so that we can leverage knowledge in the time frame it's needed.
 
@@ -553,7 +553,7 @@ See Measuring Self-Service Success for more on building a successful self-servic
 
 Article governance is an attribute of an article that allows you to control sensitive, critical, or regulated information. Not all articles have the same requirement for compliance reviews. Some articles are based on the collective experience of those who use the articles (experienced based articles). Other articles have policy or legal information that require tight control (compliance based articles). The governance attribute used in conjunction with KCS roles enables us to manage articles and their state specific to compliance requirement.
 
-**![article-governance-2026.png](https://library.serviceinnovation.org/@api/deki/files/5347/article-governance-2026.png?revision=2&size=bestfit&width=400)Experience Based** - The Experience Based attribute is the most open level of governance, and control is a function of being a member of the community and having an identity.  Sign-in is required.  The number of people with this level of rights and privileges will be very large; they can create and improve articles with the experience based attribute.  The individual's KCS role defines their rights and privileges in setting the audience attribute (Internal, Partner, External) and the confidence attribute (Not Validated, Validated)
+**![article-governance-2026.png](../images/5347-article-governance-2026.png)Experience Based** - The Experience Based attribute is the most open level of governance, and control is a function of being a member of the community and having an identity.  Sign-in is required.  The number of people with this level of rights and privileges will be very large; they can create and improve articles with the experience based attribute.  The individual's KCS role defines their rights and privileges in setting the audience attribute (Internal, Partner, External) and the confidence attribute (Not Validated, Validated)
 
 **Compliance Based** - The Compliance Based attribute is restrictive, in that only designated individuals or specific groups of individuals can create and modify articles within it. These articles contain information that describes policy, regulatory, or legal information. While everyone should be able to comment on or flag all types of articles, not everyone can create or improve articles with the Compliance attribute.
 
@@ -736,7 +736,7 @@ While we can use this as an indicator of the general health of the articles in t
 
 Start simple. Here is an example of an Content Standard Checklist spreadsheet focused on the big six items:
 
-[![csc-essential.png](https://library.serviceinnovation.org/@api/deki/files/5418/csc-big-six.png?revision=4)](https://library.serviceinnovation.org/@api/deki/files/5418/csc-big-six.png?revision=4)
+[![csc-essential.png](../images/5418-csc-big-six.png)](../images/5418-csc-big-six.png)
 
 *Percentages are calculated using (total possible points minus total points times 2) divided by total possible points.  In Excel, the formula for Al's Content Standard Checklist % = 1-(2\*(L5-K5))/L5*
 
@@ -748,7 +748,7 @@ As an organization matures in its use and confidence in KCS, it becomes easier t
 
 Following is a sample Content Standard Checklist spreadsheet in a mature KCS environment, for example purposes only (click to view full size).
 
-[![csc-expanded.png](https://library.serviceinnovation.org/@api/deki/files/5419/csc-extended-criteria.png?revision=3)](https://library.serviceinnovation.org/@api/deki/files/5419/csc-extended-criteria.png?revision=3)
+[![csc-expanded.png](../images/5419-csc-extended-criteria.png)](../images/5419-csc-extended-criteria.png)
 
 Some key ideas to note in the mature example:
 

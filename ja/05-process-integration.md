@@ -64,19 +64,25 @@ Evolve Loop は Solve Loop を定義し、包含する。構造化された問�
 
 まず、依頼者のコンテキストで状況を理解しようとし、それを保存するために記録する。次に、その課題について私たちが集合的に知っていることを理解しようとする（ナレッジベースを検索する）。これらの考え方はKCSに固有のものではない。Charles Kepner と Benjamin Tregoe は [The Rational Manager](http://www.amazon.com/gp/product/B00B89VP5G/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00B89VP5G&linkCode=as2&tag=customersupportc)（邦題『管理者の判断力』）で同じ問題解決の方法論を述べており、Stephen R. Covey も [The 7 Habits of Highly Effective People](http://www.amazon.com/gp/product/B00GOZV3TM/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00GOZV3TM&linkCode=as2&tag=customersupportc&linkId=3V3EUQJ42OFKLLHU)（邦題『7つの習慣』）で述べている。組織に既存の問題解決のプロセスがあれば、それを活かそう。
 
-![structured-problem-solving.png](https://library.serviceinnovation.org/@api/deki/files/5370/structured-problem-solving.png?revision=1&size=bestfit&width=350&height=204)
+![structured-problem-solving.png](../images/5370-structured-problem-solving.png)
+
+*図：構造化された問題解決のモデル。文字どおりの記録（Literal）→ 診断（Diagnosis）→ 調査（Research）のどの段階でもナレッジベースと行き来する。「解決しようとする前に理解しようとし、早めに探し、何度も探す」。*
 
 犯罪現場と同じように、まず、何が起きているかについての依頼者の視点を保存することから始める。これはとても文字どおりのプロセスである。次に、ナレッジベースを検索して、これが既知の課題かどうか、あるいはこの種の状況について私たちが集合的に何を知っているかを確かめる。「早めに探し、何度も探す」のテクニックは、Solve Loop の重要な部分である。解決策を示す記事が見つかれば、ほぼ終わりである（既存の記事を紐付け、改善する必要はまだある）。見つからなければ、依頼者から追加の情報を集めて検索を絞り込む。
 
 検索すると、似た状況を記述した記事が見つかることもある。私たちの状況にぴったりではないかもしれないが、似た課題についての記事は、追加の知見を与えてくれたり、思い付かなかった絞り込みの質問を促してくれたりする。これは、この種の課題の分析について私たちが知っていることを補ってくれる。何度か検索を絞り込んでも既存の記事が見つからなければ、*診断*のプロセスを始める。問題解決の経験を引き出し、関係するツールは何でも使う。確認のための質問を続ける。課題についての理解が深まるにつれて、ナレッジベースを頻繁に確認する。ナレッジベースに状況に関係するものが何も見つからず、問題を解決できなければ、他の人と協力するか、さらなる*調査*のために課題をエスカレーションする。
 
-![different-skills.png](https://library.serviceinnovation.org/@api/deki/files/5371/different-skills.png?revision=1&size=bestfit&width=350)
+![different-skills.png](../images/5371-different-skills.png)
+
+*図：問題解決のプロセスの段階ごとに異なるスキル。文字どおりの記録：聞くスキル、依頼者の言葉で課題を記録、検索。診断：推論のスキル、症状と環境を確かめ解釈する、検索。調査：分析のスキル、設計文書や実験を参照、検索。*
 
 多くの対応者は、問題解決の診断の段階に移るのが早すぎる。診断に移るのが早すぎると、結論に飛びつき、依頼者の話を聞くのをやめ、ナレッジベースにすでにKCS記事があることを見落とし、あるいは似た問題を解決した他の人の経験から学ぶ機会を逃しがちである。KCSは、文字どおりに記録する段階が問題解決のプロセスの最初の段階である必要性を強調している。
 
 ### 会話を管理する
 
-![Managing the Conversation](https://library.serviceinnovation.org/@api/deki/files/5372/managing-conversation.png?revision=1&size=bestfit&width=350&height=256)
+![Managing the Conversation](../images/5372-managing-conversation.png)
+
+*図：会話を管理する。事務処理（Admin）はインシデント追跡のシステムで最初と最後に行い、その間の検索（Look Up）・分析（Analysis）・調査（Research）はナレッジベースと行き来する。ツールが密に統合されていない環境では、会話を管理することでアプリケーション間を行き来する必要を減らせる。*
 
 仕事を片付けるのに複数のアプリケーションを使う必要がある環境では（例えば、出来事を追跡するケース管理やインシデント管理のシステムと、KCS記事を収める別のナレッジマネジメントシステム）、システム間を行き来する必要を最小にするよう、会話を管理する形でKCSのワークフローを設計すると役に立つ。
 
@@ -238,7 +244,9 @@ PARは、個人単位でもチーム単位でも分析できる。プログラ�
 
 この例示のモデルは、再利用と関連性のある再利用を評価するPARの枠組みを示している。これは、KCSの道のりを始めたばかりのプログラム（またはウェーブ）や、コーチングの機会が限られる外部委託の環境に役立つ見方である。KCSのワークフローに従っているかどうか、誰がワークフローを理解しているか、そして浮かび上がりつつあるパターンと傾向をどれだけ信頼できるかの感触が得られる。
 
-![par-essential.png](https://library.serviceinnovation.org/@api/deki/files/5389/par-essential.png?revision=1)
+![par-essential.png](../images/5389-par-essential.png)
+
+*図：PARの基本モデルの例。ナレッジワーカーごとに、閉じたケース、ナレッジの機会が無いケース、再利用の機会、再利用のあるケース、関連性のある再利用のあるケース、再利用率、再利用の正確さを示す。Al は18件中、再利用の機会12件、再利用10件、関連性のある再利用8件で、再利用率83%、再利用の正確さ80%。*
 
 この例では、Al が最近閉じたケースのうち18件を見て、そのうち2件にはナレッジの機会が無かったことがわかった。残りの16件のうち12件には再利用の機会があった（ケースが起票される前に記事が存在していた）。そのうち10件のケースで Al は記事を再利用しており、そのうち8件が関連性のある紐付けだった。つまり8件のケースが、そのケースの解決策を記述した解決策の記事に紐付けられていた。
 
@@ -250,7 +258,9 @@ PARは、個人単位でもチーム単位でも分析できる。プログラ�
 
 この例示のモデルは、Solve Loop の再利用と作成の活動を評価するPARの枠組みを示している。記事の作成をPARに加えるのを後回しにすることは、作成がKCSの主な目標ではないという事実を強め、その特定の活動に目標を設定したくなる誘惑を避ける助けになる。
 
-![Process Alignment Review Model - Expanded](https://library.serviceinnovation.org/@api/deki/files/6036/par-expanded.png?revision=3)
+![Process Alignment Review Model - Expanded](../images/6036-par-expanded.png)
+
+*図：PARの拡張モデルの例（Solve Loop の再利用と作成の活動を評価する）。基本モデルの項目に、作成の機会、記事を作成したケース、再利用または作成のあるケース、作成率、再利用と作成の指数を加えている。ナレッジワーカー単位のデータを使って、成功を称える機会やコーチングの会話を始める機会を見つける。*
 
 Al の例を広げて、今度は再利用に加えて記事の作成も見る。ナレッジの機会があった16件のケースのうち、4件は作成の機会だった。Al は2件を作成したので、再利用または作成のあるケースの合計は12件になる。
 
@@ -262,7 +272,9 @@ Al の作成率（記事を作成したケース ÷ 作成の機会）は50%で�
 
 この例示のモデルは、Solve Loop の再利用、再利用と改善、作成の活動を評価する、より成熟したPARの枠組みを示している。この見方は Solve Loop のすべての活動を可視化し、ワークフローのどの部分が問題になっているかを具体的に突き止める助けになる。
 
-![Process Alignment Review Model - Comprehensive](https://library.serviceinnovation.org/@api/deki/files/6037/par-comprehensive.png?revision=2)
+![Process Alignment Review Model - Comprehensive](../images/6037-par-comprehensive.png)
+
+*図：PARの包括モデルの例（再利用、再利用と改善、作成の活動を評価する、より成熟した枠組み）。再利用と改善の機会・ケース・率を加え、成果として Solve Loop 指数を示す。*
 
 今度は Al の Solve Loop の活動をすべて見る。記事を再利用・作成・改善する機会のうち、Al はどれだけの頻度でそれを行ったか。
 
@@ -472,7 +484,9 @@ KCS Publisher は、社外向けのコンテンツをアーカイブや削除の
 
 ### KCSの役割の段階を進む
 
-[![KCS User Development](https://library.serviceinnovation.org/@api/deki/files/5373/kcs-user-development.png?revision=6&size=bestfit&width=650)](https://library.serviceinnovation.org/@api/deki/files/5373/kcs-user-development.png?revision=6)
+[![KCS User Development](../images/5373-kcs-user-development.png)](../images/5373-kcs-user-development.png)
+
+*図：KCSの利用者の成長。KCSのナレッジと能力が、システム上の権限を決める。KCS Candidate → KCS Contributor（貢献と変更の権限）→ KCS Publisher（検証の権限）→ コーチ（人に焦点）。Publisher からは Knowledge Domain Expert（ナレッジの健全性に焦点）へ進む道もある。*
 
 KCS Contributor と KCS Publisher の役割には、その段階に到達するための明確に定められた道筋が必要である。ナレッジワーカーは、各段階で習熟度を示し、試験に合格して進むべきであり、更新のプロセスも検討すべきである。
 

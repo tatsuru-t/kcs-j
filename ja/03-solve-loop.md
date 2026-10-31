@@ -20,7 +20,9 @@
 > - [Technique 4.1: Use a Simple Template](https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/201-Solve_Loop/Practice_4_Structure/Technique_4.1)
 > - [Technique 4.2: Complete Thoughts, Not Complete Sentences](https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/201-Solve_Loop/Practice_4_Structure/Technique_4.2)
 
-![KCS Double Loop Process](https://library.serviceinnovation.org/@api/deki/files/5951/loops-practices-title.png?revision=2&size=bestfit&width=500)
+![KCS Double Loop Process](../images/5951-loops-practices-title.png)
+
+*図：KCSのダブルループのプロセス（KCS Double Loop Process）。Solve Loop の4つのプラクティス（再利用・改善・記録・構造化）と、Evolve Loop の4つのプラクティス（コンテンツの健全性・プロセスの統合・パフォーマンスの把握・チェンジマネジメント）。*
 
 **ワークフローの中で再利用し、改善し、記録し、構造化することで、既存のナレッジを活かし、それを正確で使える状態に保つ。**
 

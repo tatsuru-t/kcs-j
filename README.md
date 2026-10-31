@@ -30,7 +30,9 @@ CC BY-NC-ND 4.0（改変禁止）で、翻訳・再構成したものは共有�
 python3 -I scripts/fetch.py work     # ツリーと本文HTMLを取得（work/raw, work/manifest.json）
 python3 -I scripts/convert.py work   # ページ単位のMarkdownへ（work/pages）
 python3 -I scripts/build.py work     # 章ごとに11ファイルへまとめる（en/）
-python3 -I scripts/assemble.py 01    # 分割して訳した ja/parts/01*.md を1ファイルに（ja/）
+python3 -I scripts/images.py en ja/parts   # 図を images/ に取り込み、参照を相対パスに（何度実行しても同じ）
+python3 -I scripts/assemble.py 01    # 分割して訳した ja/parts/01*.md を1ファイルに（ja/）。図の説明もここで入る
+python3 -I scripts/package.py        # 訳文・図・HTML版を dist/kcs-j-YYYYMMDD.zip にまとめる（--with-en で原文も）
 ```
 
 必要なもの: Python 3、`beautifulsoup4`、`pandoc`。`work/` は作り直せるので git に入れていない。
@@ -39,5 +41,8 @@ python3 -I scripts/assemble.py 01    # 分割して訳した ja/parts/01*.md を
 - ファイルの区切りは `scripts/build.py` の `GROUPS` で決めている（1ファイル1.6万〜8万字）
 - サイト内リンクは、まとめた後のファイルとページのアンカー（`#page-ID`）に書き換える。
   対象外のページ（v6・会員向けwiki・アーカイブ）へのリンクは元のURLのまま
+- 図は `images/` に取り込んである（実体は `files.mtstatic.com` への転送の先にある）。図の中の英語は
+  そのままにし、各図の直後に `ja/figures.json` の日本語の説明（ラベルの訳と要点）を差し込む
+- `package.py` の zip には HTML版（`html/index.html` から開く）と利用条件の注意（`NOTICE.txt`）が入る
 - 訳文は `ja/parts/` に分けて書き、`assemble.py` でまとめる。まとめるときに、ページの
   アンカーと見出しの数が英語版と一致するかを検査する

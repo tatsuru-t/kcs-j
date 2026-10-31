@@ -52,7 +52,7 @@ Putting goals on activities will:
 
 A very helpful concept from *The Balanced Scorecard* distinguishes performance drivers ([motivators](07-change-management.md#page-8217)) from leading indicators (activities) from lagging indicators (outcomes). While each of these three elements is important, the role each plays in the measurement system is different. Making a distinction between them is crucial.
 
-![Performance Model](https://library.serviceinnovation.org/@api/deki/files/5376/performance-model.png?revision=2&size=bestfit&width=450)We need to pay attention to the trends of the activities and their correlation to the outcomes.
+![Performance Model](../images/5376-performance-model.png)We need to pay attention to the trends of the activities and their correlation to the outcomes.
 
 - Are the activity measures heading in the right direction?
 - How rapidly are they changing?
@@ -68,7 +68,7 @@ Whenever we are having a discussion about an indicator or measure, we must be cl
 
 ### Triangulation—Who is Creating Value?
 
-![Triangulation](https://library.serviceinnovation.org/@api/deki/files/5377/triangulation.png?revision=1)The distinction between activities and outcomes is only part of the picture. Understanding KCS performance comes from the integration of multiple perspectives. Because there is no one measure that indicates value creation, we assess it by correlating at least three different perspectives. The basic model includes *trends in activities* (trend over time), *key outcomes* (measured against goals), and the KCS *Content Standard Checklist* (discussed in [Content Health](04-evolve-loop-content-health.md#page-7130)). These three perspectives consider measures that are both objective (quantifiable) and subjective (qualitative) to assess value creation by individuals and teams.
+![Triangulation](../images/5377-triangulation.png)The distinction between activities and outcomes is only part of the picture. Understanding KCS performance comes from the integration of multiple perspectives. Because there is no one measure that indicates value creation, we assess it by correlating at least three different perspectives. The basic model includes *trends in activities* (trend over time), *key outcomes* (measured against goals), and the KCS *Content Standard Checklist* (discussed in [Content Health](04-evolve-loop-content-health.md#page-7130)). These three perspectives consider measures that are both objective (quantifiable) and subjective (qualitative) to assess value creation by individuals and teams.
 
 The concept of *triangulation* reflects the idea that the creation of value cannot be directly measured or counted—value is intangible. The best way to assess the creation of value is through a process of triangulation. As with GPS (global positioning system) devices that calculate our location on the earth based on input from multiple satellites, an effective performance assessment model incorporates multiple views to assess the creation of value.
 
@@ -110,7 +110,7 @@ The example to the right is for the first six months of an organization's adopti
 
 #### KCS Article Creation and Reuse
 
-![create-vs-reuse-graph.png](https://library.serviceinnovation.org/@api/deki/files/5379/create-vs-reuse-graph.png?revision=2&size=bestfit&width=450&height=262)KCS article creation will naturally lead KCS article reuse. As an organization approaches maturity, they will have already captured a high percentage of the known KCS articles, so the creation rate should drop off, and the reuse rate will continue to climb.
+![create-vs-reuse-graph.png](../images/5379-create-vs-reuse-graph.png)KCS article creation will naturally lead KCS article reuse. As an organization approaches maturity, they will have already captured a high percentage of the known KCS articles, so the creation rate should drop off, and the reuse rate will continue to climb.
 
 Because of its link to product life cycles, this pattern will repeat itself with each new product or application introduced.
 
@@ -118,7 +118,7 @@ Because of its link to product life cycles, this pattern will repeat itself with
 
 #### KCS Article Life Cycle Trend
 
-![Article Life Cycle](https://library.serviceinnovation.org/@api/deki/files/5380/article-life-cycle-graph.png?revision=2&size=bestfit&width=500&height=292)
+![Article Life Cycle](../images/5380-article-life-cycle-graph.png)
 
 The KCS article life cycle gives us a sense for the speed with which articles are moving from a Not Validated state to a Validated state and/or External state. Because the value of the knowledge increases as the visibility of the article increases, we want to make sure that there is no bottleneck in the system. Articles in the Validated state are generally visible to a much larger audience than Not Validated articles, while External articles are generally available to people outside the organization.
 
@@ -128,7 +128,7 @@ In the chart on the left, we see good movement of KCS articles from Not Validate
 
 The link rate is powerful leading or early indicator of knowledge worker behavior. Link rate is defined as the percentage of events or incidents handled that have an article linked. We divide the number of incidents that have an article linked by the total number of applicable incidents closed. We should note that every organization has some events or incidents where linking does not make sense: it adds no value. Stated another way, link rate measures the percentage of times we link when linking is appropriate.
 
-![Department Link Rate](https://library.serviceinnovation.org/@api/deki/files/5381/department-link-rate-graph.png?revision=4&size=bestfit&width=550&height=324)
+![Department Link Rate](../images/5381-department-link-rate-graph.png)
 
 Link rate is an important trend to watch as the organization adopts KCS. In general, a healthy link rate for an organization is in the range of 60-80%, although specific numbers vary based on which incidents are included into this calculation. Link rate is an indicator of how often the knowledge base is being used as part of the knowledge worker's process. The link rate reflects reuse of known or existing articles as well as articles created because one didn't exist. For example, if we closed ten incidents this week, and we reused six KCS articles and created two new KCS articles, our link rate would be 80%.
 
@@ -136,19 +136,19 @@ In some organizations, there isn't an "incident" per se, so there is no ratio of
 
  We must look at participation for the group as well as for the individual. As mentioned, link rate can be a good, early indicator of knowledge workers embracing the Solve Loop.... so long as there is not a goal placed on link rate.
 
-![Individual Link Rate by Month](https://library.serviceinnovation.org/@api/deki/files/5382/link-rate-individual-graph.png?revision=1&size=bestfit&width=700&height=301)Here we can see there is a wide range of link rates across the group. A conversation with Ed and Joe about their workflow and how they are using the knowledge base might be a good idea. Because link rate is the ratio of incidents closed to articles linked, it makes it hard to come up with a scenario for Joe or Ed that says they are "doing well." Link rate is a powerful indicator of anyone who is not playing. Again, we raise the caution that the conversation with the knowledge worker needs to be about their understanding of KCS, the Solve Loop, and their use of the knowledge base, not about their link rate "score."
+![Individual Link Rate by Month](../images/5382-link-rate-individual-graph.png)Here we can see there is a wide range of link rates across the group. A conversation with Ed and Joe about their workflow and how they are using the knowledge base might be a good idea. Because link rate is the ratio of incidents closed to articles linked, it makes it hard to come up with a scenario for Joe or Ed that says they are "doing well." Link rate is a powerful indicator of anyone who is not playing. Again, we raise the caution that the conversation with the knowledge worker needs to be about their understanding of KCS, the Solve Loop, and their use of the knowledge base, not about their link rate "score."
 
 Let us consider Kim and Hector —are they the new heroes of the organization? They seem to be doing really well. But, we don't know enough about Kim and Hector to know if they are creating value in the knowledge base or are just busy creating KCS articles that might be duplicates or incomplete. We need more information.
 
 #### Profiles of the Players
 
-[![Hector's Profile](https://library.serviceinnovation.org/@api/deki/files/5383/hector-profile-graph.png?revision=2&size=bestfit&width=550&height=322)](https://library.serviceinnovation.org/@api/deki/files/5383/hector-profile-graph.png?revision=2)It is interesting to look at a KCS indicators profile by individual. Here's an example of Hector's profile (click to open full size). While it contains a lot of data, the combination of factors gives us a better sense of Hector's contribution. We have averaged many of the factors over a week's time. Incidents closed, KCS articles linked, KCS articles created, KCS articles modified (improved), and citations (others use of KCS articles Hector has created) are all represented on a per week basis. Time to resolve and first contact resolution are the monthly averages.
+[![Hector's Profile](../images/5383-hector-profile-graph.png)](../images/5383-hector-profile-graph.png)It is interesting to look at a KCS indicators profile by individual. Here's an example of Hector's profile (click to open full size). While it contains a lot of data, the combination of factors gives us a better sense of Hector's contribution. We have averaged many of the factors over a week's time. Incidents closed, KCS articles linked, KCS articles created, KCS articles modified (improved), and citations (others use of KCS articles Hector has created) are all represented on a per week basis. Time to resolve and first contact resolution are the monthly averages.
 
 On the link rate chart above, Hector and Kim both appear to be star performers. With the profile view, we see something different.
 
 Kim, on the other hand...
 
-[![Kim's Profile](https://library.serviceinnovation.org/@api/deki/files/5384/kim-profile-graph.png?revision=1&size=bestfit&width=550)](https://library.serviceinnovation.org/@api/deki/files/5384/kim-profile-graph.png?revision=1)Here is a great example of why a profile with multiple indicators is preferable over one with only a single measure (click to open full size). There is no single measure for value creation. If we looked only at link rate, then both Kim and Hector would appear to be doing very well. However, upon reviewing Kim's profile, we see that the article created rate represents most of her activity. She does not often modify others' articles and, in fact, does not reuse others' articles very often. The difference between KCS articles linked (used) and the articles created represents article reuse.
+[![Kim's Profile](../images/5384-kim-profile-graph.png)](../images/5384-kim-profile-graph.png)Here is a great example of why a profile with multiple indicators is preferable over one with only a single measure (click to open full size). There is no single measure for value creation. If we looked only at link rate, then both Kim and Hector would appear to be doing very well. However, upon reviewing Kim's profile, we see that the article created rate represents most of her activity. She does not often modify others' articles and, in fact, does not reuse others' articles very often. The difference between KCS articles linked (used) and the articles created represents article reuse.
 
 In Kim's case, we see KCS article creation makes up most of the KCS articles linked, which indicates relatively low reuse. Based on her citations levels, we can also see that others are not using the KCS articles that Kim creates. We might infer from all this that Kim is not searching the knowledge base before creating new articles, and that the KCS articles she creates are not very useful to others. A conversation with Kim is definitely in order. It may be that she does not understand the KCS processes. However, Kim may also be working on a new release or supporting a beta product, in which case her profile might represent a very good contribution.
 
@@ -156,13 +156,13 @@ Even with all this data, we still do not have enough information to determine wh
 
 If we refer back to the Content Standard Checklist we discussed earlier, we can get an additional perspective on Hector and Kim's behaviors and contribution.
 
-![Content Standard Checklist](https://library.serviceinnovation.org/@api/deki/files/5390/csc-mature.png?revision=1)
+![Content Standard Checklist](../images/5390-csc-mature.png)
 
 Hector's Content Standard Checklist percentage is 98%; he consistently creates articles that adhere to the content standard. In contrast, Kim's percentage is 75.3%, which is below the goal (the Content Standard Checklist percentage is an outcome and should have a goal), and the frequency of duplicates is very high. This high duplicate rate reinforces the idea that Kim is not searching before resolving and creating. While her activity level is excellent, that activity is corrupting the knowledge base because of the level of duplicate KCS articles introduced.
 
 There is one more perspective that can further increase our confidence in who is creating value and who might need some help from a coach. The Content Standard Checklist tells us who understands and adheres to the content standard. The last piece of the puzzle is provided by the PAR (Process Adherence Review - formerly Process Integration Indicators) which helps us understand who is doing the Solve Loop: who has really integrated use of the knowledge base into their workflow.
 
-[![PAR Essential Model](https://library.serviceinnovation.org/@api/deki/files/5389/par-essential.png?revision=1&size=bestfit&width=550)](https://library.serviceinnovation.org/@api/deki/files/5389/par-essential.png?revision=1)Here is an example of the spreadsheet used to collect the data and calculate the Process Adherence Review (PAR). The key things we want to look at here are the Link Rate, Link Accuracy and the Contribution Index (see [Solve Loop Index in Technique 6.5: Process Adherence Review](05-process-integration.md#page-7862) for details on this).
+[![PAR Essential Model](../images/5389-par-essential.png)](../images/5389-par-essential.png)Here is an example of the spreadsheet used to collect the data and calculate the Process Adherence Review (PAR). The key things we want to look at here are the Link Rate, Link Accuracy and the Contribution Index (see [Solve Loop Index in Technique 6.5: Process Adherence Review](05-process-integration.md#page-7862) for details on this).
 
 Looking at the contribution rate and the link accuracy, we see more evidence that Hector is creating value and Kim needs some help. Hector's link rate, link accuracy, and contribution index are all very good. Looking at Kim we see her link rate is good, but her link accuracy is well below the required 90% and her link contribution index is very poor compared to her peers.
 
@@ -197,7 +197,7 @@ For our example we will use Hector and Kim's data from the scenario and we will 
 
 Once we have decided on the measures we want to include in the radar chart and the calculations for normalizing them to 1 we can plot the chart. Following are Hector and Kim's value footprint. We can see that these charts are much easier to read than the array of graphs we used in the scenario.
 
-![value-footprint-individuals.png](https://library.serviceinnovation.org/@api/deki/files/5387/value-footprint-individuals.png?revision=1)
+![value-footprint-individuals.png](../images/5387-value-footprint-individuals.png)
 
 By comparing an individual's performance to the team averages for leading indicators and the goals for the lagging indicators, we can quickly see that Hector is creating value, and Kim needs some help. This is a helpful way to view measures so long as we have a balanced view of leading and lagging indicators as well as qualitative and quantitative measures. However, no measure or collection of measures can be meaningful without an understanding of the context in which the individual works and the role of the individual. Assessing the data in the context of the environment is a key responsibility of the team manager. We find that the assessment of value creation in a KCS environment is so different from the transaction and activity based measures we have conditioned first and second line managers to use that the managers need training on how to interpret and use value based measures.
 
@@ -217,7 +217,7 @@ The conversation about performance improvement is about behavior, process, and u
 
 We can use radar charts for the team performance and as a way to assess the effectiveness of the leadership in creating an environment for KCS success. For the team radar chart, the same rules for balance apply but the measures we use would be different. The measures for a team will depend on the size of the team and the size of the organization. We offer the following as an example where the team is the support organization and can influence the measures listed.
 
-For the team's radar chart we might use the following measures:![Team Value Footprint](https://library.serviceinnovation.org/@api/deki/files/5388/value-footprint-team.png?revision=1&size=bestfit&width=600&height=409)
+For the team's radar chart we might use the following measures:![Team Value Footprint](../images/5388-value-footprint-team.png)
 
 - Customer loyalty - unlike customer satisfaction, which typically measures the transaction, loyalty measures the customer experience over time and their emotional connection to the company (1 = the loyalty goal)
 - Employee loyalty - loyal employees are a prerequisite to loyal customers (1 = the employee loyalty goal)
@@ -241,7 +241,7 @@ An organization can have the best measurement system in the world, but it is onl
 
 An [impact map](07-change-management.md#page-7142) is helpful in identifying how the KCS benefits line up with the organization's goals. Based on the sample impact map, here are examples of organizational goals to establish baseline positions for and track progress on:
 
-- Customer[![Balanced Scorecard](https://library.serviceinnovation.org/@api/deki/files/5378/balanced-scorecard.png?revision=3&size=bestfit&width=535&height=278)](https://library.serviceinnovation.org/@api/deki/files/5378/balanced-scorecard.png?revision=3)
+- Customer[![Balanced Scorecard](../images/5378-balanced-scorecard.png)](../images/5378-balanced-scorecard.png)
   - Loyalty (NPS)
   - Customer effort
   - Renewal rate

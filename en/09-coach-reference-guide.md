@@ -15,7 +15,7 @@
 > - [Doubt: The tools don’t work.](https://library.serviceinnovation.org/KCS/Coach_Reference_Guide/30_Handling_Specific_Doubts/Doubt_The_tools_don%E2%80%99t_work)
 > - [Additional Coaching Resources](https://library.serviceinnovation.org/KCS/Coach_Reference_Guide/40_Additional_Resources)
 
-![KCS Coach Reference Guide](https://library.serviceinnovation.org/@api/deki/files/5948/mindtouch.page%2523thumbnail?revision=1)
+
 
 The role of a KCS Coach is to support knowledge workers in their quest for KCS proficiency. KCS Coaches are change agents.
 
@@ -68,7 +68,7 @@ If we want to change someone's mind, we first have to understand what they belie
 
 Understanding or exposing the belief(s) that lead a doubter to have their doubt creates an opportunity to offer a different point of view. Beliefs are often not recognized or stated explicitly by the doubter. The goal is to identify the underlying belief(s).
 
-A change in beliefs is required to create a change in results. One way to think about this is represented by the BABR model![BABR by Dr. Beth Haggett](https://library.serviceinnovation.org/@api/deki/files/4235/babr-2023.png?revision=1&size=bestfit&width=350&height=234):
+A change in beliefs is required to create a change in results. One way to think about this is represented by the BABR model![BABR by Dr. Beth Haggett](../images/4235-babr-2023.png):
 
 - Beliefs influence Attitude,
 - Attitude influences Behaviors, and
@@ -179,7 +179,7 @@ The below cadence is offered as an example. Amend for your environment!
 
 Consortium Members have extensive experience with KCS Coaching and have developed both the offered coaching session guidance as well as this coach session tracking template.
 
-![KCS Coaching Session Template](https://library.serviceinnovation.org/@api/deki/files/5250/Screenshot_2026-02-05_at_9.45.04%25E2%2580%25AFPM.png?revision=1)
+![KCS Coaching Session Template](../images/5250-Screenshot_2026-02-05_at_9.45.04-PM.png)
 
 Consortium Members have access to this [workbook in Google Sheets](https://docs.google.com/spreadsheets/d/10ioaG4NWdfXU0jd5NlREjBZlyerkwsCmt5wu8RjYjyQ/edit?gid=0#gid=0) for use in coaching sessions. Save a copy and duplicate tabs for separate sessions, or adapt this into your tool of choice.
 

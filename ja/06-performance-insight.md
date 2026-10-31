@@ -52,7 +52,9 @@
 
 *The Balanced Scorecard* の非常に役立つ考え方の1つは、パフォーマンスの推進要因（[動機](07-change-management.md#page-8217)）、先行指標（活動）、遅行指標（成果）を区別することである。この3つの要素はどれも重要だが、測定の仕組みの中でそれぞれが果たす役割は異なる。それらを区別することが極めて重要である。
 
-![Performance Model](https://library.serviceinnovation.org/@api/deki/files/5376/performance-model.png?revision=2&size=bestfit&width=450)
+![Performance Model](../images/5376-performance-model.png)
+
+*図：パフォーマンスのモデル。左が活動（先行指標）：KCSの能力（ライセンスの段階、学習）、再利用率（プロセスの整合）、記事の傾向（再利用・変更・作成）、貢献指数、記事のライフサイクル。右が成果（遅行指標）：顧客満足（速さ・正確さ・セルフサービスの利用が上がる）、従業員の関与（仕事の重複が減り、仕事の多様さ・自信・承認が上がる）、事業（利益・顧客の維持・製品の関連性が上がり、離職が減る）。*
 
 活動の傾向と、それと成果との相関に注意を払う必要がある。
 
@@ -70,7 +72,9 @@
 
 ### 三角測量：誰が価値を生み出しているのか
 
-![Triangulation](https://library.serviceinnovation.org/@api/deki/files/5377/triangulation.png?revision=1)
+![Triangulation](../images/5377-triangulation.png)
+
+*図：三角測量。活動の傾向（Trends in Activity）、結果・成果（Results / Outcomes）、コンテンツ標準チェックリストとPARの3つの視点から、価値の創出（Value Creation）を評価する。*
 
 活動と成果の区別は、全体像の一部にすぎない。KCSのパフォーマンスの理解は、複数の視点を統合することから生まれる。価値の創出を示す単一の測定項目は無いので、少なくとも3つの異なる視点を突き合わせて評価する。基本のモデルには、*活動の傾向*（時間的な傾向）、*主要な成果*（目標と比べて測る）、そしてKCSの*コンテンツ標準チェックリスト*（[コンテンツの健全性](04-evolve-loop-content-health.md#page-7130)で述べた）が含まれる。この3つの視点は、客観的（定量的）な測定と主観的（定性的）な測定の両方を考慮して、個人とチームによる価値の創出を評価する。
 
@@ -114,7 +118,9 @@ KCS導入の過程で、KCS記事の作成（全員が週に5件のKCS記事を�
 
 #### KCS記事の作成と再利用
 
-![create-vs-reuse-graph.png](https://library.serviceinnovation.org/@api/deki/files/5379/create-vs-reuse-graph.png?revision=2&size=bestfit&width=450&height=262)
+![create-vs-reuse-graph.png](../images/5379-create-vs-reuse-graph.png)
+
+*図：月ごとの記事の作成と再利用。破線が作成（Create）、実線が再利用（Reuse）。最初は作成が先行し、5か月目あたりで再利用が作成に追いつき、その後は再利用が上回る。*
 
 KCS記事の作成は、自然とKCS記事の再利用に先行する。組織が成熟に近づくと、既知のKCS記事の大部分はすでに記録されているので、作成率は下がり、再利用率は上がり続けるはずである。
 
@@ -122,7 +128,9 @@ KCS記事の作成は、自然とKCS記事の再利用に先行する。組織�
 
 #### KCS記事のライフサイクルの傾向
 
-![Article Life Cycle](https://library.serviceinnovation.org/@api/deki/files/5380/article-life-cycle-graph.png?revision=2&size=bestfit&width=500&height=292)
+![Article Life Cycle](../images/5380-article-life-cycle-graph.png)
+
+*図：記事のライフサイクル。月ごとの未検証（Not Validated）・検証済み（Validated）・社外向け（External）の記事数。6か月目には検証済みが約5,800件まで増えるが、社外向けは約900件にとどまる。*
 
 KCS記事のライフサイクルは、記事が未検証の状態から検証済みの状態や社外向けの状態へとどれだけ速く移っているかの感触を与えてくれる。ナレッジの価値は記事が見える範囲が広がるほど高まるので、システムにボトルネックが無いことを確かめたい。検証済みの状態の記事は一般に未検証の記事よりはるかに多くの対象者から見え、社外向けの記事は一般に組織の外の人も利用できる。
 
@@ -132,7 +140,9 @@ KCS記事のライフサイクルは、記事が未検証の状態から検証�
 
 紐付け率は、ナレッジワーカーの行動を示す強力な先行指標、つまり早い段階の指標である。紐付け率は、処理した出来事やインシデントのうち、記事が紐付けられているものの割合と定義される。記事が紐付けられたインシデントの数を、閉じられた該当するインシデントの総数で割る。どの組織にも、紐付けが意味を持たない、つまり何の価値も加えない出来事やインシデントがあることに注意すべきである。言い換えれば、紐付け率は、紐付けが適切なときに紐付けた割合を測る。
 
-![Department Link Rate](https://library.serviceinnovation.org/@api/deki/files/5381/department-link-rate-graph.png?revision=4&size=bestfit&width=550&height=324)
+![Department Link Rate](../images/5381-department-link-rate-graph.png)
+
+*図：部門の紐付け率。月ごとの閉じたインシデント（約3,000件で横ばい）と紐付けた記事（約200件から約2,300件へ増加）、紐付け率（折れ線。約5%から約80%へ上昇）。*
 
 紐付け率は、組織がKCSを導入する際に見守るべき重要な傾向である。一般に、組織にとって健全な紐付け率は60〜80%の範囲にあるが、具体的な数字はどのインシデントをこの計算に含めるかによって変わる。紐付け率は、ナレッジワーカーのプロセスの一部として、ナレッジベースがどれだけ頻繁に使われているかを示す指標である。紐付け率には、既知の、あるいは既存の記事の再利用と、記事が無かったために作成した記事の両方が反映される。例えば、今週インシデントを10件閉じ、KCS記事を6件再利用し、新しいKCS記事を2件作成したなら、紐付け率は80%になる。
 
@@ -140,7 +150,9 @@ KCS記事のライフサイクルは、記事が未検証の状態から検証�
 
 グループとしての参加と、個人としての参加の両方を見なければならない。述べたように、紐付け率は、ナレッジワーカーが Solve Loop を受け入れていることを示す、良い早い段階の指標になりうる……紐付け率に目標が設定されていない限りは。
 
-![Individual Link Rate by Month](https://library.serviceinnovation.org/@api/deki/files/5382/link-rate-individual-graph.png?revision=1&size=bestfit&width=700&height=301)
+![Individual Link Rate by Month](../images/5382-link-rate-individual-graph.png)
+
+*図：個人ごと・月ごとの紐付け率。Hector と Kim は6か月目に80%を超える一方、Ed と Joe は低いまま推移している。*
 
 ここでは、グループの中で紐付け率に大きな幅があることがわかる。Ed と Joe と、そのワークフローとナレッジベースの使い方について話してみるのがよいかもしれない。紐付け率は、閉じたインシデントと紐付けた記事の比率なので、Joe や Ed が「うまくやっている」と言えるシナリオを考えるのは難しい。紐付け率は、参加していない人を見つける強力な指標である。繰り返しになるが、ナレッジワーカーとの会話は、紐付け率の「点数」についてではなく、KCS、Solve Loop、ナレッジベースの使い方についての理解についてのものである必要がある、と注意しておく。
 
@@ -148,7 +160,9 @@ Kim と Hector について考えてみよう。彼らは組織の新しいヒ�
 
 #### プレイヤーのプロファイル
 
-[![Hector's Profile](https://library.serviceinnovation.org/@api/deki/files/5383/hector-profile-graph.png?revision=2&size=bestfit&width=550&height=322)](https://library.serviceinnovation.org/@api/deki/files/5383/hector-profile-graph.png?revision=2)
+[![Hector's Profile](../images/5383-hector-profile-graph.png)](../images/5383-hector-profile-graph.png)
+
+*図：Hector のプロファイル（すべて週の平均）。閉じたインシデント、紐付けた記事、作成した記事、変更した記事、引用、解決時間（分）、一次解決率（%）。紐付けた記事は作成した記事を大きく上回り（再利用が多い）、引用も伸びている。*
 
 個人ごとのKCSの指標のプロファイルを見ると興味深い。これは Hector のプロファイルの例である（クリックすると原寸で開く）。多くのデータが入っているが、要因を組み合わせることで、Hector の貢献をよりよく把握できる。多くの要因は1週間の平均にしてある。閉じたインシデント、紐付けたKCS記事、作成したKCS記事、変更（改善）したKCS記事、引用（Hector が作成したKCS記事を他の人が使ったこと）は、すべて週あたりで示している。解決までの時間と一次解決率は月の平均である。
 
@@ -156,7 +170,9 @@ Kim と Hector について考えてみよう。彼らは組織の新しいヒ�
 
 一方 Kim は……
 
-[![Kim's Profile](https://library.serviceinnovation.org/@api/deki/files/5384/kim-profile-graph.png?revision=1&size=bestfit&width=550)](https://library.serviceinnovation.org/@api/deki/files/5384/kim-profile-graph.png?revision=1)
+[![Kim's Profile](../images/5384-kim-profile-graph.png)](../images/5384-kim-profile-graph.png)
+
+*図：Kim のプロファイル（すべて週の平均）。項目は Hector と同じ。紐付けた記事のほとんどを作成した記事が占め（再利用が少ない）、変更や引用はほとんど無い。*
 
 これは、単一の測定項目だけのプロファイルより、複数の指標を持つプロファイルのほうが望ましい理由を示す絶好の例である（クリックすると原寸で開く）。価値の創出を示す単一の測定項目は無い。紐付け率だけを見れば、Kim も Hector もとてもうまくやっているように見える。しかし、Kim のプロファイルを見直すと、活動の大部分を記事の作成率が占めていることがわかる。Kim は他の人の記事をあまり変更しておらず、実際、他の人の記事をあまり再利用していない。紐付けた（使った）KCS記事と作成した記事の差が、記事の再利用を表している。
 
@@ -166,13 +182,17 @@ Kim の場合、紐付けたKCS記事の大部分をKCS記事の作成が占め�
 
 先に述べたコンテンツ標準チェックリストに立ち返ると、Hector と Kim の行動と貢献について、さらに別の視点が得られる。
 
-![Content Standard Checklist](https://library.serviceinnovation.org/@api/deki/files/5390/csc-mature.png?revision=1)
+![Content Standard Checklist](../images/5390-csc-mature.png)
+
+*図：成熟した環境でのコンテンツ標準チェックリスト。Hector は98.0%、Kim は75.3%で、Kim は固有（Unique）の項目で11件中4件しか満たしておらず、重複が多い。項目は拡張した基準の例と同じ。*
 
 Hector のコンテンツ標準チェックリストの割合は98%であり、一貫してコンテンツ標準に従った記事を作成している。対照的に、Kim の割合は75.3%で目標を下回っており（コンテンツ標準チェックリストの割合は成果なので、目標を設定すべきである）、重複の頻度も非常に高い。この高い重複率は、Kim が解決し作成する前に検索していない、という見方を裏付けている。Kim の活動の水準は素晴らしいが、持ち込まれた重複したKCS記事の多さのために、その活動はナレッジベースを損なっている。
 
 誰が価値を生み出していて、誰がコーチの手助けを必要としているかについての確信をさらに高められる視点が、もう1つある。コンテンツ標準チェックリストは、誰がコンテンツ標準を理解し、それに従っているかを教えてくれる。パズルの最後のピースは、PAR（プロセス整合性レビュー。以前はプロセスの統合の指標と呼んでいた）が与えてくれる。これは、誰が Solve Loop を実践しているか、つまり誰がナレッジベースの利用を本当にワークフローに組み込んでいるかを理解する助けになる。
 
-[![PAR Essential Model](https://library.serviceinnovation.org/@api/deki/files/5389/par-essential.png?revision=1&size=bestfit&width=550)](https://library.serviceinnovation.org/@api/deki/files/5389/par-essential.png?revision=1)
+[![PAR Essential Model](../images/5389-par-essential.png)](../images/5389-par-essential.png)
+
+*図：PARの基本モデルの例。ナレッジワーカーごとに、閉じたケース、ナレッジの機会が無いケース、再利用の機会、再利用のあるケース、関連性のある再利用のあるケース、再利用率、再利用の正確さを示す。Al は18件中、再利用の機会12件、再利用10件、関連性のある再利用8件で、再利用率83%、再利用の正確さ80%。*
 
 これは、データを集めてプロセス整合性レビュー（PAR）を計算するのに使うスプレッドシートの例である。ここで見たい主な点は、紐付け率、紐付けの正確さ、貢献指数である（詳しくは[プロセス整合性レビューの Solve Loop 指数](05-process-integration.md#page-7862)を参照。原文では「テクニック6.5」と書かれているが、現行の番号は6.3）。
 
@@ -209,7 +229,9 @@ Hector と Kim のシナリオには、何人分ものグラフを使った大�
 
 レーダーチャートに含めたい測定項目と、それを1に正規化する計算を決めたら、チャートを描ける。以下は Hector と Kim のバリューフットプリントである。これらのチャートは、シナリオで使ったグラフの数々よりずっと読みやすいことがわかる。
 
-![value-footprint-individuals.png](https://library.serviceinnovation.org/@api/deki/files/5387/value-footprint-individuals.png?revision=1)
+![value-footprint-individuals.png](../images/5387-value-footprint-individuals.png)
+
+*図：バリューフットプリント（個人）。左が Hector、右が Kim。項目は平均処理インシデント数、平均TTR、紐付け率、紐付けの正確さ、貢献指数、記事の質、顧客満足。緑がチームの平均または目標。Hector はほとんどの項目で平均・目標を上回り、Kim は紐付け率だけが高く、紐付けの正確さ・貢献指数・記事の質が大きく下回っている。*
 
 個人のパフォーマンスを、先行指標についてはチームの平均と、遅行指標については目標と比べることで、Hector が価値を生み出していて、Kim が手助けを必要としていることがすぐにわかる。先行指標と遅行指標、定性的な測定と定量的な測定の釣り合いの取れた見方がある限り、これは測定項目を見る役立つ方法である。しかし、個人が働いているコンテキストとその個人の役割を理解していなければ、どんな測定項目も、測定項目の集まりも意味を持たない。環境のコンテキストの中でデータを評価することは、チームのマネージャーの重要な責任である。KCSの環境での価値の創出の評価は、1次・2次の現場のマネージャーに使うよう慣らしてきた処理件数や活動に基づく測定とあまりに違うので、マネージャーには価値に基づく測定の解釈と使い方についての研修が必要だということがわかっている。
 
@@ -229,7 +251,9 @@ Hector と Kim のシナリオには、何人分ものグラフを使った大�
 
 レーダーチャートは、チームのパフォーマンスにも、KCSの成功のための環境を作るうえでのリーダーシップの効果を評価する方法としても使える。チームのレーダーチャートでも、釣り合いについての同じルールが当てはまるが、使う測定項目は異なる。チームの測定項目は、チームの規模と組織の規模によって変わる。以下は、チームがサポート組織であり、挙げた測定項目に影響を与えられる場合の例である。
 
-チームのレーダーチャートには、次の測定項目を使うことが考えられる。![Team Value Footprint](https://library.serviceinnovation.org/@api/deki/files/5388/value-footprint-team.png?revision=1&size=bestfit&width=600&height=409)
+チームのレーダーチャートには、次の測定項目を使うことが考えられる。![Team Value Footprint](../images/5388-value-footprint-team.png)
+
+*図：バリューフットプリント（チーム）。項目は顧客ロイヤルティ、従業員ロイヤルティ、記事の質、貢献指数、紐付けの正確さ、協働の健全性、売上に対するコストの割合、閉じたインシデント、平均TTR、セルフサービスの成功。青が3月の実績、緑が平均または目標。*
 
 - 顧客ロイヤルティ：一般に1件ごとのやり取りを測る顧客満足度とは違い、ロイヤルティは時間をかけた顧客の体験と、会社との感情的なつながりを測る（1 = ロイヤルティの目標）
 - 従業員ロイヤルティ：ロイヤルティの高い従業員は、ロイヤルティの高い顧客の前提条件である（1 = 従業員ロイヤルティの目標）
@@ -253,7 +277,7 @@ Hector と Kim のシナリオには、何人分ものグラフを使った大�
 
 [インパクトマップ](07-change-management.md#page-7142)は、KCSの効果が組織の目標とどう結び付くかを見極めるのに役立つ。インパクトマップの例に基づいて、基準となる現状を定め、進み具合を追跡すべき組織の目標の例を挙げる。
 
-- 顧客[![Balanced Scorecard](https://library.serviceinnovation.org/@api/deki/files/5378/balanced-scorecard.png?revision=3&size=bestfit&width=535&height=278)](https://library.serviceinnovation.org/@api/deki/files/5378/balanced-scorecard.png?revision=3)
+- 顧客[![Balanced Scorecard](../images/5378-balanced-scorecard.png)](../images/5378-balanced-scorecard.png)
   - ロイヤルティ（NPS）
   - 顧客の労力
   - 契約更新率
@@ -265,6 +289,8 @@ Hector と Kim のシナリオには、何人分ものグラフを使った大�
   - 売上の伸び
   - 費用の管理
   - 収益性
+
+*図：サポートのためのバランスト・スコアカードの例。顧客（NPS、労力、ブランドプロミスの指標、維持と成長）、財務（売上、コスト、サポートネットワークの最適化、資源の活用）、従業員（成長、定着、労力、関与（ロイヤルティ・賛同））、プロセス（プロセスの効率、やり取りの管理、記録率、協働の健全性）。中央はナレッジベースの健全性（紐付けの正確さ、コンテンツ標準チェックリスト、セルフサービスの成功、新規と既知の比率）。*
 
 事業目標に合わせるとき、バランスト・スコアカードの形式は、目標の全範囲を網羅していることを確かめるのに役立つ。
 

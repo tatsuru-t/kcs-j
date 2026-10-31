@@ -446,7 +446,13 @@ Consortiumのイベントと作業セッションを通じて、メンバー企�
 
 [Service Innovation Blog](https://www.serviceinnovation.org/blog/) と[継続的なイベント](https://www.serviceinnovation.org/events)を通じて、公開の資料も頻繁に共有している。
 
-[![Agentic-AI-Series-Session-3-3.png](https://library.serviceinnovation.org/@api/deki/files/5307/Agentic-AI-Series-Session-3-3.png?revision=1&size=bestfit&width=382&height=215)](https://www.serviceinnovation.org/connecting-agentic-ai-to-kcs-and-intelligent-swarming/) [![Why-AI-Projects-Fail-or-Succeed-1024x576.png](https://library.serviceinnovation.org/@api/deki/files/5308/Why-AI-Projects-Fail-or-Succeed-1024x576.png?revision=1&size=bestfit&width=382&height=215)](https://www.serviceinnovation.org/why-ai-projects-fail-or-succeed/) [![KCSA-Lab-Recap-1024x576.png](https://library.serviceinnovation.org/@api/deki/files/5309/KCSA-Lab-Recap-1024x576.png?revision=1&size=bestfit&width=382&height=215)](https://www.serviceinnovation.org/common-challenges-at-the-intersection-of-kcs-and-ai/)
+[![Agentic-AI-Series-Session-3-3.png](../images/5307-Agentic-AI-Series-Session-3-3.png)](https://www.serviceinnovation.org/connecting-agentic-ai-to-kcs-and-intelligent-swarming/) [![Why-AI-Projects-Fail-or-Succeed-1024x576.png](../images/5308-Why-AI-Projects-Fail-or-Succeed-1024x576.png)](https://www.serviceinnovation.org/why-ai-projects-fail-or-succeed/) [![KCSA-Lab-Recap-1024x576.png](../images/5309-KCSA-Lab-Recap-1024x576.png)](https://www.serviceinnovation.org/common-challenges-at-the-intersection-of-kcs-and-ai/)
+
+*図：ブログ記事へのリンク：Agentic AI シリーズ「KCS® と Intelligent Swarming® で AIエージェントを動かす」（Jeff Elser, Oracle）の振り返り。*
+
+*図：ブログ記事へのリンク：AIプロジェクトが失敗する理由・成功する理由。*
+
+*図：ブログ記事へのリンク：KCSとAIが交わるところでよくある課題（KCSA Lab の振り返り）。*
 
 #### よく探られている領域
 
@@ -517,7 +523,9 @@ KCSと共有された経験にAIの探求を根差させることで、Consortiu
 
 KCS v6 から Knowledge-Centered Success への更新点のまとめ。
 
-![KCSDoubleLoop2026tm.png](https://library.serviceinnovation.org/@api/deki/files/5953/KCSDoubleLoop2026tm.png?revision=1)
+![KCSDoubleLoop2026tm.png](../images/5953-KCSDoubleLoop2026tm.png)
+
+*図：KCSのダブルループのプロセス（2026年版）。Solve Loop：再利用・改善・記録・構造化。Evolve Loop：コンテンツの健全性・プロセスの統合・パフォーマンスの把握・チェンジマネジメント。*
 
 [Knowledge-Centered Success Practices Guide](02-practices-guide-introduction.md) は、各プラクティスとテクニックの背後にある*なぜ*に焦点を当てており、人が*どのように*進めるのが最善かについて健全な判断を下せるようにしている。
 

@@ -6,7 +6,7 @@
 > - [Why KCS Works](https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/101-Why_KCS_Works)
 > - [Output: the KCS Article](https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/102-Output_the_KCS_Article)
 
-![Knowledge-Centered Success](https://library.serviceinnovation.org/@api/deki/files/5971/knowledge-centered-success-loops.png?revision=1&size=bestfit&width=0&height=0)[![Knowledge-Centered Success](https://library.serviceinnovation.org/@api/deki/files/5971/knowledge-centered-success-loops.png?revision=1&size=bestfit&width=400)](https://library.serviceinnovation.org/@api/deki/files/5971/knowledge-centered-success-loops.png?revision=1)Knowledge-Centered Success (KCS^(®)) is a simple idea that creates profound benefits.  If, as part of our workflow, we can reuse, improve, and (if it doesn't exist) create knowledge that is available to people who are looking for it, we can
+![Knowledge-Centered Success](../images/5971-knowledge-centered-success-loops.png)[![Knowledge-Centered Success](../images/5971-knowledge-centered-success-loops.png)](../images/5971-knowledge-centered-success-loops.png)Knowledge-Centered Success (KCS^(®)) is a simple idea that creates profound benefits.  If, as part of our workflow, we can reuse, improve, and (if it doesn't exist) create knowledge that is available to people who are looking for it, we can
 
 1.  make gains in operational efficiency,
 2.  increase success with self-service and automation, and
@@ -87,7 +87,7 @@ Loopy processes can be difficult to introduce, since each step is connected to t
 
 To optimize the health of the knowledge base and the capability of the organization, the eight Practices of the KCS methodology are organized into double loop processes that reinforce each other. These Solve and Evolve Loop processes are the operational activities that make up the system.
 
-![double-loops-complexity-2026.png](https://library.serviceinnovation.org/@api/deki/files/5346/double-loops-complexity-2026.png?revision=1)
+![double-loops-complexity-2026.png](../images/5346-double-loops-complexity-2026.png)
 
 The Solve Loop represents the responsibilities of the responder, or knowledge worker, when they are resolving a requestor's issue. Solve Loop Practices are reactive and transactional.
 
@@ -97,7 +97,7 @@ In the [Create Value](https://library.serviceinnovation.org/Archive/KCS_v6_FOR_R
 
 We need to look after interactions and activities if we want to learn from and influence the patterns. The Solve Loop and Evolve Loop together create a system that is self-correcting. It is the aggregate of lots of Solve Loop events, each handled correctly, that enables the Evolve Loop analysis. By analyzing the collection of events and related knowledge articles over time, the Evolve Loop identifies areas for improvement in the Solve Loop. And, perhaps most importantly, the Evolve Loop identifies opportunities for improvement to the business. The root cause analysis done in the Evolve Loop can drive improvements to products, services, processes, and policies that are based on the collective experiences of knowledge workers and of those we serve.
 
-![KCS Double Loop Process](https://library.serviceinnovation.org/@api/deki/files/5951/loops-practices-title.png?revision=2&size=bestfit&width=500&height=378)
+![KCS Double Loop Process](../images/5951-loops-practices-title.png)
 
 ### Example Solve Loop Workflow
 
@@ -105,13 +105,13 @@ What might this look like in a support center? A question comes in to a knowledg
 
 When this Solve Loop flow is followed, it provides usage data to analyze in the Evolve Loop, including insight into the requestor (and responder) experience and enabling corrective action like product, process, or policy improvements.
 
-![Sample Solve Loop Workflow](https://library.serviceinnovation.org/@api/deki/files/5199/Screenshot_2025-10-16_at_2.35.22%25E2%2580%25AFPM.png?revision=1)
+![Sample Solve Loop Workflow](../images/5199-Screenshot_2025-10-16_at_2.35.22-PM.png)
 
 <a id="page-7099"></a>
 
 ## Output: the KCS Article
 
-![KCS Double Loop Process](https://library.serviceinnovation.org/@api/deki/files/5951/loops-practices-title.png?revision=2&size=bestfit&width=350&height=264)
+![KCS Double Loop Process](../images/5951-loops-practices-title.png)
 
 The KCS methodology is organized into three components:
 
@@ -131,7 +131,7 @@ Knowledge is the by-product of interaction. To make knowledge relevant and finda
 
 ### The KCS Article
 
-![The KCS Article](https://library.serviceinnovation.org/@api/deki/files/5952/kcs-article.png?revision=1&size=bestfit&width=400)The KCS article is the content created using the KCS methodology. Articles can be used for many different types of content including a simple question, a complex problem, or a procedure. [KCS articles have a little bit of structure](04-evolve-loop-content-health.md#page-7118), and they integrate the perspective of three groups: the requestor, the responder, and the organization.
+![The KCS Article](../images/5952-kcs-article.png)The KCS article is the content created using the KCS methodology. Articles can be used for many different types of content including a simple question, a complex problem, or a procedure. [KCS articles have a little bit of structure](04-evolve-loop-content-health.md#page-7118), and they integrate the perspective of three groups: the requestor, the responder, and the organization.
 
 - The **requestor's** perspective includes their experience of what is happening as well as information about the environment relevant to their situation. The issue statement is the requestor's view of what is happening. It is captured in their words and phrases so that we have a record of their context.
 - The **responder's** perspective is captured in the resolution and cause (if appropriate).
@@ -143,4 +143,4 @@ The intent of the article is to connect these perspectives so that we have a ful
 
 Every organization has a broad spectrum of content that contains valuable, reusable information. KCS provides a methodology and set of practices for consistently capturing information in a way that is both structured enough to be useful, and dynamic enough to suit a rapidly changing environment. In addition to drawing from many content sources and creating a context-sensitive knowledge base for daily use, KCS processes generate new material that may reference existing content and feed into other business content like product designs, marketing plans, field training, and documentation. KCS Principles may be helpful in maintaining many types of content, but KCS articles are not intended to be a one-size fits all content type.
 
-![content-continuum.png](https://library.serviceinnovation.org/@api/deki/files/5368/content-continuum.png?revision=1)
+![content-continuum.png](../images/5368-content-continuum.png)

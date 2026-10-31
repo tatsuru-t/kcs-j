@@ -20,7 +20,7 @@
 > - [Technique 4.1: Use a Simple Template](https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/201-Solve_Loop/Practice_4_Structure/Technique_4.1)
 > - [Technique 4.2: Complete Thoughts, Not Complete Sentences](https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/201-Solve_Loop/Practice_4_Structure/Technique_4.2)
 
-![KCS Double Loop Process](https://library.serviceinnovation.org/@api/deki/files/5951/loops-practices-title.png?revision=2&size=bestfit&width=500)
+![KCS Double Loop Process](../images/5951-loops-practices-title.png)
 
 **Reuse, improve, capture, and structure in the workflow to leverage existing knowledge and keep it accurate and available.**
 
