@@ -16,7 +16,7 @@ CC BY-NC-ND 4.0（改変禁止）で、翻訳・再構成したものは共有�
 | 04 | Evolve Loop／プラクティス5：コンテンツの健全性 | [ja](ja/04-evolve-loop-content-health.md) | [en](en/04-evolve-loop-content-health.md) | CC BY-NC 4.0 |
 | 05 | プラクティス6：プロセスの統合 | [ja](ja/05-process-integration.md) | [en](en/05-process-integration.md) | CC BY-NC 4.0 |
 | 06 | プラクティス7：パフォーマンスの把握 | [ja](ja/06-performance-insight.md) | [en](en/06-performance-insight.md) | CC BY-NC 4.0 |
-| 07 | プラクティス8：チェンジマネジメント | 未訳 | [en](en/07-change-management.md) | CC BY-NC 4.0 |
+| 07 | プラクティス8：チェンジマネジメント | [ja](ja/07-change-management.md) | [en](en/07-change-management.md) | CC BY-NC 4.0 |
 | 08 | 教訓と避けるべき落とし穴・プラクティスの目的 | 未訳 | [en](en/08-lessons-learned-and-purpose.md) | CC BY-NC 4.0 |
 | 09 | コーチ・リファレンスガイド | 未訳 | [en](en/09-coach-reference-guide.md) | 表示なし（BY-NC-ND とみなす） |
 | 10 | セルフサービスの成功の測定（2027年版） | 未訳 | [en](en/10-measuring-self-service-success.md) | CC BY-NC 4.0 |
