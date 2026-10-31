@@ -20,7 +20,7 @@ CC BY-NC-ND 4.0（改変禁止）で、翻訳・再構成したものは共有�
 | 08 | 教訓と避けるべき落とし穴・プラクティスの目的 | [ja](ja/08-lessons-learned-and-purpose.md) | [en](en/08-lessons-learned-and-purpose.md) | CC BY-NC 4.0 |
 | 09 | コーチ・リファレンスガイド | [ja](ja/09-coach-reference-guide.md) | [en](en/09-coach-reference-guide.md) | 表示なし（BY-NC-ND とみなす） |
 | 10 | セルフサービスの成功の測定（2027年版） | [ja](ja/10-measuring-self-service-success.md) | [en](en/10-measuring-self-service-success.md) | CC BY-NC 4.0 |
-| 11 | 補足資料（用語集・参考文献・帰属表示など） | 未訳 | [en](en/11-supplemental-resources.md) | CC BY-NC-ND 4.0（一部ページ） |
+| 11 | 補足資料（用語集・参考文献・帰属表示など） | [ja](ja/11-supplemental-resources.md) | [en](en/11-supplemental-resources.md) | CC BY-NC-ND 4.0（一部ページ） |
 
 新しい版のガイドだけを扱う（KCS v6 と他言語版は対象外）。訳語と表記の決まりは [glossary.md](glossary.md)。
 
