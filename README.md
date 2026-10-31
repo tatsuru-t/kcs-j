@@ -13,7 +13,7 @@ CC BY-NC-ND 4.0（改変禁止）で、翻訳・再構成したものは共有�
 | 01 | 原則とコアコンセプト | [ja](ja/01-principles-and-core-concepts.md) | [en](en/01-principles-and-core-concepts.md) | CC BY-NC-ND 4.0 |
 | 02 | プラクティスガイド（2027年版）序文・KCSが機能する理由・KCS記事 | [ja](ja/02-practices-guide-introduction.md) | [en](en/02-practices-guide-introduction.md) | CC BY-NC 4.0 |
 | 03 | Solve Loop（プラクティス1〜4） | [ja](ja/03-solve-loop.md) | [en](en/03-solve-loop.md) | CC BY-NC 4.0 |
-| 04 | Evolve Loop／プラクティス5：コンテンツの健全性 | 未訳 | [en](en/04-evolve-loop-content-health.md) | CC BY-NC 4.0 |
+| 04 | Evolve Loop／プラクティス5：コンテンツの健全性 | [ja](ja/04-evolve-loop-content-health.md) | [en](en/04-evolve-loop-content-health.md) | CC BY-NC 4.0 |
 | 05 | プラクティス6：プロセスの統合 | 未訳 | [en](en/05-process-integration.md) | CC BY-NC 4.0 |
 | 06 | プラクティス7：パフォーマンスの把握 | 未訳 | [en](en/06-performance-insight.md) | CC BY-NC 4.0 |
 | 07 | プラクティス8：チェンジマネジメント | 未訳 | [en](en/07-change-management.md) | CC BY-NC 4.0 |
