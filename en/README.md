@@ -10,4 +10,4 @@
 - [Lessons Learned and the Purpose Behind the Practices](08-lessons-learned-and-purpose.md)（2ページ / 16,287字）
 - [KCS Coach Reference Guide](09-coach-reference-guide.md)（12ページ / 73,334字）
 - [Measuring Self-Service Success (2027)](10-measuring-self-service-success.md)（7ページ / 56,170字）
-- [Supplemental KCS Resources](11-supplemental-resources.md)（7ページ / 47,427字）
+- [Supplemental KCS Resources](11-supplemental-resources.md)（7ページ / 48,676字）

@@ -40,7 +40,24 @@ Knowledge-Centered Success documentation is created, continually updated, and ma
 
 #### Knowledge-Centered Success Practices Guide Team (2027)
 
-[TABLE]
+- Heather Ausmus
+- Monique Cadena
+- Jennifer Crippen
+- Janine Deegan
+- Andreea Dudas
+- Sara Feldman
+- Adam Hansen
+- David Kay
+- Lana Kosnik
+- Jae-Jae Lombardo
+- Pat McBride
+- Kelly Murray
+- Gowri Peddirisi
+- Laurel Poertner
+- Christina Roosen
+- Erik Rutten
+- Shari Wennes
+- Kristin Wilson
 
 #### PAR 2.0: Process Alignment Review
 
@@ -48,13 +65,49 @@ A note on the name change: when gathering feedback on the Process Adherence Revi
 
 Special thanks to David Kay and Jennifer Crippen, whose years of real world experience, thoughtfulness, and contributions continue to make the methodology understandable, usable, and relevant.
 
-[TABLE]
+- Monique Cadena
+- Kristin Cline
+- Janine Deegan
+- Adam Hansen
+- Adam Mullen
+- Kelly Murray
+- Mitzi Newland
+- Padma Prasad
+- Christina Roosen
+- Jason Rowland
+- Dave Stewart
+- Tomer Shoshan
+- Sander van der Moolen
+- Jacob Watts
+- Sue Wong
+- Larry Yang
 
 #### The Why Behind the Practices
 
 This project was born out of a Consortium Member session called "KCS with No Staff, No Funding, No Time, and Bad Tools" and reflects the collected experience of the following people.  Thanks to each of them for their perspective and feedback!
 
-[TABLE]
+- Tamara Amlung, pro accessio
+- Arnfinn Austefjord, Consortium
+- Denise Baldwin, SDL
+- Jennifer Crippen, DB Kay & Associates
+- Arun Daniel, Dell
+- Judith de Jong, SDL
+- Karen Eisen, Alida
+- Sara Feldman, Consortium
+- Victor Feyen, Topdesk
+- David Hahn, Humana
+- Bret Halford, SAP
+- Jenna Hoffman, Intel
+- Gerald Joiner, Humana
+- Terry Kim, SDL
+- Kelly Murray, Consortium
+- Mitzi Newland, PAR
+- Jason O'Donnell, Autodesk
+- Nikki Peck, Humana
+- Matt Seaman, Consortium
+- Christian Tobbe, Humana
+- Carla Verwijs, Sequal
+- Jacob Watts, PAR
 
 #### KCS v6 Practices Guide
 
@@ -62,7 +115,19 @@ KCS v6 is based on more than 25 years of collective thinking, investment, experi
 
 KCS v6 was written by Greg Oxton, Melissa George, and Kelly Murray based on the experiences and contributions from many Consortium Members. Special thanks to David Kay for his contribution in many of the techniques and for his editing and comments on the entire document. Thank you to the KCS v6 Practices team.
 
-[TABLE]
+- Arnfinn Austefjord
+- Russ Brooks
+- Monique Cadena
+- Jennifer Crippen
+- Amy Dotson
+- Beth Haggett
+- David Kay
+- Kristin Cline Hunter
+- Jennifer MacIntosh
+- David Stanley-Jones
+- Devra Struzenberg
+
+&nbsp;
 
 <a id="page-356"></a>
 

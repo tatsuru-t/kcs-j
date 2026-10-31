@@ -18,10 +18,35 @@ from bs4 import BeautifulSoup
 SITE = "https://library.serviceinnovation.org"
 
 
+def flatten_layout_tables(soup: BeautifulSoup) -> None:
+    """名前を段組みに並べるだけのレイアウト用の表を箇条書きにする。
+
+    見出しセルが無く、セルの中に段落が複数ある表は、pandoc が Markdown の表に
+    できず `[TABLE]` に置き換えてしまう（謝辞のページの名簿がこれだった）。
+    セルの段落を左の列から順に取り出して1つの箇条書きにする。
+    """
+    for table in soup.find_all("table"):
+        if table.find("th"):
+            continue
+        cells = table.find_all("td")
+        if not any(len(c.find_all("p")) > 1 for c in cells):
+            continue
+        ul = soup.new_tag("ul")
+        for cell in cells:
+            for p in cell.find_all("p") or [cell]:
+                text = p.get_text(" ", strip=True)
+                if text:
+                    li = soup.new_tag("li")
+                    li.string = text
+                    ul.append(li)
+        table.replace_with(ul)
+
+
 def clean(body: str) -> str:
     soup = BeautifulSoup(body, "html.parser")
     for tag in soup.find_all(["style", "script", "noscript"]):
         tag.decompose()
+    flatten_layout_tables(soup)
     # 見出しの前に置かれたアンカー用の空 span
     for span in soup.find_all("span"):
         if not span.get_text(strip=True) and not span.find("img"):
