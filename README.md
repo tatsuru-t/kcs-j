@@ -24,6 +24,7 @@ Consortium for Service Innovation の [KCS ライブラリ](https://library.serv
 python3 -I scripts/fetch.py work     # ツリーと本文HTMLを取得（work/raw, work/manifest.json）
 python3 -I scripts/convert.py work   # ページ単位のMarkdownへ（work/pages）
 python3 -I scripts/build.py work     # 章ごとに11ファイルへまとめる（work/en）
+python3 -I scripts/assemble.py 01   # 分割して訳した work/ja/parts/01*.md を1ファイルに（work/ja）
 ```
 
 必要なもの: Python 3、`beautifulsoup4`、`pandoc`。
