@@ -6,7 +6,7 @@
 
 Consortium Members are at the forefront of leveraging knowledge-powered AI capabilities.
 
-![AI Powered by Knowledge](../images/web-ai-only-logo-wordpress.png)
+![AI Powered by Knowledge](../../images/web-ai-only-logo-wordpress.png)
 
 AI outcomes are only as good as the knowledge it pulls from. For AI to scale successfully, you need trusted content, consistent structure, and clear workflows for curation and reuse. Organizations that have implemented [KCS](https://www.serviceinnovation.org/kcs/) are uniquely positioned to harness the power of AI.
 
@@ -18,7 +18,7 @@ While it’s tempting to focus on the shiny aspects of what AI technologies may 
 
 While data and technology are important, *operational transformation* is the most critical factor for success.
 
-![10% AI Models, 20% Technology, 70% Operational Transformation](../images/web-Screen-Shot-2024-08-22-at-9.29.14-PM-1024x713.png)
+![10% AI Models, 20% Technology, 70% Operational Transformation](../../images/web-Screen-Shot-2024-08-22-at-9.29.14-PM-1024x713.png)
 
 *This echoes Consortium Member experience in building systematic AI implementations. For details about what we’ve learned:*
 

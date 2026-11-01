@@ -4,14 +4,16 @@
 出力:   dist/kcs-j-YYYYMMDD.zip
 
 zip に入るもの:
-- html/  各章をブラウザで読めるHTMLにしたもの（pandoc。--no-html で省く）
-- ja/    訳文の Markdown（ja/parts は入れない）
+- html/  各章をブラウザで読めるHTMLにしたもの（pandoc。--no-html で省く）。
+         index.html の目次は本編とAI関連（html/ai/）の2部に分かれる
+- ja/    本編の訳文の Markdown（ja/parts は入れない）
+- ai/ja/ AI関連（別冊）の訳文の Markdown
 - images/ 図
 - glossary.md、README.md、NOTICE.txt（利用条件の注意）
-- en/    英語原文（--with-en を付けたときだけ）
+- en/・ai/en/ 英語原文（--with-en を付けたときだけ）
 
-Markdown と HTML のどちらも ../images/ を参照するので、zip を展開した
-フォルダの構成のまま開けば図が表示される。
+本編は ../images/、別冊は ../../images/ を参照する（HTML版も同じ深さに置く）ので、
+zip を展開したフォルダの構成のまま開けば図が表示される。
 """
 import argparse
 import datetime
@@ -32,7 +34,7 @@ KCS ドキュメント 日本語訳（個人の学習用）
   KCS® is a service mark of the Consortium for Service Innovation™.
 - 一部の文書（原則とコアコンセプト、コーチ・リファレンスガイド、補足資料）は
   CC BY-NC-ND 4.0（改変禁止）です。翻訳・再構成したものを他の人に配布・共有できません。
-- 12〜16（AI関連）は serviceinnovation.org のページとブログ記事で、クリエイティブ・コモンズの
+- AI関連（別冊、ai/）は serviceinnovation.org のページとブログ記事で、クリエイティブ・コモンズの
   表示がありません（通常の著作権）。翻訳したものを他の人に配布・共有できません。
 - Practices Guide (2027) と Measuring Self-Service Success (2027) は CC BY-NC 4.0 です。
   共有する場合も非営利に限り、出典と変更した旨を示す必要があります。
@@ -59,6 +61,7 @@ def to_html(md: Path, out: Path) -> None:
     text = re.sub(r"\]\((\d\d-[^)#]+)\.md(#[^)]*)?\)", r"](\1.html\2)", text)
     text = text.replace("](README.md)", "](index.html)")
     title = next((l[2:] for l in text.splitlines() if l.startswith("# ")), md.stem)
+    text = text.replace(f"# {title}\n", "", 1)  # 見出しは pandoc のタイトル欄に出るので本文からは外す
     with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False) as head:
         head.write(HTML_STYLE)
     subprocess.run(
@@ -76,8 +79,9 @@ def main():
     args = ap.parse_args()
 
     chapters = sorted(Path("ja").glob("[0-9][0-9]-*.md"))
-    if len(chapters) < 11:
-        sys.exit(f"ja/ の章が足りない（{len(chapters)}）。先に assemble.py を実行する")
+    if len(chapters) != 11:
+        sys.exit(f"ja/ の章が11ではない（{len(chapters)}）。先に assemble.py を実行する")
+    ai_chapters = sorted(Path("ai/ja").glob("[0-9][0-9]-*.md"))
 
     Path("dist").mkdir(exist_ok=True)
     name = f"kcs-j-{datetime.date.today():%Y%m%d}"
@@ -92,20 +96,29 @@ def main():
         add(Path("glossary.md"), "glossary.md")
         for md in chapters:
             add(md, f"ja/{md.name}")
+        for md in ai_chapters:
+            add(md, f"ai/ja/{md.name}")
         for img in sorted(Path("images").iterdir()):
             add(img, f"images/{img.name}")
         if args.with_en:
             for md in sorted(Path("en").glob("*.md")):
                 add(md, f"en/{md.name}")
+            for md in sorted(Path("ai/en").glob("*.md")):
+                add(md, f"ai/en/{md.name}")
         if not args.no_html:
             with tempfile.TemporaryDirectory() as tmp:
-                index = ["# KCS ドキュメント 日本語訳", "", "NOTICE.txt の利用条件も読んでください。", ""]
-                for md in chapters:
-                    out = Path(tmp) / f"{md.stem}.html"
-                    to_html(md, out)
-                    add(out, f"html/{out.name}")
-                    title = md.read_text(encoding="utf-8").splitlines()[0][2:]
-                    index.append(f"- [{title}]({md.stem}.html)")
+                index = ["# KCS ドキュメント 日本語訳", "", "NOTICE.txt の利用条件も読んでください。", "",
+                         "## 本編（KCS ライブラリ）", ""]
+                Path(tmp, "ai").mkdir()
+                for book, mds, sub in (("main", chapters, ""), ("ai", ai_chapters, "ai/")):
+                    if book == "ai" and mds:
+                        index += ["", "## AI関連（別冊）", ""]
+                    for md in mds:
+                        out = Path(tmp) / sub / f"{md.stem}.html"
+                        to_html(md, out)
+                        add(out, f"html/{sub}{out.name}")
+                        title = md.read_text(encoding="utf-8").splitlines()[0][2:]
+                        index.append(f"- [{title}]({sub}{md.stem}.html)")
                 idx_md = Path(tmp) / "index.md"
                 idx_md.write_text("\n".join(index) + "\n", encoding="utf-8")
                 to_html(idx_md, Path(tmp) / "index.html")

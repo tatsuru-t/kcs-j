@@ -6,7 +6,7 @@
 
 Consortium Member examples of AI in action.
 
-![AI Powered by Knowledge](../images/web-ai-only-logo-wordpress.png)
+![AI Powered by Knowledge](../../images/web-ai-only-logo-wordpress.png)
 
 Consortium Members continue their thoughtful approach to AI implementation, focusing on business processes, use cases, and operational transformation, and share their experiences at [Consortium events](https://www.serviceinnovation.org/events/).
 
@@ -22,9 +22,9 @@ Consortium Members continue their thoughtful approach to AI implementation, focu
 
 PTC considered the ease of implementation against the value delivered, focusing on content creation and leveraging their mature KCS implementation.
 
-[![use case deployment strategy](../images/web-PTC-deployment-steps.png)](../images/web-PTC-deployment-steps.png)
+[![use case deployment strategy](../../images/web-PTC-deployment-steps.png)](../../images/web-PTC-deployment-steps.png)
 
-[![Themes for PTC to consider use cases for GenAI](../images/web-PTC-AI-Themes.png)](../images/web-PTC-AI-Themes.png)
+[![Themes for PTC to consider use cases for GenAI](../../images/web-PTC-AI-Themes.png)](../../images/web-PTC-AI-Themes.png)
 
 **Result**: Launched an interactive article authoring assistant that automates the first draft to be reviewed by the Knowledge Worker, increasing content creation efficiency and accuracy.
 
@@ -41,9 +41,9 @@ PTC considered the ease of implementation against the value delivered, focusing 
 - Akamai’s approach highlights the importance of a structured process for managing both stakeholder expectations and the outputs of an AI implementation.
 - A leadership committee helps prioritize use cases, moving them into proof of concept and testing phases.
 
-[![Akamai AI Adoption Approach](../images/web-underlying-approach-AIatAkamai-1024x582.png)](../images/web-underlying-approach-AIatAkamai-1024x582.png)
+[![Akamai AI Adoption Approach](../../images/web-underlying-approach-AIatAkamai-1024x582.png)](../../images/web-underlying-approach-AIatAkamai-1024x582.png)
 
-[![Akamai build vs. buy AI tools - dimensions for deciding](../images/web-BuildorBuyorPartner-1024x600.png)](../images/web-BuildorBuyorPartner-1024x600.png)
+[![Akamai build vs. buy AI tools - dimensions for deciding](../../images/web-BuildorBuyorPartner-1024x600.png)](../../images/web-BuildorBuyorPartner-1024x600.png)
 
 **Result**: Leadership buy-in to this timeline provides the required space to be thoughtful and systematic about implementing AI at scale, while offering a structured approach to experimentation for all parts of the business as new tools and capabilities become available.
 
@@ -57,9 +57,9 @@ PTC considered the ease of implementation against the value delivered, focusing 
 
 **Strategy**: Used an ecosystem approach to understand relationships between interconnected elements, mitigate blindspots, and drive continuous improvement.
 
-[![Triangle depicting the relationship between knowledge management, artificial intelligence, and business intelligence.](../images/web-KM-AI-BI-triangle-1024x656.png)](../images/web-KM-AI-BI-triangle-1024x656.png)
+[![Triangle depicting the relationship between knowledge management, artificial intelligence, and business intelligence.](../../images/web-KM-AI-BI-triangle-1024x656.png)](../../images/web-KM-AI-BI-triangle-1024x656.png)
 
-[![Red Hat AI deployments](../images/web-RedHatAIResults.png)](../images/web-RedHatAIResults.png)
+[![Red Hat AI deployments](../../images/web-RedHatAIResults.png)](../../images/web-RedHatAIResults.png)
 
 **Result**: Improved relevant content matching, AI-generated snippets for organic search, and KCS copilot for Knowledge Worker workflow while providing actionable feedback to all parts of the ecosystem.
 

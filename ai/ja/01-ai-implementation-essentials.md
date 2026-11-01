@@ -2,11 +2,13 @@
 
 > 出典: Consortium for Service Innovation, *AI Implementation Essentials* — ページにクリエイティブ・コモンズの表示なし（© Consortium for Service Innovation）。原文を日本語に翻訳したもの。個人の学習用で、共有しない  
 > 元のページ:
-> - （assemble.py が英語版から写す）
+> - [AI Implementation Essentials](https://www.serviceinnovation.org/ai-implementation-essentials/)
 
 AIの取り組みを成功させるための、実績のある手順。
 
-![AI Powered by Knowledge](../images/web-ai-only-logo-wordpress.png)
+![AI Powered by Knowledge](../../images/web-ai-only-logo-wordpress.png)
+
+*図：「AI Powered by Knowledge（ナレッジを動力とするAI）」のロゴ。白抜きの画像なので、白い背景では見えない。*
 
 *Consortiumの[メンバー企業](https://www.serviceinnovation.org/current-members/)から直接得られた知見に基づく、AIの取り組みを準備し、立ち上げ、継続的に改善するための要点となる行動。* *特定の企業の例は [AI Case Studies](https://www.serviceinnovation.org/ai-case-studies/) を参照のこと。*
 
@@ -31,7 +33,9 @@ AIの取り組みを成功させるための、実績のある手順。
 
 ナレッジマネジメントとAIは、互いの成功を後押しする。よく管理されたナレッジは信頼できるAIの出力を可能にし、AIはナレッジの記録・再利用・改善を加速する。
 
-![Knowledge Management and AI are symbiotic!](../images/web-AI-KM-Symbiotic.png)
+![Knowledge Management and AI are symbiotic!](../../images/web-AI-KM-Symbiotic.png)
+
+*図：ナレッジマネジメント（KM）+ AI = 共生関係。AIが効果的に機能するにはKMが必要であり、KMはAIによって効率よく規模を広げられる。引用：「KCSは RAG の R（検索）を担う」（Oracle のシニアプロダクトマネージャー）。*
 
 [KCS](https://www.serviceinnovation.org/kcs/)^(®) のような規律あるナレッジマネジメントの手法は、AIが引き出すコンテンツが検証され、人が実際に助けを求めるときの言い方に沿っていることを確実にする。その見返りに、AIは記事の下書き、重複の検出、欠落の分析といった作業を効率化し、チームがより価値の高い改善に集中できるようにする。
 
@@ -46,7 +50,9 @@ AIの取り組みを成功させるための、実績のある手順。
 3. **改善の繰り返し（Iterate）**
    自動化の道のりのすべての段階を通じて、継続的に評価し、見守り、改善する。AIソリューションが効果を保つには、継続的な見守り・学習・改良が必要である。
 
-[![Continuous Improvement for AI: Prepare & Iterate phases apply holistically. Execute phase repeats for each use case.](../images/web-Continuous-Improvement-AI.png)](../images/web-Continuous-Improvement-AI.png)
+[![Continuous Improvement for AI: Prepare & Iterate phases apply holistically. Execute phase repeats for each use case.](../../images/web-Continuous-Improvement-AI.png)](../../images/web-Continuous-Improvement-AI.png)
+
+*図：AIの継続的改善。準備（Prepare）→ 実行（Execute）→ 改善の繰り返し（Iterate）が8の字のようにつながり、実行の段階は中で何度も回る（利用場面ごとに繰り返す）。*
 
 ***準備**と**改善の繰り返し**の段階は全体に当てはまる。**実行**の段階は利用場面ごとに繰り返す。*
 

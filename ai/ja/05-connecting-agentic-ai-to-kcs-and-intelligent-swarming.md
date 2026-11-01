@@ -40,7 +40,7 @@ AIについての深い経験と、ナレッジ主導の組織がどう機能す
 
 - [今後のConsortiumのイベント](https://www.serviceinnovation.org/events/)に参加する
 - [Service Innovation Summit](https://www.serviceinnovation.org/event/annual-summit-2026/) で直接つながる
-- AIの取り組みを進めている？ [AI Implementation Essentials](12-ai-implementation-essentials.md)（AI導入の要点）を見てほしい
+- AIの取り組みを進めている？ [AI Implementation Essentials](01-ai-implementation-essentials.md)（AI導入の要点）を見てほしい
 
 **Consortium for Service Innovation のメンバー：**
 [セッションの録画](https://library.serviceinnovation.org/wiki/Predictive_Customer_Engagement%C2%AE/One_Hour_Web_Sessions/Agentic_AI_Series_Agentic_AI_Meets_Knowledge_Management_2025)を見て、[AI Blueprint](https://library.serviceinnovation.org/wiki/Featured_Member_Resources/AI_Blueprint) で経験に基づくAIプログラムの指針を得てほしい（メンバーのログインが必要）

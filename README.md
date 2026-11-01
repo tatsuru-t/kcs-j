@@ -1,12 +1,13 @@
 # kcs-j
 
 Consortium for Service Innovation の [KCS ライブラリ](https://library.serviceinnovation.org/KCS)
-を、読みやすい大きさの章ごとのMarkdownにまとめ直し、日本語に訳したもの。
+を、読みやすい大きさの章ごとのMarkdownにまとめ直し、日本語に訳したもの（本編）。
+あわせて、serviceinnovation.org のAI関連のページを別冊（`ai/`）として訳している。
 
 **個人の学習用。このリポジトリは非公開にしておくこと。** 一部の文書は
 CC BY-NC-ND 4.0（改変禁止）で、翻訳・再構成したものは共有できない（下の表）。
 
-## 目次
+## 目次：本編（KCS ライブラリ）
 
 | # | 章 | 日本語 | 英語原文 | ライセンス |
 | --- | --- | --- | --- | --- |
@@ -21,14 +22,23 @@ CC BY-NC-ND 4.0（改変禁止）で、翻訳・再構成したものは共有�
 | 09 | コーチ・リファレンスガイド | [ja](ja/09-coach-reference-guide.md) | [en](en/09-coach-reference-guide.md) | 表示なし（BY-NC-ND とみなす） |
 | 10 | セルフサービスの成功の測定（2027年版） | [ja](ja/10-measuring-self-service-success.md) | [en](en/10-measuring-self-service-success.md) | CC BY-NC 4.0 |
 | 11 | 補足資料（用語集・参考文献・帰属表示など） | [ja](ja/11-supplemental-resources.md) | [en](en/11-supplemental-resources.md) | CC BY-NC-ND 4.0（一部ページ） |
-| 12 | AI導入の要点（AI Implementation Essentials） | [ja](ja/12-ai-implementation-essentials.md) | [en](en/12-ai-implementation-essentials.md) | 表示なし（© のみ。通常の著作権） |
-| 13 | ナレッジを動力とするAI（Knowledge-Powered AI） | [ja](ja/13-knowledge-powered-ai.md) | [en](en/13-knowledge-powered-ai.md) | 表示なし（© のみ。通常の著作権） |
-| 14 | AIの事例（AI Case Studies：PTC・Akamai・Red Hat） | [ja](ja/14-ai-case-studies.md) | [en](en/14-ai-case-studies.md) | 表示なし（© のみ。通常の著作権） |
-| 15 | AIプロジェクトが失敗する理由・成功する理由（ブログ、2025-11） | [ja](ja/15-why-ai-projects-fail-or-succeed.md) | [en](en/15-why-ai-projects-fail-or-succeed.md) | 表示なし（© のみ。通常の著作権） |
-| 16 | エージェント型AIをKCSと Intelligent Swarming に結び付ける（ブログ、2026-02） | [ja](ja/16-connecting-agentic-ai-to-kcs-and-intelligent-swarming.md) | [en](en/16-connecting-agentic-ai-to-kcs-and-intelligent-swarming.md) | 表示なし（© のみ。通常の著作権） |
 
-01〜11は KCS ライブラリの新しい版のガイド（KCS v6 と他言語版は対象外）。12〜16は serviceinnovation.org の
-AIに関するページとブログ記事で、`scripts/fetch_web.py` で取り込んだ。訳語と表記の決まりは [glossary.md](glossary.md)。
+KCS ライブラリの新しい版のガイドだけを扱う（KCS v6 と他言語版は対象外）。
+
+## 目次：AI関連（別冊、`ai/`）
+
+serviceinnovation.org の、AIに関するページとブログ記事。`scripts/fetch_web.py` で取り込んだ。
+どれもクリエイティブ・コモンズの表示が無い（フッターは © のみ）ので、通常の著作権として扱う。
+
+| # | ページ | 日本語 | 英語原文 |
+| --- | --- | --- | --- |
+| 01 | AI導入の要点（AI Implementation Essentials） | [ja](ai/ja/01-ai-implementation-essentials.md) | [en](ai/en/01-ai-implementation-essentials.md) |
+| 02 | ナレッジを動力とするAI（Knowledge-Powered AI） | [ja](ai/ja/02-knowledge-powered-ai.md) | [en](ai/en/02-knowledge-powered-ai.md) |
+| 03 | AIの事例（AI Case Studies：PTC・Akamai・Red Hat） | [ja](ai/ja/03-ai-case-studies.md) | [en](ai/en/03-ai-case-studies.md) |
+| 04 | AIプロジェクトが失敗する理由・成功する理由（ブログ、2025-11） | [ja](ai/ja/04-why-ai-projects-fail-or-succeed.md) | [en](ai/en/04-why-ai-projects-fail-or-succeed.md) |
+| 05 | エージェント型AIをKCSと Intelligent Swarming に結び付ける（ブログ、2026-02） | [ja](ai/ja/05-connecting-agentic-ai-to-kcs-and-intelligent-swarming.md) | [en](ai/en/05-connecting-agentic-ai-to-kcs-and-intelligent-swarming.md) |
+
+訳語と表記の決まりは本編・別冊共通で [glossary.md](glossary.md)。
 
 ## 作り方
 
@@ -38,7 +48,9 @@ python3 -I scripts/convert.py work   # ページ単位のMarkdownへ（work/page
 python3 -I scripts/build.py work     # 章ごとに11ファイルへまとめる（en/）
 python3 -I scripts/images.py en ja/parts   # 図を images/ に取り込み、参照を相対パスに（何度実行しても同じ）
 python3 -I scripts/assemble.py 01    # 分割して訳した ja/parts/01*.md を1ファイルに（ja/）。図の説明もここで入る
-python3 -I scripts/package.py        # 訳文・図・HTML版を dist/kcs-j-YYYYMMDD.zip にまとめる（--with-en で原文も）
+python3 -I scripts/fetch_web.py URL 01-slug "見出し" ai    # 別冊：serviceinnovation.org のページを ai/en/ に
+python3 -I scripts/assemble.py 01 ai # 別冊：ai/ja/parts/01*.md を ai/ja/ に
+python3 -I scripts/package.py        # 本編・別冊の訳文・図・HTML版を dist/kcs-j-YYYYMMDD.zip にまとめる（--with-en で原文も）
 ```
 
 必要なもの: Python 3、`beautifulsoup4`、`pandoc`。`work/` は作り直せるので git に入れていない。

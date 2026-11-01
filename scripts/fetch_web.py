@@ -1,9 +1,9 @@
 """serviceinnovation.org（WordPress）の単独ページを、英語版の章ファイルとして取り込む。
 
-使い方: python3 -I scripts/fetch_web.py URL 章ファイル名 "H1の見出し"
+使い方: python3 -I scripts/fetch_web.py URL 章ファイル名 "H1の見出し" [出力先のフォルダ]
 例:     python3 -I scripts/fetch_web.py https://www.serviceinnovation.org/ai-implementation-essentials/ \\
-            12-ai-implementation-essentials "AI Implementation Essentials"
-出力:   en/章ファイル名.md、図は images/web-*.png
+            01-ai-implementation-essentials "AI Implementation Essentials" ai
+出力:   出力先のフォルダ/en/章ファイル名.md（既定は en/）、図は images/web-*.png（本編と共有）
 
 KCSライブラリ（MindTouch）とは別のサイトなので fetch.py / convert.py は使えない。
 - 本文は .entry-content だけを取る。冒頭の大見出しの帯（h1 の重複）と、
@@ -12,6 +12,7 @@ KCSライブラリ（MindTouch）とは別のサイトなので fetch.py / conve
 - このサイトにはクリエイティブ・コモンズの表示が無い（フッターは © のみ）。
   出典欄にもそう書く
 """
+import os
 import re
 import subprocess
 import sys
@@ -33,6 +34,8 @@ def get(url: str) -> bytes:
 
 def main():
     url, name, title = sys.argv[1], sys.argv[2], sys.argv[3]
+    out_dir = Path(sys.argv[4] if len(sys.argv) > 4 else ".") / "en"
+    img_prefix = os.path.relpath("images", out_dir)  # en/ からは ../images、ai/en/ からは ../../images
     soup = BeautifulSoup(get(url), "html.parser")
     body = soup.select_one(".entry-content")
     if body is None:
@@ -65,7 +68,7 @@ def main():
             dest.write_bytes(get(src))
             print(f"  取得 {dest.name}")
             time.sleep(0.5)
-        img.attrs = {"src": f"../images/{dest.name}", "alt": img.get("alt") or dest.stem}
+        img.attrs = {"src": f"{img_prefix}/{dest.name}", "alt": img.get("alt") or dest.stem}
         if img.parent.name == "a":  # 拡大表示用のリンクも取り込んだ画像に向ける
             img.parent["href"] = img["src"]
 
@@ -83,7 +86,8 @@ def main():
         "> 元のページ:",
         f"> - [{title}]({url})", "", "",
     ]
-    out = Path("en") / f"{name}.md"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out = out_dir / f"{name}.md"
     out.write_text("\n".join(header) + md + "\n", encoding="utf-8")
     print(f"{out}: {len(md):,}字")
 

@@ -2,11 +2,11 @@
 
 > 出典: Consortium for Service Innovation, *Why AI Projects Fail or Succeed*（ブログ記事、2025年11月20日、Matt Seaman）— ページにクリエイティブ・コモンズの表示なし（© Consortium for Service Innovation）。原文を日本語に翻訳したもの。個人の学習用で、共有しない  
 > 元のページ:
-> - （assemble.py が英語版から写す）
+> - [Why AI Projects Fail or Succeed](https://www.serviceinnovation.org/why-ai-projects-fail-or-succeed/)
 
 見出しや誇大な宣伝の陰で、多くのチームがある難題に取り組んでいる。**なぜこれほど多くのAIの取り組みが行き詰まっているのか。そして、本番で成功するには実際に何が必要なのか。**
 
-*世界のさまざまな[AIの事例](14-ai-case-studies.md)に基づく知見を、動画で見るか文章で読んで、見出しに躍る数字が本当は何を意味しているのか、試行の「失敗」率が高いことがなぜ実は良い兆しでありうるのか、そして組織が意味のある拡大可能なAIの成功に向けてどう備えられるのかを理解してほしい。*
+*世界のさまざまな[AIの事例](03-ai-case-studies.md)に基づく知見を、動画で見るか文章で読んで、見出しに躍る数字が本当は何を意味しているのか、試行の「失敗」率が高いことがなぜ実は良い兆しでありうるのか、そして組織が意味のある拡大可能なAIの成功に向けてどう備えられるのかを理解してほしい。*
 
 ## 12分間の動画による要約
 
@@ -45,10 +45,15 @@ AIを活用したソリューションは、規律、明確さ、正直な評価
 - 導入し、評価する
 - 継続的に改善を繰り返す
 
-具体的な行動項目は [AI Implementation Essentials](12-ai-implementation-essentials.md)（AI導入の要点）を参照のこと。
+具体的な行動項目は [AI Implementation Essentials](01-ai-implementation-essentials.md)（AI導入の要点）を参照のこと。
 
 > AIを技術的な導入としてではなく、事業と業務のソリューションとして捉え直そう。
 
-![LinkedIn post from Greg Weinert about preparing properly for AI implementations](../images/web-AI-projects-Greg.png)
+![LinkedIn post from Greg Weinert about preparing properly for AI implementations](../../images/web-AI-projects-Greg.png)
 
-![LinkedIn post from Monique Cadena about AI hype vs. reality](../images/web-AI-projects-Monique.png)
+*図：Greg Weinert の LinkedIn の投稿。「AIの導入と、その後の運用モデルが失敗しないよう、適切に準備しよう。Consortium for Service Innovation の Matthew Seaman によるこの記事と動画は、なぜこれほど多くのAIプロジェクトが失敗するのかを示す明確な統計に加えて、多くの企業が実現している成功への知見と、AIの取り組みを成功させるための取り組み方を示している。」*
+
+![LinkedIn post from Monique Cadena about AI hype vs. reality](../../images/web-AI-projects-Monique.png)
+
+
+*図：Monique Cadena の LinkedIn の投稿。「AIの誇大宣伝。AIの約束。AIの現実。私たちは以前にもこれを経験している。30年近く前、組織がKCSのような変革の戦略を初めて探ったとき、同じ興奮と同じ厳しい教訓があった。Matthew Seaman のこの短い動画はその真実を突いている。雑音を切り捨て、AIの取り組みがなぜ成功し、なぜ失敗するのかを現実的に語り、持続する変革はテクノロジーだけでなく人とプロセスから始まることを思い出させてくれる。ぜひ見てほしい。最後のスライドは必見だ。」*

@@ -2,11 +2,13 @@
 
 > 出典: Consortium for Service Innovation, *Knowledge-Powered AI* — ページにクリエイティブ・コモンズの表示なし（© Consortium for Service Innovation）。原文を日本語に翻訳したもの。個人の学習用で、共有しない  
 > 元のページ:
-> - （assemble.py が英語版から写す）
+> - [Knowledge-Powered AI](https://www.serviceinnovation.org/knowledge-powered-ai/)
 
 Consortiumのメンバーは、ナレッジを動力とするAIの機能の活用で最前線にいる。
 
-![AI Powered by Knowledge](../images/web-ai-only-logo-wordpress.png)
+![AI Powered by Knowledge](../../images/web-ai-only-logo-wordpress.png)
+
+*図：「AI Powered by Knowledge（ナレッジを動力とするAI）」のロゴ。白抜きの画像なので、白い背景では見えない。*
 
 AIの成果の良し悪しは、AIが引き出すナレッジの良し悪しで決まる。AIをうまく拡大するには、信頼できるコンテンツ、一貫した構造、キュレーションと再利用のための明確なワークフローが必要である。[KCS](https://www.serviceinnovation.org/kcs/)を実践してきた組織は、AIの力を活かすうえで独自の有利な立場にある。
 
@@ -18,12 +20,14 @@ AIのテクノロジーが組織に何をもたらしうるかという華やか
 
 データとテクノロジーも重要だが、成功にとって最も決定的な要因は*業務の変革*である。
 
-![10% AI Models, 20% Technology, 70% Operational Transformation](../images/web-Screen-Shot-2024-08-22-at-9.29.14-PM-1024x713.png)
+![10% AI Models, 20% Technology, 70% Operational Transformation](../../images/web-Screen-Shot-2024-08-22-at-9.29.14-PM-1024x713.png)
+
+*図：AI導入の成功に向けた比重（Boston Consulting Group）。AIモデル（アルゴリズム、生成AI）10%、テクノロジー／IT（データ基盤、データの質と入手しやすさ、可視化ツール）20%、業務の変革（業務プロセス／ユースケース、人材とスキル、チェンジマネジメント、コミュニケーション）70%。*
 
 *これは、体系的なAIの導入を進めてきたConsortiumのメンバーの経験とも一致する。私たちが学んできたことの詳細は次のとおり。*
 
-- **[AI Implementation Essentials](12-ai-implementation-essentials.md)（AI導入の要点）：** 成功に何が必要かの概要
-- [**AI Case Studies**](14-ai-case-studies.md)（AIの事例）：メンバーが実際にどうAIを導入しているか
+- **[AI Implementation Essentials](01-ai-implementation-essentials.md)（AI導入の要点）：** 成功に何が必要かの概要
+- [**AI Case Studies**](03-ai-case-studies.md)（AIの事例）：メンバーが実際にどうAIを導入しているか
 - **[AI Blueprint](https://library.serviceinnovation.org/wiki/Featured_Member_Resources/AI_Blueprint)：** 詳しい例とテンプレートを含む、メンバー限定の資料
 
 ## AIの全体像：これから向かう先

@@ -6,13 +6,13 @@
 
 ConsortiumのメンバーによるAIの実践例。
 
-![AI Powered by Knowledge](../images/web-ai-only-logo-wordpress.png)
+![AI Powered by Knowledge](../../images/web-ai-only-logo-wordpress.png)
 
 *図：「AI Powered by Knowledge（ナレッジを動力とするAI）」のロゴ。白抜きの画像なので、白い背景では見えない。*
 
 Consortiumのメンバーは、業務プロセス、利用場面、業務の変革に焦点を当てた、よく考えられたAI導入の取り組みを続けており、その経験を[Consortiumのイベント](https://www.serviceinnovation.org/events/)で共有している。
 
-[AI Implementation Essentials](12-ai-implementation-essentials.md)（AI導入の要点）は、成功に何が必要かの概要を示している。メンバーは、さらに多くの例とテンプレートを [AI Blueprint](https://library.serviceinnovation.org/wiki/Featured_Member_Resources/AI_Blueprint) の全体で見られる。
+[AI Implementation Essentials](01-ai-implementation-essentials.md)（AI導入の要点）は、成功に何が必要かの概要を示している。メンバーは、さらに多くの例とテンプレートを [AI Blueprint](https://library.serviceinnovation.org/wiki/Featured_Member_Resources/AI_Blueprint) の全体で見られる。
 
 ## サポートでのAIの利用場面を見つける（Identify AI Use Cases for Support）
 
@@ -24,11 +24,11 @@ Consortiumのメンバーは、業務プロセス、利用場面、業務の変�
 
 PTC は、導入のしやすさと届けられる価値とを比べ、コンテンツの作成と、成熟したKCSの実践を活かすことに焦点を当てた。
 
-[![use case deployment strategy](../images/web-PTC-deployment-steps.png)](../images/web-PTC-deployment-steps.png)
+[![use case deployment strategy](../../images/web-PTC-deployment-steps.png)](../../images/web-PTC-deployment-steps.png)
 
 *図：PTC のユースケースの展開戦略。概念実証（Proof of Concepts）→ 試作（Prototypes）→ ROIの検証 → 展開（Deployment）→ 業務システムとの統合。*
 
-[![Themes for PTC to consider use cases for GenAI](../images/web-PTC-AI-Themes.png)](../images/web-PTC-AI-Themes.png)
+[![Themes for PTC to consider use cases for GenAI](../../images/web-PTC-AI-Themes.png)](../../images/web-PTC-AI-Themes.png)
 
 *図：PTC が挙げた、サポートでの生成AIのユースケースのテーマ。左ほど試作しやすく、右ほど会社の支援と投資が要る。(1) 定めた基準に沿ってコンテンツを書くのを助ける（記事作成アシスタント、書面のコミュニケーションの評価）(2) 複雑な取引履歴をまとめる（ケースの履歴、コミュニティのトピックの要約）(3) 記録の重複を防ぐ（重複した記事、重複した不具合報告）(4) 音声のやり取りを読みやすいテキストとして記録する（サポートエンジニアと顧客の電話）(5) ナレッジベースとの会話型（Q&A）のやり取り（社内向けチャットボット、顧客向けチャットボット）。*
 
@@ -47,11 +47,11 @@ PTC は、導入のしやすさと届けられる価値とを比べ、コンテ�
 - Akamai の取り組み方は、利害関係者の期待とAI導入のアウトプットの両方を管理するための、構造化されたプロセスの重要性を際立たせている。
 - リーダーの委員会が利用場面の優先順位付けを助け、概念実証とテストの段階へと進める。
 
-[![Akamai AI Adoption Approach](../images/web-underlying-approach-AIatAkamai-1024x582.png)](../images/web-underlying-approach-AIatAkamai-1024x582.png)
+[![Akamai AI Adoption Approach](../../images/web-underlying-approach-AIatAkamai-1024x582.png)](../../images/web-underlying-approach-AIatAkamai-1024x582.png)
 
 *図：Akamai のAI導入の進め方（AI導入曲線）。構想（Concept：憲章と戦略の議論）→ 発想（Ideate：AIが業務プロセスを補い改善できる場所を集めて評価）→ 実験（Experiment：価値が高く労力の少ないユースケースで概念実証と試行）→ 標準化（Standardize：実験の教訓をAIの実践に当てはめ、追加のユースケースの展開を運用に乗せる）→ 最適化（Optimize：影響とROIが最も大きい事業ケースに集中）→ 拡大（Scale：さらなるユースケースと、複数の情報源のデータの統合へ）。2024年第2四半期から2025年第1四半期にかけてのスケジュール。*
 
-[![Akamai build vs. buy AI tools - dimensions for deciding](../images/web-BuildorBuyorPartner-1024x600.png)](../images/web-BuildorBuyorPartner-1024x600.png)
+[![Akamai build vs. buy AI tools - dimensions for deciding](../../images/web-BuildorBuyorPartner-1024x600.png)](../../images/web-BuildorBuyorPartner-1024x600.png)
 
 *図：Akamai のAIの調達の選択肢（IT部門の視点）。パートナーとのAI（ベンダー提供のAI機能。コストと自社にとっての利点を見極める）、プラットフォーム上のAI（既存のプラットフォームを活かし、既存のサービスと統合したAIのようなソリューションを作る）、一から作るAI（自社固有の必要に合わせたAIソリューションを社内で開発する）。その下に、選択肢ごとに異なる評価の観点として、技術の導入の難しさ、法務とセキュリティのコンプライアンスの難しさ、アプリケーションの縦割りと拡大に耐える設計、が並ぶ。*
 
@@ -67,11 +67,11 @@ PTC は、導入のしやすさと届けられる価値とを比べ、コンテ�
 
 **戦略**：エコシステムの取り組み方を使って、相互につながった要素どうしの関係を理解し、死角を減らし、継続的改善を推し進めた。
 
-[![Triangle depicting the relationship between knowledge management, artificial intelligence, and business intelligence.](../images/web-KM-AI-BI-triangle-1024x656.png)](../images/web-KM-AI-BI-triangle-1024x656.png)
+[![Triangle depicting the relationship between knowledge management, artificial intelligence, and business intelligence.](../../images/web-KM-AI-BI-triangle-1024x656.png)](../../images/web-KM-AI-BI-triangle-1024x656.png)
 
 *図：ナレッジマネジメント（KM）・人工知能（AI）・ビジネスインテリジェンス（BI）のエコシステム（Red Hat の Albert Myles の図を改変）。KMはAIにコンテンツを供給し、AIはKMの改善を推し進める。KMはBIに情報を与え、BIはKMの改善を推し進める。AIとBIも互いの改善を推し進める。*
 
-[![Red Hat AI deployments](../images/web-RedHatAIResults.png)](../images/web-RedHatAIResults.png)
+[![Red Hat AI deployments](../../images/web-RedHatAIResults.png)](../../images/web-RedHatAIResults.png)
 
 *図：Red Hat のAIの展開。検索の再順位付け（Mistral のLLMで、顧客の検索と関連コンテンツの照合を改善）、AI生成の要約（Mistral のモデルがKCSで作られたコンテンツを要約）、KCSコパイロット（ワークフロー支援：ケースのメモの要約とKCS記事の下書き支援／キュレーションの強化：重複チェック、自動タグ付けと紐付け／品質保証：PARの自動化、品質チェック）。*
 

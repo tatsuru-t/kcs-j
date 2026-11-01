@@ -49,6 +49,6 @@ See [AI Implementation Essentials](https://www.serviceinnovation.org/ai-implemen
 
 > Reframe AI not as a technical implementation, but as business and operational solution.
 
-![LinkedIn post from Greg Weinert about preparing properly for AI implementations](../images/web-AI-projects-Greg.png)
+![LinkedIn post from Greg Weinert about preparing properly for AI implementations](../../images/web-AI-projects-Greg.png)
 
-![LinkedIn post from Monique Cadena about AI hype vs. reality](../images/web-AI-projects-Monique.png)
+![LinkedIn post from Monique Cadena about AI hype vs. reality](../../images/web-AI-projects-Monique.png)

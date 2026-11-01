@@ -6,7 +6,7 @@
 
 Proven steps for successful AI initiatives.
 
-![AI Powered by Knowledge](../images/web-ai-only-logo-wordpress.png)
+![AI Powered by Knowledge](../../images/web-ai-only-logo-wordpress.png)
 
 *Essential actions to prepare, launch, and continuously improve your AI initiatives based on direct insights from [Consortium Member companies](https://www.serviceinnovation.org/current-members/).* *See [AI Case Studies](https://www.serviceinnovation.org/ai-case-studies/) for examples from specific companies.*
 
@@ -31,7 +31,7 @@ This guidance highlights established methods to manage expectations and achieve 
 
 Knowledge management and AI fuel each other’s success. Well-managed knowledge enables reliable AI outputs, while AI accelerates how knowledge is captured, reused, and improved.
 
-![Knowledge Management and AI are symbiotic!](../images/web-AI-KM-Symbiotic.png)
+![Knowledge Management and AI are symbiotic!](../../images/web-AI-KM-Symbiotic.png)
 
 A disciplined knowledge management approach, [such as KCS](https://www.serviceinnovation.org/kcs/)^(®), ensures that the content AI draws from is validated and aligned with how people actually ask for help. In return, AI streamlines tasks like article drafting, duplicate detection, and gap analysis, allowing teams to focus on higher-value improvements.
 
@@ -46,7 +46,7 @@ Together, [knowledge-powered AI](https://www.serviceinnovation.org/knowledge-pow
 3.  **Iterate**
     Continuously evaluate, monitor, and improve along all stages of an automation journey. AI solutions require continuous monitoring, learning, and refinement to stay effective.
 
-[![Continuous Improvement for AI: Prepare & Iterate phases apply holistically. Execute phase repeats for each use case.](../images/web-Continuous-Improvement-AI.png)](../images/web-Continuous-Improvement-AI.png)
+[![Continuous Improvement for AI: Prepare & Iterate phases apply holistically. Execute phase repeats for each use case.](../../images/web-Continuous-Improvement-AI.png)](../../images/web-Continuous-Improvement-AI.png)
 
 ***Prepare** & **Iterate** phases apply holistically. **Execute** phase repeats for each use case.*
 
