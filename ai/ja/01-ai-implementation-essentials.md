@@ -1,0 +1,149 @@
+# AI導入の要点（AI Implementation Essentials）
+
+> 出典: Consortium for Service Innovation, *AI Implementation Essentials* — ページにクリエイティブ・コモンズの表示なし（© Consortium for Service Innovation）。原文を日本語に翻訳したもの。個人の学習用で、共有しない  
+> 元のページ:
+> - [AI Implementation Essentials](https://www.serviceinnovation.org/ai-implementation-essentials/)
+
+AIの取り組みを成功させるための、実績のある手順。
+
+![AI Powered by Knowledge](../../images/web-ai-only-logo-wordpress.png)
+
+*図：「AI Powered by Knowledge（ナレッジを動力とするAI）」のロゴ。白抜きの画像なので、白い背景では見えない。*
+
+*Consortiumの[メンバー企業](https://www.serviceinnovation.org/current-members/)から直接得られた知見に基づく、AIの取り組みを準備し、立ち上げ、継続的に改善するための要点となる行動。* *特定の企業の例は [AI Case Studies](https://www.serviceinnovation.org/ai-case-studies/) を参照のこと。*
+
+**AIが本当の事業価値を届けるには、次のものが必要である。**
+
+- 信頼でき、よく管理されたナレッジの基盤
+- 組織の目標に沿った利用場面（ユースケース）
+- 包括的なチェンジマネジメント
+
+この指針は、新しいAIソリューションを使えるようにする際に、期待を管理し、成功する成果を得るための確立された方法を示している。
+
+## このガイドの内容
+
+- ナレッジマネジメントが基盤である
+- AI導入の主な段階
+- 行動項目
+- AIが動かす未来に加わる
+
+*Consortiumのメンバーは、さらに詳しい [AI Blueprint](https://library.serviceinnovation.org/wiki/Featured_Member_Resources/AI_Blueprint) の全体を利用できる。*
+
+## ナレッジマネジメントが基盤である
+
+ナレッジマネジメントとAIは、互いの成功を後押しする。よく管理されたナレッジは信頼できるAIの出力を可能にし、AIはナレッジの記録・再利用・改善を加速する。
+
+![Knowledge Management and AI are symbiotic!](../../images/web-AI-KM-Symbiotic.png)
+
+*図：ナレッジマネジメント（KM）+ AI = 共生関係。AIが効果的に機能するにはKMが必要であり、KMはAIによって効率よく規模を広げられる。引用：「KCSは RAG の R（検索）を担う」（Oracle のシニアプロダクトマネージャー）。*
+
+[KCS](https://www.serviceinnovation.org/kcs/)^(®) のような規律あるナレッジマネジメントの手法は、AIが引き出すコンテンツが検証され、人が実際に助けを求めるときの言い方に沿っていることを確実にする。その見返りに、AIは記事の下書き、重複の検出、欠落の分析といった作業を効率化し、チームがより価値の高い改善に集中できるようにする。
+
+合わさることで、[ナレッジを動力とするAI](https://www.serviceinnovation.org/knowledge-powered-ai/)はフィードバックのループを生み出す。より良いナレッジがより良いAIの成果を生み、AIの機能がそのナレッジを大規模に維持し進化させることを容易にする。
+
+## AI導入の主な段階
+
+1. **準備（Prepare）**
+   準備の段階は、期待を設定し、信頼を築くためのものである。導入前に足並みをそろえることで、AIの導入が事業戦略に根差し、経営層がAIを、よく考えた実行を必要とする道のりとして捉えられるようになる。
+2. **実行（Execute）**
+   AIを試行し拡大するための構造化された取り組み方が、効果的な実験、情報に基づく意思決定、長期的な導入の成功を確実にする。実行の段階では、必要なデータと、整っているテクノロジーの基盤全体に関して、AIへの準備状況について多くを学ぶ。
+3. **改善の繰り返し（Iterate）**
+   自動化の道のりのすべての段階を通じて、継続的に評価し、見守り、改善する。AIソリューションが効果を保つには、継続的な見守り・学習・改良が必要である。
+
+[![Continuous Improvement for AI: Prepare & Iterate phases apply holistically. Execute phase repeats for each use case.](../../images/web-Continuous-Improvement-AI.png)](../../images/web-Continuous-Improvement-AI.png)
+
+*図：AIの継続的改善。準備（Prepare）→ 実行（Execute）→ 改善の繰り返し（Iterate）が8の字のようにつながり、実行の段階は中で何度も回る（利用場面ごとに繰り返す）。*
+
+***準備**と**改善の繰り返し**の段階は全体に当てはまる。**実行**の段階は利用場面ごとに繰り返す。*
+
+### 重要な前提条件
+
+新しいAIの導入に飛び込む前に、何を達成しようとしているのかを考えることが欠かせない。
+
+- AIを当てはめることで、どのプロセスを改善できるか。
+- AIを活かすことで、どの事業上の問題をより速く解決できるか。
+- AIは、人が仕事でより成功できるよう、どう力を与えられるか。
+- AIは、顧客とパートナーにどう役立つか。
+
+言い換えれば、あなたの利用場面（ユースケース）は何か。
+
+## 行動項目
+
+AIソリューションを立ち上げ、継続的に改善する際に、行うこと・考えることのチェックリストとして使ってほしい。これらの行動項目の実践例は [AI Case Studies](https://www.serviceinnovation.org/ai-case-studies/) を参照のこと。
+
+### 準備：基盤を作る（Prepare – Build the Foundation）
+
+- **戦略を定める**
+  - 自動化の計画を組織の目標に結び付ける。
+  - 利害関係者のあいだで足並みをそろえる。
+  - 前に進むための資源（現在あるものと、欠けている可能性のあるもの）を見極める。
+- **組織の準備状況を評価する**
+  - 関係する利用場面について、プロセス・ワークフロー・データの責任者を特定する。
+  - ナレッジマネジメントの取り組みを強化する。
+  - プロセスやシステムの依存関係を理解する。
+  - リスク評価を済ませる。
+- **チェンジマネジメントを活用する**
+  - 対象者、頻度、伝達のチャネル、意図する成果を定めた、充実したコミュニケーション計画を作る。
+  - 自動化の取り組みについて、短期・中期・長期の節目を持つロードマップ、あるいは段階的な取り組み方の概要を作る。
+- **利用場面の基準を定める**
+  - 試行の優先順位付けで考慮すべきことを決める。
+  - 成功を評価する方法を決める。
+
+戦略を定め、準備状況を評価し、チェンジマネジメントを活用し、利用場面の基準を定めることに時間を投じることで、実行に移るための確かな基盤が築かれ、成功が加速する。
+
+### 実行：意図を持って立ち上げる（Execute – Launch with Intent）
+
+利用場面ごとに、次の手順に従う。
+
+- **試行から始める**
+  - 評価基準を含め、目標と目的を定める。
+  - 利用場面を試行に進めるのに必要なプロジェクトチームを特定する。
+  - ベンダーから購入するか、社内で構築するかの選択肢を評価する。
+  - 実現可能性を評価するため、できるだけ範囲を絞った導入計画を作る。
+  - 試行を実施し、あらかじめ定めた基準に基づいて評価する。
+- **本番へ拡大する**
+  - 拡大するのに必要な、人とシステムの両方の長期的な資源を定める。
+  - フィードバックのループを含め、継続的なパフォーマンスを見守るための測定項目と頻度を決める。
+  - AIソリューションがデータのプライバシー、セキュリティ、規制上の要件を尊重することを確実にするため、ガバナンスとコンプライアンスの枠組みを検証する。
+
+試行は、価値の証明を確立し、信頼を築き、費用のかかる想定外の事態を避けるためにリスクを浮かび上がらせるのに役立つ。AIがより多くのワークフローとやり取りに広がるにつれて、大規模に生じる意図しない結果を見つけて和らげるには、継続的な監督とフィードバックが欠かせない。試作を本番に移して拡大するには、他のどのアプリケーションとも同じガバナンス、管理、サポートが必要である。
+
+### 改善の繰り返し：継続的に改善する（Iterate – Continuously Improve）
+
+- **戦略を維持する**
+  - 事業目標、組織のAIへの取り組み方、プログラムの戦略のあいだで、継続的に足並みをそろえる。
+  - チームが新しいシステムを扱い、最適化できる状態を保つため、AIの進化に合わせて従業員の研修に投資する。
+  - 計画と導入のすべての段階で、実験を取り入れて評価する。
+- **テクノロジーを維持する**
+  - AIツールと自動化のワークフローのパフォーマンスを継続的に見守り、最適化する。
+  - 必要に応じてモデルとデータソースを調整する。
+  - 競争上の優位を高め、ソリューションを最新に保つため、進化するAIの動向とテクノロジーを追う。
+
+継続的な進化によって、AIの取り組みが事業の必要に沿い、混乱に強く、持続的な価値を届けられる状態が保たれる。改善の繰り返しとは、壊れたものを直すことだけではなく、AIへの取り組み方を先回りして強化し、将来に備えることでもある。
+
+## AIが動かす未来に加わる
+
+Consortiumのメンバーは、業務プロセス、利用場面、業務の変革に焦点を当てた、よく考えられたAI導入の取り組みを続けている。会話に加わろう。
+
+- [Consortiumのメーリングリスト](https://www.serviceinnovation.org/mailing-list/)に登録する
+- [イベント](https://www.serviceinnovation.org/events)に参加する
+- [Consortiumのメンバーシップ](https://www.serviceinnovation.org/member-activities/)について知る
+
+### メンバー限定の資料
+
+- [AI Blueprint](https://library.serviceinnovation.org/wiki/Featured_Member_Resources/AI_Blueprint)：詳しい例とテンプレートを含む実践ガイド
+- Consortiumのメンバー用 Slack の [\#ml-llm-ai チャンネル](https://consortiummembers.slack.com/archives/C04S5QT3B6Y)に参加する
+- [Thoughtful and Strategic Automation](https://library.serviceinnovation.org/wiki/Predictive_Customer_Engagement/Thoughtful_and_Strategic_Automation_Team_Meeting_2024)
+- [The Intersection of ML-LLM-AI and KCS](https://library.serviceinnovation.org/wiki/KCS/Team_Meetings/ML-LLM-AI_and_KCS_Team_Meeting_2024)
+
+[Consortiumのメンバー](https://www.serviceinnovation.org/current-members/)でログインに助けが必要な場合は、[support@serviceinnovation.org](mailto:support@serviceinnovation.org) に連絡すること。
+
+## 出典の表示（Attribution）
+
+KCS^(®)の方法論は、Consortium for Service Innovation のサービスマークである。
+
+文書でKCSに初めて言及するときは、上付きの^(®)を付けなければならない。また、次の文を脚注または括弧書きで添えること：「KCS® is a service mark of the Consortium for Service Innovation^(TM).」
+
+KCSは形容詞として使うのが正しい。例えば「[会社名] は KCS® の方法論を支持している……」のように使う。
+
+Consortium for Service Innovation の書面による明示的な許可なく、KCSを提供物の名称に使うことはできない。質問は [Consortium へ問い合わせる](mailto:info@serviceinnovation.org) こと。

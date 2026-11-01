@@ -1,7 +1,8 @@
 """分割して訳したファイル（ja/parts/NN*.md）を、章ごとの1ファイル（ja/NN-slug.md）にまとめる。
 
-使い方: python3 -I scripts/assemble.py NN
-例:     python3 -I scripts/assemble.py 01
+使い方: python3 -I scripts/assemble.py NN [別冊のフォルダ]
+例:     python3 -I scripts/assemble.py 01        # 本編（en/・ja/）
+        python3 -I scripts/assemble.py 01 ai     # AI関連の別冊（ai/en/・ai/ja/）
 
 - ja/parts/ の NN で始まるファイルを名前順に連結する
 - 冒頭の「> 元のページ:」の一覧は、英語版（en/NN-*.md）からそのまま写す
@@ -27,7 +28,7 @@ def source_list(text: str) -> list[str]:
     return lines[start:end]
 
 
-IMAGE = re.compile(r"!\[[^\]]*\]\(\.\./images/([^)\s]+)\)")
+IMAGE = re.compile(r"!\[[^\]]*\]\((?:\.\./)+images/([^)\s]+)\)")
 
 
 def add_captions(text: str) -> str:
@@ -51,10 +52,11 @@ def add_captions(text: str) -> str:
 
 def main():
     num = sys.argv[1]
-    en = next(Path("en").glob(f"{num}-*.md"))
-    parts = sorted(Path("ja/parts").glob(f"{num}*.md"))
+    base = Path(sys.argv[2]) if len(sys.argv) > 2 else Path(".")
+    en = next((base / "en").glob(f"{num}-*.md"))
+    parts = sorted((base / "ja" / "parts").glob(f"{num}*.md"))
     if not parts:
-        sys.exit(f"訳文が無い: ja/parts/{num}*.md")
+        sys.exit(f"訳文が無い: {base / 'ja' / 'parts'}/{num}*.md")
     ja = "\n\n".join(p.read_text(encoding="utf-8").strip() for p in parts) + "\n"
 
     en_text = en.read_text(encoding="utf-8")
@@ -73,7 +75,7 @@ def main():
     if n_en != n_ja:
         sys.exit(f"見出しの数が英語版と違う: 英語版 {n_en} / 訳文 {n_ja}")
 
-    out = Path("ja") / en.name
+    out = base / "ja" / en.name
     out.write_text(ja, encoding="utf-8")
     print(f"{out}: {len(ja):,}字（英語版 {len(en_text):,}字）")
 
