@@ -43,5 +43,8 @@
   "4271-Support_Demand_-_new.png": "顧客のサポートの需要（少しのコンテキスト）。顧客の課題全体の中に、セルフサービス、ユーザーフォーラムやコミュニティ、非公式なピアツーピアがある。有人サポートに報告されたインシデントはその一部にすぎない。セルフサービスで解決されたものの中に、インシデントになっていたかもしれないもの（Potential Incidents Resolved）が含まれる。",
   "5307-Agentic-AI-Series-Session-3-3.png": "ブログ記事へのリンク：Agentic AI シリーズ「KCS® と Intelligent Swarming® で AIエージェントを動かす」（Jeff Elser, Oracle）の振り返り。",
   "5308-Why-AI-Projects-Fail-or-Succeed-1024x576.png": "ブログ記事へのリンク：AIプロジェクトが失敗する理由・成功する理由。",
-  "5309-KCSA-Lab-Recap-1024x576.png": "ブログ記事へのリンク：KCSとAIが交わるところでよくある課題（KCSA Lab の振り返り）。"
+  "5309-KCSA-Lab-Recap-1024x576.png": "ブログ記事へのリンク：KCSとAIが交わるところでよくある課題（KCSA Lab の振り返り）。",
+  "web-ai-only-logo-wordpress.png": "「AI Powered by Knowledge（ナレッジを動力とするAI）」のロゴ。白抜きの画像なので、白い背景では見えない。",
+  "web-AI-KM-Symbiotic.png": "ナレッジマネジメント（KM）+ AI = 共生関係。AIが効果的に機能するにはKMが必要であり、KMはAIによって効率よく規模を広げられる。引用：「KCSは RAG の R（検索）を担う」（Oracle のシニアプロダクトマネージャー）。",
+  "web-Continuous-Improvement-AI.png": "AIの継続的改善。準備（Prepare）→ 実行（Execute）→ 改善の繰り返し（Iterate）が8の字のようにつながり、実行の段階は中で何度も回る（利用場面ごとに繰り返す）。"
 }

@@ -32,6 +32,8 @@ KCS ドキュメント 日本語訳（個人の学習用）
   KCS® is a service mark of the Consortium for Service Innovation™.
 - 一部の文書（原則とコアコンセプト、コーチ・リファレンスガイド、補足資料）は
   CC BY-NC-ND 4.0（改変禁止）です。翻訳・再構成したものを他の人に配布・共有できません。
+- 12「AI導入の要点」は serviceinnovation.org のページで、クリエイティブ・コモンズの表示が
+  ありません（通常の著作権）。翻訳したものを他の人に配布・共有できません。
 - Practices Guide (2027) と Measuring Self-Service Success (2027) は CC BY-NC 4.0 です。
   共有する場合も非営利に限り、出典と変更した旨を示す必要があります。
 - 各章のライセンスは README.md の目次の表、各章の冒頭の出典欄にあります。
@@ -74,8 +76,8 @@ def main():
     args = ap.parse_args()
 
     chapters = sorted(Path("ja").glob("[0-9][0-9]-*.md"))
-    if len(chapters) != 11:
-        sys.exit(f"ja/ の章が11ではない（{len(chapters)}）。先に assemble.py を実行する")
+    if len(chapters) < 11:
+        sys.exit(f"ja/ の章が足りない（{len(chapters)}）。先に assemble.py を実行する")
 
     Path("dist").mkdir(exist_ok=True)
     name = f"kcs-j-{datetime.date.today():%Y%m%d}"
