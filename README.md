@@ -22,9 +22,13 @@ CC BY-NC-ND 4.0（改変禁止）で、翻訳・再構成したものは共有�
 | 10 | セルフサービスの成功の測定（2027年版） | [ja](ja/10-measuring-self-service-success.md) | [en](en/10-measuring-self-service-success.md) | CC BY-NC 4.0 |
 | 11 | 補足資料（用語集・参考文献・帰属表示など） | [ja](ja/11-supplemental-resources.md) | [en](en/11-supplemental-resources.md) | CC BY-NC-ND 4.0（一部ページ） |
 | 12 | AI導入の要点（AI Implementation Essentials） | [ja](ja/12-ai-implementation-essentials.md) | [en](en/12-ai-implementation-essentials.md) | 表示なし（© のみ。通常の著作権） |
+| 13 | ナレッジを動力とするAI（Knowledge-Powered AI） | [ja](ja/13-knowledge-powered-ai.md) | [en](en/13-knowledge-powered-ai.md) | 表示なし（© のみ。通常の著作権） |
+| 14 | AIの事例（AI Case Studies：PTC・Akamai・Red Hat） | [ja](ja/14-ai-case-studies.md) | [en](en/14-ai-case-studies.md) | 表示なし（© のみ。通常の著作権） |
+| 15 | AIプロジェクトが失敗する理由・成功する理由（ブログ、2025-11） | [ja](ja/15-why-ai-projects-fail-or-succeed.md) | [en](en/15-why-ai-projects-fail-or-succeed.md) | 表示なし（© のみ。通常の著作権） |
+| 16 | エージェント型AIをKCSと Intelligent Swarming に結び付ける（ブログ、2026-02） | [ja](ja/16-connecting-agentic-ai-to-kcs-and-intelligent-swarming.md) | [en](en/16-connecting-agentic-ai-to-kcs-and-intelligent-swarming.md) | 表示なし（© のみ。通常の著作権） |
 
-01〜11は KCS ライブラリの新しい版のガイド（KCS v6 と他言語版は対象外）。12は serviceinnovation.org の
-単独ページで、`scripts/fetch_web.py` で取り込んだ。訳語と表記の決まりは [glossary.md](glossary.md)。
+01〜11は KCS ライブラリの新しい版のガイド（KCS v6 と他言語版は対象外）。12〜16は serviceinnovation.org の
+AIに関するページとブログ記事で、`scripts/fetch_web.py` で取り込んだ。訳語と表記の決まりは [glossary.md](glossary.md)。
 
 ## 作り方
 

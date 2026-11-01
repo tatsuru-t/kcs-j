@@ -38,7 +38,7 @@ def main():
     if body is None:
         sys.exit("本文（.entry-content）が見つからない")
 
-    for tag in body.find_all(["script", "style", "noscript"]):
+    for tag in body.find_all(["script", "style", "noscript", "button", "svg"]):  # 拡大ボタンのアイコンなど
         tag.decompose()
     for h in body.find_all("h1"):  # 冒頭の帯に入っている重複した大見出し
         h.decompose()
@@ -55,6 +55,9 @@ def main():
     # 図を取り込む（サイトのロゴのような飾りも含めて、本文中の img はすべて）
     Path("images").mkdir(exist_ok=True)
     for img in body.find_all("img"):
+        if img.get("src", "").startswith("data:"):  # 画像の拡大ボタンなどの飾りのアイコン
+            img.decompose()
+            continue
         src = urllib.parse.urljoin(url, img.get("src", ""))
         base = re.sub(r"[^A-Za-z0-9._-]+", "-", Path(urllib.parse.urlparse(src).path).name)
         dest = Path("images") / f"web-{base}"
