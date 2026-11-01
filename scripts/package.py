@@ -1,7 +1,9 @@
 """訳文と図を1つの zip にまとめる（メールで送って手元で読むため）。
 
 使い方: python3 -I scripts/package.py [--with-en] [--no-html]
-出力:   dist/kcs-j-YYYYMMDD.zip
+出力:   dist/kcs-j-YYYYMMDD.zip（訳文・図・HTML版）
+        dist/kcs-j-slides-YYYYMMDD.zip（学習用スライドのPDF。slides/*.md から scripts/slides.py で作る。
+        本体に入れると10MBを超えるので別にしている。--no-slides で作らない）
 
 zip に入るもの:
 - html/  各章をブラウザで読めるHTMLにしたもの（pandoc。--no-html で省く）。
@@ -76,12 +78,17 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--with-en", action="store_true", help="英語原文も入れる")
     ap.add_argument("--no-html", action="store_true", help="HTML版を作らない")
+    ap.add_argument("--no-slides", action="store_true", help="スライドのPDFを入れない")
     args = ap.parse_args()
 
     chapters = sorted(Path("ja").glob("[0-9][0-9]-*.md"))
     if len(chapters) != 11:
         sys.exit(f"ja/ の章が11ではない（{len(chapters)}）。先に assemble.py を実行する")
     ai_chapters = sorted(Path("ai/ja").glob("[0-9][0-9]-*.md"))
+
+    decks = sorted(Path("slides").glob("*.md"))
+    if decks and not args.no_slides:  # 原稿から作り直してから入れる（古いPDFを入れないため）
+        subprocess.run([sys.executable, "-I", "scripts/slides.py", *map(str, decks)], check=True)
 
     Path("dist").mkdir(exist_ok=True)
     name = f"kcs-j-{datetime.date.today():%Y%m%d}"
@@ -124,10 +131,20 @@ def main():
                 to_html(idx_md, Path(tmp) / "index.html")
                 add(Path(tmp) / "index.html", "html/index.html")
 
-    size = zpath.stat().st_size / 1024 / 1024
-    print(f"{zpath}（{size:.1f} MB）")
-    if size > 10:
-        print("注意: 10MB を超えている。メールの添付上限に引っかかるかもしれない", file=sys.stderr)
+    outputs = [zpath]
+    if decks and not args.no_slides:
+        spath = Path("dist") / f"kcs-j-slides-{datetime.date.today():%Y%m%d}.zip"
+        with zipfile.ZipFile(spath, "w", zipfile.ZIP_DEFLATED) as z:
+            z.writestr(f"{spath.stem}/NOTICE.txt", NOTICE)
+            for md in decks:
+                z.write(Path("dist/slides") / f"{md.stem}.pdf", f"{spath.stem}/{md.stem}.pdf")
+        outputs.append(spath)
+
+    for path in outputs:
+        size = path.stat().st_size / 1024 / 1024
+        print(f"{path}（{size:.1f} MB）")
+        if size > 10:
+            print("注意: 10MB を超えている。メールの添付上限に引っかかるかもしれない", file=sys.stderr)
 
 
 if __name__ == "__main__":

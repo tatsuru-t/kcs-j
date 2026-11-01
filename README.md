@@ -40,6 +40,17 @@ serviceinnovation.org の、AIに関するページとブログ記事。`scripts
 
 訳語と表記の決まりは本編・別冊共通で [glossary.md](glossary.md)。
 
+## 学習用スライド（`slides/`）
+
+訳文の要点をまとめた個人学習用のスライド。原稿は Markdown（`---` でスライドを区切る）で、
+`scripts/slides.py` が pandoc と Chromium（Playwright）だけで16:9のHTMLとPDFを作る（`dist/slides/`）。
+PDFは `package.py` が本体とは別の zip（`dist/kcs-j-slides-YYYYMMDD.zip`）にまとめる。
+
+| 原稿 | 内容 |
+| --- | --- |
+| [slides/01-kcs-overview.md](slides/01-kcs-overview.md) | KCS 本編の要点（29枚）：原則・ダブルループ・8つのプラクティス・役割・測定・落とし穴 |
+| [slides/02-ai-and-kcs.md](slides/02-ai-and-kcs.md) | AI × KCS（12枚）：AI導入の要点・事例・失敗の理由・エージェント型AI・本編とのつながり |
+
 ## 作り方
 
 ```bash
@@ -50,7 +61,8 @@ python3 -I scripts/images.py en ja/parts   # 図を images/ に取り込み、�
 python3 -I scripts/assemble.py 01    # 分割して訳した ja/parts/01*.md を1ファイルに（ja/）。図の説明もここで入る
 python3 -I scripts/fetch_web.py URL 01-slug "見出し" ai    # 別冊：serviceinnovation.org のページを ai/en/ に
 python3 -I scripts/assemble.py 01 ai # 別冊：ai/ja/parts/01*.md を ai/ja/ に
-python3 -I scripts/package.py        # 本編・別冊の訳文・図・HTML版を dist/kcs-j-YYYYMMDD.zip にまとめる（--with-en で原文も）
+python3 -I scripts/slides.py slides/01-kcs-overview.md    # スライドのHTMLとPDFを dist/slides/ に（はみ出しも検査する）
+python3 -I scripts/package.py        # 本編・別冊の訳文・図・HTML版を dist/kcs-j-YYYYMMDD.zip に、スライドのPDFを別の zip にまとめる
 ```
 
 必要なもの: Python 3、`beautifulsoup4`、`pandoc`。`work/` は作り直せるので git に入れていない。
