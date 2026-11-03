@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ナレッジを動力とするAI（Knowledge-Powered AI）</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style>
+  body { max-width: 52rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.8;
+         font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif; color: #222; }
+  img { max-width: 100%; height: auto; border: 1px solid #ddd; }
+  table { border-collapse: collapse; } td, th { border: 1px solid #ccc; padding: .3rem .5rem; }
+  blockquote { color: #555; border-left: 4px solid #ccc; margin-left: 0; padding-left: 1rem; }
+  em { color: #444; }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">ナレッジを動力とするAI（Knowledge-Powered AI）</h1>
+</header>
+<blockquote>
+<p>出典: Consortium for Service Innovation, <em>Knowledge-Powered
+AI</em> — ページにクリエイティブ・コモンズの表示なし（© Consortium for
+Service
+Innovation）。原文を日本語に翻訳したもの。個人の学習用で、共有しない<br />
+元のページ:</p>
+<ul>
+<li><a
+href="https://www.serviceinnovation.org/knowledge-powered-ai/">Knowledge-Powered
+AI</a></li>
+</ul>
+</blockquote>
+<p>Consortiumのメンバーは、ナレッジを動力とするAIの機能の活用で最前線にいる。</p>
+<p><img src="../../images/web-ai-only-logo-wordpress.png"
+alt="AI Powered by Knowledge" /></p>
+<p><em>図：「AI Powered by
+Knowledge（ナレッジを動力とするAI）」のロゴ。白抜きの画像なので、白い背景では見えない。</em></p>
+<p>AIの成果の良し悪しは、AIが引き出すナレッジの良し悪しで決まる。AIをうまく拡大するには、信頼できるコンテンツ、一貫した構造、キュレーションと再利用のための明確なワークフローが必要である。<a
+href="https://www.serviceinnovation.org/kcs/">KCS</a>を実践してきた組織は、AIの力を活かすうえで独自の有利な立場にある。</p>
+<p>Consortiumのメンバーは、ナレッジマネジメントの実践に加えて、明確な目的を定めること、事業部門の賛同を得ること、適切な資源を確保することも成功に必要だと結論付けている。</p>
+<h2 id="aiの導入課題と戦略">AIの導入：課題と戦略</h2>
+<p>AIのテクノロジーが組織に何をもたらしうるかという華やかな面に目を向けたくなるが、Boston
+Consulting Group
+の調査結果は、AIの導入を成功させるには、AIモデルに10%、テクノロジーに20%、業務の変革に70%の比重を置くことが重要だと示している。</p>
+<p>データとテクノロジーも重要だが、成功にとって最も決定的な要因は<em>業務の変革</em>である。</p>
+<p><img
+src="../../images/web-Screen-Shot-2024-08-22-at-9.29.14-PM-1024x713.png"
+alt="10% AI Models, 20% Technology, 70% Operational Transformation" /></p>
+<p><em>図：AI導入の成功に向けた比重（Boston Consulting
+Group）。AIモデル（アルゴリズム、生成AI）10%、テクノロジー／IT（データ基盤、データの質と入手しやすさ、可視化ツール）20%、業務の変革（業務プロセス／ユースケース、人材とスキル、チェンジマネジメント、コミュニケーション）70%。</em></p>
+<p><em>これは、体系的なAIの導入を進めてきたConsortiumのメンバーの経験とも一致する。私たちが学んできたことの詳細は次のとおり。</em></p>
+<ul>
+<li><strong><a href="01-ai-implementation-essentials.html">AI
+Implementation Essentials</a>（AI導入の要点）：</strong>
+成功に何が必要かの概要</li>
+<li><a href="03-ai-case-studies.html"><strong>AI Case
+Studies</strong></a>（AIの事例）：メンバーが実際にどうAIを導入しているか</li>
+<li><strong><a
+href="https://library.serviceinnovation.org/wiki/Featured_Member_Resources/AI_Blueprint">AI
+Blueprint</a>：</strong>
+詳しい例とテンプレートを含む、メンバー限定の資料</li>
+</ul>
+<h2 id="aiの全体像これから向かう先">AIの全体像：これから向かう先</h2>
+<p>私たちは、メンバー企業やその他の業界団体の業務上の経験に基づいて、構造化された取り組み方を提供し、ベストプラクティスを共有することで、組織がAIの誇大な宣伝から現実へと移るのを助けている。</p>
+<p><a href="https://youtu.be/fEGfVAvVmeI">YouTube で「The AI Landscape |
+Part 2 of 2 | Where We Are Going」を見る</a></p>
+<p><em>これは2部構成の第2部である。第1部はこちら</em> – <a
+href="https://www.serviceinnovation.org/navigating-the-ai-landscape/">The
+AI Landscape: Where We Have Been</a></p>
+<h2 id="aiが動かす未来に加わる">AIが動かす未来に加わる</h2>
+<p>Consortiumのメンバーは、業務プロセス、利用場面、業務の変革に焦点を当てた、よく考えられたAI導入の取り組みを続けている。会話に加わろう。</p>
+<ul>
+<li><a
+href="https://www.serviceinnovation.org/mailing-list/">Consortiumのメーリングリスト</a>に登録する</li>
+<li><a
+href="https://www.serviceinnovation.org/events">イベント</a>に参加する</li>
+<li><a
+href="https://www.serviceinnovation.org/member-activities/">Consortiumのメンバー</a>になる</li>
+</ul>
+<h3 id="メンバー限定の資料">メンバー限定の資料</h3>
+<ul>
+<li><a
+href="https://library.serviceinnovation.org/wiki/Featured_Member_Resources/AI_Blueprint">AI
+Blueprint</a>：詳しい例とテンプレートを含む実践ガイド</li>
+<li>Consortiumのメンバー用 Slack の <a
+href="https://consortiummembers.slack.com/archives/C04S5QT3B6Y">#ml-llm-ai
+チャンネル</a>に参加する</li>
+<li><a
+href="https://library.serviceinnovation.org/wiki/Predictive_Customer_Engagement/Thoughtful_and_Strategic_Automation_Team_Meeting_2024">Thoughtful
+and Strategic Automation</a></li>
+<li><a
+href="https://library.serviceinnovation.org/wiki/KCS/Team_Meetings/ML-LLM-AI_and_KCS_Team_Meeting_2024">The
+Intersection of ML-LLM-AI and KCS</a></li>
+</ul>
+<p><a
+href="https://www.serviceinnovation.org/current-members/">Consortiumのメンバー</a>でログインに助けが必要な場合は、<a
+href="mailto:support@serviceinnovation.org"><span>support@serviceinnovation.org</span></a>
+に連絡すること。</p>
+<h2 id="出典の表示attribution">出典の表示（Attribution）</h2>
+<p>KCS^(®)の方法論は、Consortium for Service Innovation
+のサービスマークである。</p>
+<p>文書でKCSに初めて言及するときは、上付きの^(®)を付けなければならない。また、次の文を脚注または括弧書きで添えること：「KCS®
+is a service mark of the Consortium for Service Innovation^(TM).」</p>
+<p>KCSは形容詞として使うのが正しい。例えば「[会社名] は KCS®
+の方法論を支持している……」のように使う。</p>
+<p>Consortium for Service Innovation
+の書面による明示的な許可なく、KCSを提供物の名称に使うことはできない。質問は
+<a href="mailto:info@serviceinnovation.org">Consortium
+へ問い合わせる</a> こと。</p>
+</body>
+</html>

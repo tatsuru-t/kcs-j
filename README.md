@@ -40,6 +40,9 @@ serviceinnovation.org の、AIに関するページとブログ記事。`scripts
 
 訳語と表記の決まりは本編・別冊共通で [glossary.md](glossary.md)。
 
+**HTML版**：[`html/index.html`](html/index.html) から本編・別冊の全章をブラウザで読める（図と説明入り）。
+GitHub の画面ではページとして表示されないので、clone か「Download ZIP」をして手元で開く。
+
 ## 学習用スライド（`slides/`）
 
 訳文の要点をまとめた個人学習用のスライド。原稿は Markdown（`---` でスライドを区切る）で、
@@ -62,7 +65,7 @@ python3 -I scripts/assemble.py 01    # 分割して訳した ja/parts/01*.md を
 python3 -I scripts/fetch_web.py URL 01-slug "見出し" ai    # 別冊：serviceinnovation.org のページを ai/en/ に
 python3 -I scripts/assemble.py 01 ai # 別冊：ai/ja/parts/01*.md を ai/ja/ に
 python3 -I scripts/slides.py slides/01-kcs-overview.md    # スライドのHTMLとPDFを dist/slides/ に（はみ出しも検査する）
-python3 -I scripts/package.py --publish   # 本編・別冊の訳文・図・HTML版の zip と、スライドのPDFの zip を作り、packages/ に置く
+python3 -I scripts/package.py --publish   # HTML版を html/ に作り直し、本体とスライドの zip を packages/ に置く
 ```
 
 必要なもの: Python 3、`beautifulsoup4`、`pandoc`。`work/` は作り直せるので git に入れていない。

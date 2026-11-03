@@ -4,12 +4,14 @@
 出力:   dist/kcs-j-YYYYMMDD.zip（訳文・図・HTML版）
         dist/kcs-j-slides-YYYYMMDD.zip（学習用スライドのPDF。slides/*.md から scripts/slides.py で作る。
         本体に入れると10MBを超えるので別にしている。--no-slides で作らない）
-        --publish を付けると、できた zip を packages/ にコピーし、packages/ の古い zip を消す
+        --publish を付けると、HTML版をリポジトリの html/ に作り直し、できた zip を packages/ にコピーし、
+        packages/ の古い zip を消す
         （packages/ はリポジトリに入れている。dist/ は入れていない）
 
 zip に入るもの:
 - html/  各章をブラウザで読めるHTMLにしたもの（pandoc。--no-html で省く）。
-         index.html の目次は本編とAI関連（html/ai/）の2部に分かれる
+         index.html の目次は本編とAI関連（html/ai/）の2部に分かれる。
+         --publish のときはリポジトリの html/ にも置く（作り直すたびに前の出力は消す）
 - ja/    本編の訳文の Markdown（ja/parts は入れない）
 - ai/ja/ AI関連（別冊）の訳文の Markdown
 - images/ 図
@@ -77,12 +79,33 @@ def to_html(md: Path, out: Path) -> None:
     Path(head.name).unlink()
 
 
+def build_html(html_dir: Path, chapters: list, ai_chapters: list) -> None:
+    """本編と別冊の各章、2部に分けた目次（index.html）を html_dir に作る。前の出力は消す。"""
+    for old in html_dir.rglob("*.html") if html_dir.exists() else []:
+        old.unlink()
+    (html_dir / "ai").mkdir(parents=True, exist_ok=True)
+    index = ["# KCS ドキュメント 日本語訳", "",
+             "個人の学習用。利用条件は README.md（zip では NOTICE.txt）を読んでください。", "",
+             "## 本編（KCS ライブラリ）", ""]
+    for book, mds, sub in (("main", chapters, ""), ("ai", ai_chapters, "ai/")):
+        if book == "ai" and mds:
+            index += ["", "## AI関連（別冊）", ""]
+        for md in mds:
+            to_html(md, html_dir / sub / f"{md.stem}.html")
+            title = md.read_text(encoding="utf-8").splitlines()[0][2:]
+            index.append(f"- [{title}]({sub}{md.stem}.html)")
+    with tempfile.TemporaryDirectory() as tmp:
+        idx_md = Path(tmp) / "index.md"
+        idx_md.write_text("\n".join(index) + "\n", encoding="utf-8")
+        to_html(idx_md, html_dir / "index.html")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--with-en", action="store_true", help="英語原文も入れる")
     ap.add_argument("--no-html", action="store_true", help="HTML版を作らない")
     ap.add_argument("--no-slides", action="store_true", help="スライドのPDFを入れない")
-    ap.add_argument("--publish", action="store_true", help="できた zip を packages/ に置き、古い zip を消す")
+    ap.add_argument("--publish", action="store_true", help="HTML版を html/ に、zip を packages/ に置き、古い zip を消す")
     args = ap.parse_args()
 
     chapters = sorted(Path("ja").glob("[0-9][0-9]-*.md"))
@@ -93,6 +116,13 @@ def main():
     decks = sorted(Path("slides").glob("*.md"))
     if decks and not args.no_slides:  # 原稿から作り直してから入れる（古いPDFを入れないため）
         subprocess.run([sys.executable, "-I", "scripts/slides.py", *map(str, decks)], check=True)
+
+    # HTML版：--publish ならリポジトリの html/ に、そうでなければ一時フォルダに作る。
+    # どちらも images/ と同じ階層に置くので、../images/・../../images/ の参照がそのまま通る
+    tmp = tempfile.TemporaryDirectory()
+    html_dir = Path("html") if args.publish else Path(tmp.name) / "html"
+    if not args.no_html:
+        build_html(html_dir, chapters, ai_chapters)
 
     Path("dist").mkdir(exist_ok=True)
     name = f"kcs-j-{datetime.date.today():%Y%m%d}"
@@ -117,23 +147,8 @@ def main():
             for md in sorted(Path("ai/en").glob("*.md")):
                 add(md, f"ai/en/{md.name}")
         if not args.no_html:
-            with tempfile.TemporaryDirectory() as tmp:
-                index = ["# KCS ドキュメント 日本語訳", "", "NOTICE.txt の利用条件も読んでください。", "",
-                         "## 本編（KCS ライブラリ）", ""]
-                Path(tmp, "ai").mkdir()
-                for book, mds, sub in (("main", chapters, ""), ("ai", ai_chapters, "ai/")):
-                    if book == "ai" and mds:
-                        index += ["", "## AI関連（別冊）", ""]
-                    for md in mds:
-                        out = Path(tmp) / sub / f"{md.stem}.html"
-                        to_html(md, out)
-                        add(out, f"html/{sub}{out.name}")
-                        title = md.read_text(encoding="utf-8").splitlines()[0][2:]
-                        index.append(f"- [{title}]({sub}{md.stem}.html)")
-                idx_md = Path(tmp) / "index.md"
-                idx_md.write_text("\n".join(index) + "\n", encoding="utf-8")
-                to_html(idx_md, Path(tmp) / "index.html")
-                add(Path(tmp) / "index.html", "html/index.html")
+            for path in sorted(html_dir.rglob("*.html")):
+                add(path, f"html/{path.relative_to(html_dir).as_posix()}")
 
     outputs = [zpath]
     if decks and not args.no_slides:

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>AIプロジェクトが失敗する理由・成功する理由（Why AI Projects Fail or Succeed）</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style>
+  body { max-width: 52rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.8;
+         font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif; color: #222; }
+  img { max-width: 100%; height: auto; border: 1px solid #ddd; }
+  table { border-collapse: collapse; } td, th { border: 1px solid #ccc; padding: .3rem .5rem; }
+  blockquote { color: #555; border-left: 4px solid #ccc; margin-left: 0; padding-left: 1rem; }
+  em { color: #444; }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">AIプロジェクトが失敗する理由・成功する理由（Why AI
+Projects Fail or Succeed）</h1>
+</header>
+<blockquote>
+<p>出典: Consortium for Service Innovation, <em>Why AI Projects Fail or
+Succeed</em>（ブログ記事、2025年11月20日、Matt Seaman）—
+ページにクリエイティブ・コモンズの表示なし（© Consortium for Service
+Innovation）。原文を日本語に翻訳したもの。個人の学習用で、共有しない<br />
+元のページ:</p>
+<ul>
+<li><a
+href="https://www.serviceinnovation.org/why-ai-projects-fail-or-succeed/">Why
+AI Projects Fail or Succeed</a></li>
+</ul>
+</blockquote>
+<p>見出しや誇大な宣伝の陰で、多くのチームがある難題に取り組んでいる。<strong>なぜこれほど多くのAIの取り組みが行き詰まっているのか。そして、本番で成功するには実際に何が必要なのか。</strong></p>
+<p><em>世界のさまざまな<a
+href="03-ai-case-studies.html">AIの事例</a>に基づく知見を、動画で見るか文章で読んで、見出しに躍る数字が本当は何を意味しているのか、試行の「失敗」率が高いことがなぜ実は良い兆しでありうるのか、そして組織が意味のある拡大可能なAIの成功に向けてどう備えられるのかを理解してほしい。</em></p>
+<h2 id="12分間の動画による要約">12分間の動画による要約</h2>
+<p>多くのAIの取り組みは、特に本番に移った後、測定できる影響を生み出せていない。よくある失敗の原因と、AIの導入を成功させるために組織がどこに資源を集中させるべきかを理解しよう。</p>
+<p><a href="https://youtu.be/N7q8-MAZhAc?si=txp54Ua29XYkPD1H">YouTube
+で「Why AI Projects Fail or Succeed (Beyond the Clickbait
+Numbers)」を見る</a></p>
+<h2
+id="失敗の数字が本当に意味すること">失敗の数字が本当に意味すること</h2>
+<p>試行の「失敗」率が高いことは、必ずしも悪いことではない。それは実験が行われ、ツールが広く使えるようになっていることを示している。より懸念すべき数字は、<strong>本番に到達した<em>後</em>のAIプロジェクトの70〜90%という失敗率</strong>であり、これは現実のコスト、混乱、勢いの喪失を表している。</p>
+<blockquote>
+<p>「［本番に移った後で］これほど高い失敗率になるのは、事業にとって現実の打撃である。」</p>
+</blockquote>
+<h2
+id="aiプロジェクトはなぜ失敗しているのか">AIプロジェクトはなぜ失敗しているのか</h2>
+<p>AIの取り組みで最もよくある問題には、次のものがある。</p>
+<ul>
+<li><strong>誇大な宣伝や派手なアイデアが幅をきかせる</strong>：具体的で拡大可能な利用場面の代わりに</li>
+<li><strong>事業目標との不整合</strong>：「AIが必要だ」は事業目標ではない</li>
+<li><strong>質の悪いデータ</strong>：失敗の理由の最大85%</li>
+<li><strong>システム</strong>：古いワークフロー、拡大の障壁</li>
+<li><strong>膨らむコスト・隠れたコスト</strong>：基盤、運用、トークン</li>
+<li><strong>人と文化</strong>：不十分なチェンジマネジメント</li>
+</ul>
+<blockquote>
+<p>「AIを使え」というリーダーシップからの圧力によって、チームは空回りしたり方向転換したりして、資源を無駄にする。
+足並みがそろっておらず、解決すべき明確な事業上の問題が無ければ、価値を生みうる試行も拡大しない。</p>
+</blockquote>
+<h2 id="本番での成功を確実にする">本番での成功を確実にする</h2>
+<p>AIを活用したソリューションは、規律、明確さ、正直な評価を必要とする、継続的なサイクルの一部である。</p>
+<ul>
+<li>戦略と目的を定める</li>
+<li>組織の準備状況について正直になる</li>
+<li>ガバナンスと節目を伴う計画を作る</li>
+<li>利用場面に焦点を絞り、優先順位を付ける</li>
+<li>導入し、評価する</li>
+<li>継続的に改善を繰り返す</li>
+</ul>
+<p>具体的な行動項目は <a href="01-ai-implementation-essentials.html">AI
+Implementation Essentials</a>（AI導入の要点）を参照のこと。</p>
+<blockquote>
+<p>AIを技術的な導入としてではなく、事業と業務のソリューションとして捉え直そう。</p>
+</blockquote>
+<p><img src="../../images/web-AI-projects-Greg.png"
+alt="LinkedIn post from Greg Weinert about preparing properly for AI implementations" /></p>
+<p><em>図：Greg Weinert の LinkedIn
+の投稿。「AIの導入と、その後の運用モデルが失敗しないよう、適切に準備しよう。Consortium
+for Service Innovation の Matthew Seaman
+によるこの記事と動画は、なぜこれほど多くのAIプロジェクトが失敗するのかを示す明確な統計に加えて、多くの企業が実現している成功への知見と、AIの取り組みを成功させるための取り組み方を示している。」</em></p>
+<p><img src="../../images/web-AI-projects-Monique.png"
+alt="LinkedIn post from Monique Cadena about AI hype vs. reality" /></p>
+<p><em>図：Monique Cadena の LinkedIn
+の投稿。「AIの誇大宣伝。AIの約束。AIの現実。私たちは以前にもこれを経験している。30年近く前、組織がKCSのような変革の戦略を初めて探ったとき、同じ興奮と同じ厳しい教訓があった。Matthew
+Seaman
+のこの短い動画はその真実を突いている。雑音を切り捨て、AIの取り組みがなぜ成功し、なぜ失敗するのかを現実的に語り、持続する変革はテクノロジーだけでなく人とプロセスから始まることを思い出させてくれる。ぜひ見てほしい。最後のスライドは必見だ。」</em></p>
+</body>
+</html>
