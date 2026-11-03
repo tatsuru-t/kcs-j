@@ -1,9 +1,11 @@
 """訳文と図を1つの zip にまとめる（メールで送って手元で読むため）。
 
-使い方: python3 -I scripts/package.py [--with-en] [--no-html]
+使い方: python3 -I scripts/package.py [--with-en] [--no-html] [--no-slides] [--publish]
 出力:   dist/kcs-j-YYYYMMDD.zip（訳文・図・HTML版）
         dist/kcs-j-slides-YYYYMMDD.zip（学習用スライドのPDF。slides/*.md から scripts/slides.py で作る。
         本体に入れると10MBを超えるので別にしている。--no-slides で作らない）
+        --publish を付けると、できた zip を packages/ にコピーし、packages/ の古い zip を消す
+        （packages/ はリポジトリに入れている。dist/ は入れていない）
 
 zip に入るもの:
 - html/  各章をブラウザで読めるHTMLにしたもの（pandoc。--no-html で省く）。
@@ -20,6 +22,7 @@ zip を展開したフォルダの構成のまま開けば図が表示される�
 import argparse
 import datetime
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -79,6 +82,7 @@ def main():
     ap.add_argument("--with-en", action="store_true", help="英語原文も入れる")
     ap.add_argument("--no-html", action="store_true", help="HTML版を作らない")
     ap.add_argument("--no-slides", action="store_true", help="スライドのPDFを入れない")
+    ap.add_argument("--publish", action="store_true", help="できた zip を packages/ に置き、古い zip を消す")
     args = ap.parse_args()
 
     chapters = sorted(Path("ja").glob("[0-9][0-9]-*.md"))
@@ -145,6 +149,19 @@ def main():
         print(f"{path}（{size:.1f} MB）")
         if size > 10:
             print("注意: 10MB を超えている。メールの添付上限に引っかかるかもしれない", file=sys.stderr)
+
+    if args.publish:
+        pub = Path("packages")
+        pub.mkdir(exist_ok=True)
+        for path in outputs:  # 同じ種類（本体／スライド）の古い zip だけを消す
+            kind = path.name.rsplit("-", 1)[0]  # kcs-j / kcs-j-slides
+            for old in pub.glob(f"{kind}-[0-9]*.zip"):
+                if old.name != path.name:
+                    old.unlink()
+                    print(f"削除 {old}")
+        for path in outputs:
+            shutil.copy2(path, pub / path.name)
+            print(f"配置 {pub / path.name}")
 
 
 if __name__ == "__main__":

@@ -62,7 +62,7 @@ python3 -I scripts/assemble.py 01    # 分割して訳した ja/parts/01*.md を
 python3 -I scripts/fetch_web.py URL 01-slug "見出し" ai    # 別冊：serviceinnovation.org のページを ai/en/ に
 python3 -I scripts/assemble.py 01 ai # 別冊：ai/ja/parts/01*.md を ai/ja/ に
 python3 -I scripts/slides.py slides/01-kcs-overview.md    # スライドのHTMLとPDFを dist/slides/ に（はみ出しも検査する）
-python3 -I scripts/package.py        # 本編・別冊の訳文・図・HTML版を dist/kcs-j-YYYYMMDD.zip に、スライドのPDFを別の zip にまとめる
+python3 -I scripts/package.py --publish   # 本編・別冊の訳文・図・HTML版の zip と、スライドのPDFの zip を作り、packages/ に置く
 ```
 
 必要なもの: Python 3、`beautifulsoup4`、`pandoc`。`work/` は作り直せるので git に入れていない。
@@ -73,6 +73,7 @@ python3 -I scripts/package.py        # 本編・別冊の訳文・図・HTML版�
   対象外のページ（v6・会員向けwiki・アーカイブ）へのリンクは元のURLのまま
 - 図は `images/` に取り込んである（実体は `files.mtstatic.com` への転送の先にある）。図の中の英語は
   そのままにし、各図の直後に `ja/figures.json` の日本語の説明（ラベルの訳と要点）を差し込む
-- `package.py` の zip には HTML版（`html/index.html` から開く）と利用条件の注意（`NOTICE.txt`）が入る
+- `package.py` の zip には HTML版（`html/index.html` から開く）と利用条件の注意（`NOTICE.txt`）が入る。
+  最新の zip は [`packages/`](packages/) に置いてある（`--publish` で置き換わり、古い zip は消える）
 - 訳文は `ja/parts/` に分けて書き、`assemble.py` でまとめる。まとめるときに、ページの
   アンカーと見出しの数が英語版と一致するかを検査する
