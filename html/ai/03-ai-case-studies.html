@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>AIの事例（AI Case Studies）</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style>
+  body { max-width: 52rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.8;
+         font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif; color: #222; }
+  img { max-width: 100%; height: auto; border: 1px solid #ddd; }
+  table { border-collapse: collapse; } td, th { border: 1px solid #ccc; padding: .3rem .5rem; }
+  blockquote { color: #555; border-left: 4px solid #ccc; margin-left: 0; padding-left: 1rem; }
+  em { color: #444; }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">AIの事例（AI Case Studies）</h1>
+</header>
+<blockquote>
+<p>出典: Consortium for Service Innovation, <em>AI Case Studies</em> —
+ページにクリエイティブ・コモンズの表示なし（© Consortium for Service
+Innovation）。原文を日本語に翻訳したもの。個人の学習用で、共有しない<br />
+元のページ:</p>
+<ul>
+<li><a href="https://www.serviceinnovation.org/ai-case-studies/">AI Case
+Studies</a></li>
+</ul>
+</blockquote>
+<p>ConsortiumのメンバーによるAIの実践例。</p>
+<p><img src="../../images/web-ai-only-logo-wordpress.png"
+alt="AI Powered by Knowledge" /></p>
+<p><em>図：「AI Powered by
+Knowledge（ナレッジを動力とするAI）」のロゴ。白抜きの画像なので、白い背景では見えない。</em></p>
+<p>Consortiumのメンバーは、業務プロセス、利用場面、業務の変革に焦点を当てた、よく考えられたAI導入の取り組みを続けており、その経験を<a
+href="https://www.serviceinnovation.org/events/">Consortiumのイベント</a>で共有している。</p>
+<p><a href="01-ai-implementation-essentials.html">AI Implementation
+Essentials</a>（AI導入の要点）は、成功に何が必要かの概要を示している。メンバーは、さらに多くの例とテンプレートを
+<a
+href="https://library.serviceinnovation.org/wiki/Featured_Member_Resources/AI_Blueprint">AI
+Blueprint</a> の全体で見られる。</p>
+<h2
+id="サポートでのaiの利用場面を見つけるidentify-ai-use-cases-for-support">サポートでのAIの利用場面を見つける（Identify
+AI Use Cases for Support）</h2>
+<p><em>メンバー企業：PTC</em></p>
+<p><strong>取り組み方</strong>：AIに当てはめて評価する主要なプロセスを選び、プロセスの責任者と専門家を集め、ワークショップを開いて利用場面の候補を見つけた。</p>
+<p><strong>戦略</strong>：生成AIが影響を与えるテーマを作ることに焦点を当てた。例えば、人がコンテンツを書くのを助けることや、ナレッジベースとの会話型のやり取りを改善することである。</p>
+<p>PTC
+は、導入のしやすさと届けられる価値とを比べ、コンテンツの作成と、成熟したKCSの実践を活かすことに焦点を当てた。</p>
+<p><a href="../../images/web-PTC-deployment-steps.png"><img
+src="../../images/web-PTC-deployment-steps.png"
+alt="use case deployment strategy" /></a></p>
+<p><em>図：PTC のユースケースの展開戦略。概念実証（Proof of Concepts）→
+試作（Prototypes）→ ROIの検証 → 展開（Deployment）→
+業務システムとの統合。</em></p>
+<p><a href="../../images/web-PTC-AI-Themes.png"><img
+src="../../images/web-PTC-AI-Themes.png"
+alt="Themes for PTC to consider use cases for GenAI" /></a></p>
+<p><em>図：PTC
+が挙げた、サポートでの生成AIのユースケースのテーマ。左ほど試作しやすく、右ほど会社の支援と投資が要る。(1)
+定めた基準に沿ってコンテンツを書くのを助ける（記事作成アシスタント、書面のコミュニケーションの評価）(2)
+複雑な取引履歴をまとめる（ケースの履歴、コミュニティのトピックの要約）(3)
+記録の重複を防ぐ（重複した記事、重複した不具合報告）(4)
+音声のやり取りを読みやすいテキストとして記録する（サポートエンジニアと顧客の電話）(5)
+ナレッジベースとの会話型（Q&amp;A）のやり取り（社内向けチャットボット、顧客向けチャットボット）。</em></p>
+<p><strong>結果</strong>：ナレッジワーカーがレビューする最初の下書きを自動で作る、対話型の記事作成アシスタントを立ち上げ、コンテンツ作成の効率と正確さを高めた。</p>
+<p><em>Consortiumのメンバー：<a
+href="https://library.serviceinnovation.org/wiki/Member_Summits/Member_Summit_2024">PTC
+のスライドを見る</a></em></p>
+<h2
+id="期待を管理し構築か購入かを評価するmanage-expectations-and-evaluate-build-versus-buy-options">期待を管理し、構築か購入かを評価する（Manage
+Expectations and Evaluate Build-versus-Buy Options）</h2>
+<p><em>メンバー企業：Akamai</em></p>
+<p><strong>取り組み方</strong>：リスクを和らげ投資の優先順位を付けながら、実験から本番へとよく考えて移るため、AIの展開について全社的な手順を定めた。</p>
+<p><strong>戦略</strong>：節目とスケジュールについての期待をそろえるためのAI導入曲線と、テクノロジーの選択を決めるための一貫した評価の観点を、社内に浸透させた。</p>
+<ul>
+<li>Akamai
+の取り組み方は、利害関係者の期待とAI導入のアウトプットの両方を管理するための、構造化されたプロセスの重要性を際立たせている。</li>
+<li>リーダーの委員会が利用場面の優先順位付けを助け、概念実証とテストの段階へと進める。</li>
+</ul>
+<p><a
+href="../../images/web-underlying-approach-AIatAkamai-1024x582.png"><img
+src="../../images/web-underlying-approach-AIatAkamai-1024x582.png"
+alt="Akamai AI Adoption Approach" /></a></p>
+<p><em>図：Akamai
+のAI導入の進め方（AI導入曲線）。構想（Concept：憲章と戦略の議論）→
+発想（Ideate：AIが業務プロセスを補い改善できる場所を集めて評価）→
+実験（Experiment：価値が高く労力の少ないユースケースで概念実証と試行）→
+標準化（Standardize：実験の教訓をAIの実践に当てはめ、追加のユースケースの展開を運用に乗せる）→
+最適化（Optimize：影響とROIが最も大きい事業ケースに集中）→
+拡大（Scale：さらなるユースケースと、複数の情報源のデータの統合へ）。2024年第2四半期から2025年第1四半期にかけてのスケジュール。</em></p>
+<p><a href="../../images/web-BuildorBuyorPartner-1024x600.png"><img
+src="../../images/web-BuildorBuyorPartner-1024x600.png"
+alt="Akamai build vs. buy AI tools - dimensions for deciding" /></a></p>
+<p><em>図：Akamai
+のAIの調達の選択肢（IT部門の視点）。パートナーとのAI（ベンダー提供のAI機能。コストと自社にとっての利点を見極める）、プラットフォーム上のAI（既存のプラットフォームを活かし、既存のサービスと統合したAIのようなソリューションを作る）、一から作るAI（自社固有の必要に合わせたAIソリューションを社内で開発する）。その下に、選択肢ごとに異なる評価の観点として、技術の導入の難しさ、法務とセキュリティのコンプライアンスの難しさ、アプリケーションの縦割りと拡大に耐える設計、が並ぶ。</em></p>
+<p><strong>結果</strong>：リーダーシップがこのスケジュールに賛同したことで、AIを大規模に導入することについてよく考え体系的に進める余地が生まれた。同時に、新しいツールと機能が使えるようになるたびに、事業のあらゆる部門が実験するための構造化された取り組み方も提供している。</p>
+<p><em>Consortiumのメンバー：<a
+href="https://library.serviceinnovation.org/wiki/KCS/One_Hour_Web_Sessions/Automation_and_Tools/2023_09_28_Connected_Data_Trusted_Knowledge">Akamai
+の戦略について詳しく知る</a></em></p>
+<h2
+id="ナレッジの拡充を自動化するautomate-knowledge-enhancements">ナレッジの拡充を自動化する（Automate
+Knowledge Enhancements）</h2>
+<p><em>メンバー企業：Red Hat</em></p>
+<p><strong>取り組み方</strong>：強固なKCSの実践とビジネスインテリジェンスのシステムを活かし、AIによって従業員と顧客の体験を改善した。</p>
+<p><strong>戦略</strong>：エコシステムの取り組み方を使って、相互につながった要素どうしの関係を理解し、死角を減らし、継続的改善を推し進めた。</p>
+<p><a href="../../images/web-KM-AI-BI-triangle-1024x656.png"><img
+src="../../images/web-KM-AI-BI-triangle-1024x656.png"
+alt="Triangle depicting the relationship between knowledge management, artificial intelligence, and business intelligence." /></a></p>
+<p><em>図：ナレッジマネジメント（KM）・人工知能（AI）・ビジネスインテリジェンス（BI）のエコシステム（Red
+Hat の Albert Myles
+の図を改変）。KMはAIにコンテンツを供給し、AIはKMの改善を推し進める。KMはBIに情報を与え、BIはKMの改善を推し進める。AIとBIも互いの改善を推し進める。</em></p>
+<p><a href="../../images/web-RedHatAIResults.png"><img
+src="../../images/web-RedHatAIResults.png"
+alt="Red Hat AI deployments" /></a></p>
+<p><em>図：Red Hat のAIの展開。検索の再順位付け（Mistral
+のLLMで、顧客の検索と関連コンテンツの照合を改善）、AI生成の要約（Mistral
+のモデルがKCSで作られたコンテンツを要約）、KCSコパイロット（ワークフロー支援：ケースのメモの要約とKCS記事の下書き支援／キュレーションの強化：重複チェック、自動タグ付けと紐付け／品質保証：PARの自動化、品質チェック）。</em></p>
+<p><strong>結果</strong>：関連するコンテンツの照合の改善、自然検索向けのAI生成の要約（スニペット）、ナレッジワーカーのワークフロー向けのKCSコパイロットを実現し、同時にエコシステムのあらゆる部分に行動に移せるフィードバックを返している。</p>
+<p><em>Consortiumのメンバー：<a
+href="https://library.serviceinnovation.org/wiki/Predictive_Customer_Engagement/Thoughtful_and_Strategic_Automation_Team_Meeting_2024/AI_for_KCS_at_Red_Hat">Red
+Hat の発表を見る</a></em></p>
+<p><em>Cisco、SAP、SAS、Akamai のさらなる例：<a
+href="https://www.serviceinnovation.org/industry-leaders-build-ai-driven-customer-experiences/">How
+Industry Leaders are Building AI-Driven Customer
+Experiences</a></em></p>
+<h2 id="aiが動かす未来に加わる">AIが動かす未来に加わる</h2>
+<p>Consortiumのメンバーは、業務プロセス、利用場面、業務の変革に焦点を当てた、よく考えられたAI導入の取り組みを続けている。会話に加わろう。</p>
+<ul>
+<li><a
+href="https://www.serviceinnovation.org/mailing-list/">Consortiumのメーリングリスト</a>に登録する</li>
+<li><a
+href="https://www.serviceinnovation.org/events">イベント</a>に参加する</li>
+<li><a
+href="https://www.serviceinnovation.org/join-us/">Consortiumのメンバー</a>になる</li>
+</ul>
+<h3 id="メンバー限定の資料">メンバー限定の資料</h3>
+<ul>
+<li><a
+href="https://library.serviceinnovation.org/wiki/Featured_Member_Resources/AI_Blueprint">AI
+Blueprint</a>：詳しい例とテンプレートを含む実践ガイド</li>
+<li>Consortiumのメンバー用 Slack の <a
+href="https://consortiummembers.slack.com/archives/C04S5QT3B6Y">#ml-llm-ai
+チャンネル</a>に参加する</li>
+<li><a
+href="https://library.serviceinnovation.org/wiki/Predictive_Customer_Engagement/Thoughtful_and_Strategic_Automation_Team_Meeting_2024">Thoughtful
+and Strategic Automation</a></li>
+<li><a
+href="https://library.serviceinnovation.org/wiki/KCS/Team_Meetings/ML-LLM-AI_and_KCS_Team_Meeting_2024">The
+Intersection of ML-LLM-AI and KCS</a></li>
+</ul>
+<p><a
+href="https://www.serviceinnovation.org/current-members/">Consortiumのメンバー</a>でログインに助けが必要な場合は、<a
+href="mailto:support@serviceinnovation.org"><span>support@serviceinnovation.org</span></a>
+に連絡すること。</p>
+</body>
+</html>

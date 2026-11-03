@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>AI導入の要点（AI Implementation Essentials）</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style>
+  body { max-width: 52rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.8;
+         font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif; color: #222; }
+  img { max-width: 100%; height: auto; border: 1px solid #ddd; }
+  table { border-collapse: collapse; } td, th { border: 1px solid #ccc; padding: .3rem .5rem; }
+  blockquote { color: #555; border-left: 4px solid #ccc; margin-left: 0; padding-left: 1rem; }
+  em { color: #444; }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">AI導入の要点（AI Implementation Essentials）</h1>
+</header>
+<blockquote>
+<p>出典: Consortium for Service Innovation, <em>AI Implementation
+Essentials</em> — ページにクリエイティブ・コモンズの表示なし（©
+Consortium for Service
+Innovation）。原文を日本語に翻訳したもの。個人の学習用で、共有しない<br />
+元のページ:</p>
+<ul>
+<li><a
+href="https://www.serviceinnovation.org/ai-implementation-essentials/">AI
+Implementation Essentials</a></li>
+</ul>
+</blockquote>
+<p>AIの取り組みを成功させるための、実績のある手順。</p>
+<p><img src="../../images/web-ai-only-logo-wordpress.png"
+alt="AI Powered by Knowledge" /></p>
+<p><em>図：「AI Powered by
+Knowledge（ナレッジを動力とするAI）」のロゴ。白抜きの画像なので、白い背景では見えない。</em></p>
+<p><em>Consortiumの<a
+href="https://www.serviceinnovation.org/current-members/">メンバー企業</a>から直接得られた知見に基づく、AIの取り組みを準備し、立ち上げ、継続的に改善するための要点となる行動。</em>
+<em>特定の企業の例は <a
+href="https://www.serviceinnovation.org/ai-case-studies/">AI Case
+Studies</a> を参照のこと。</em></p>
+<p><strong>AIが本当の事業価値を届けるには、次のものが必要である。</strong></p>
+<ul>
+<li>信頼でき、よく管理されたナレッジの基盤</li>
+<li>組織の目標に沿った利用場面（ユースケース）</li>
+<li>包括的なチェンジマネジメント</li>
+</ul>
+<p>この指針は、新しいAIソリューションを使えるようにする際に、期待を管理し、成功する成果を得るための確立された方法を示している。</p>
+<h2 id="このガイドの内容">このガイドの内容</h2>
+<ul>
+<li>ナレッジマネジメントが基盤である</li>
+<li>AI導入の主な段階</li>
+<li>行動項目</li>
+<li>AIが動かす未来に加わる</li>
+</ul>
+<p><em>Consortiumのメンバーは、さらに詳しい <a
+href="https://library.serviceinnovation.org/wiki/Featured_Member_Resources/AI_Blueprint">AI
+Blueprint</a> の全体を利用できる。</em></p>
+<h2
+id="ナレッジマネジメントが基盤である">ナレッジマネジメントが基盤である</h2>
+<p>ナレッジマネジメントとAIは、互いの成功を後押しする。よく管理されたナレッジは信頼できるAIの出力を可能にし、AIはナレッジの記録・再利用・改善を加速する。</p>
+<p><img src="../../images/web-AI-KM-Symbiotic.png"
+alt="Knowledge Management and AI are symbiotic!" /></p>
+<p><em>図：ナレッジマネジメント（KM）+ AI =
+共生関係。AIが効果的に機能するにはKMが必要であり、KMはAIによって効率よく規模を広げられる。引用：「KCSは
+RAG の R（検索）を担う」（Oracle
+のシニアプロダクトマネージャー）。</em></p>
+<p><a href="https://www.serviceinnovation.org/kcs/">KCS</a>^(®)
+のような規律あるナレッジマネジメントの手法は、AIが引き出すコンテンツが検証され、人が実際に助けを求めるときの言い方に沿っていることを確実にする。その見返りに、AIは記事の下書き、重複の検出、欠落の分析といった作業を効率化し、チームがより価値の高い改善に集中できるようにする。</p>
+<p>合わさることで、<a
+href="https://www.serviceinnovation.org/knowledge-powered-ai/">ナレッジを動力とするAI</a>はフィードバックのループを生み出す。より良いナレッジがより良いAIの成果を生み、AIの機能がそのナレッジを大規模に維持し進化させることを容易にする。</p>
+<h2 id="ai導入の主な段階">AI導入の主な段階</h2>
+<ol type="1">
+<li><strong>準備（Prepare）</strong>
+準備の段階は、期待を設定し、信頼を築くためのものである。導入前に足並みをそろえることで、AIの導入が事業戦略に根差し、経営層がAIを、よく考えた実行を必要とする道のりとして捉えられるようになる。</li>
+<li><strong>実行（Execute）</strong>
+AIを試行し拡大するための構造化された取り組み方が、効果的な実験、情報に基づく意思決定、長期的な導入の成功を確実にする。実行の段階では、必要なデータと、整っているテクノロジーの基盤全体に関して、AIへの準備状況について多くを学ぶ。</li>
+<li><strong>改善の繰り返し（Iterate）</strong>
+自動化の道のりのすべての段階を通じて、継続的に評価し、見守り、改善する。AIソリューションが効果を保つには、継続的な見守り・学習・改良が必要である。</li>
+</ol>
+<p><a href="../../images/web-Continuous-Improvement-AI.png"><img
+src="../../images/web-Continuous-Improvement-AI.png"
+alt="Continuous Improvement for AI: Prepare &amp; Iterate phases apply holistically. Execute phase repeats for each use case." /></a></p>
+<p><em>図：AIの継続的改善。準備（Prepare）→ 実行（Execute）→
+改善の繰り返し（Iterate）が8の字のようにつながり、実行の段階は中で何度も回る（利用場面ごとに繰り返す）。</em></p>
+<p><em><strong>準備</strong>と改善の繰り返し</em>*の段階は全体に当てはまる。<strong>実行</strong>の段階は利用場面ごとに繰り返す。*</p>
+<h3 id="重要な前提条件">重要な前提条件</h3>
+<p>新しいAIの導入に飛び込む前に、何を達成しようとしているのかを考えることが欠かせない。</p>
+<ul>
+<li>AIを当てはめることで、どのプロセスを改善できるか。</li>
+<li>AIを活かすことで、どの事業上の問題をより速く解決できるか。</li>
+<li>AIは、人が仕事でより成功できるよう、どう力を与えられるか。</li>
+<li>AIは、顧客とパートナーにどう役立つか。</li>
+</ul>
+<p>言い換えれば、あなたの利用場面（ユースケース）は何か。</p>
+<h2 id="行動項目">行動項目</h2>
+<p>AIソリューションを立ち上げ、継続的に改善する際に、行うこと・考えることのチェックリストとして使ってほしい。これらの行動項目の実践例は
+<a href="https://www.serviceinnovation.org/ai-case-studies/">AI Case
+Studies</a> を参照のこと。</p>
+<h3
+id="準備基盤を作るprepare--build-the-foundation">準備：基盤を作る（Prepare
+– Build the Foundation）</h3>
+<ul>
+<li><strong>戦略を定める</strong>
+<ul>
+<li>自動化の計画を組織の目標に結び付ける。</li>
+<li>利害関係者のあいだで足並みをそろえる。</li>
+<li>前に進むための資源（現在あるものと、欠けている可能性のあるもの）を見極める。</li>
+</ul></li>
+<li><strong>組織の準備状況を評価する</strong>
+<ul>
+<li>関係する利用場面について、プロセス・ワークフロー・データの責任者を特定する。</li>
+<li>ナレッジマネジメントの取り組みを強化する。</li>
+<li>プロセスやシステムの依存関係を理解する。</li>
+<li>リスク評価を済ませる。</li>
+</ul></li>
+<li><strong>チェンジマネジメントを活用する</strong>
+<ul>
+<li>対象者、頻度、伝達のチャネル、意図する成果を定めた、充実したコミュニケーション計画を作る。</li>
+<li>自動化の取り組みについて、短期・中期・長期の節目を持つロードマップ、あるいは段階的な取り組み方の概要を作る。</li>
+</ul></li>
+<li><strong>利用場面の基準を定める</strong>
+<ul>
+<li>試行の優先順位付けで考慮すべきことを決める。</li>
+<li>成功を評価する方法を決める。</li>
+</ul></li>
+</ul>
+<p>戦略を定め、準備状況を評価し、チェンジマネジメントを活用し、利用場面の基準を定めることに時間を投じることで、実行に移るための確かな基盤が築かれ、成功が加速する。</p>
+<h3
+id="実行意図を持って立ち上げるexecute--launch-with-intent">実行：意図を持って立ち上げる（Execute
+– Launch with Intent）</h3>
+<p>利用場面ごとに、次の手順に従う。</p>
+<ul>
+<li><strong>試行から始める</strong>
+<ul>
+<li>評価基準を含め、目標と目的を定める。</li>
+<li>利用場面を試行に進めるのに必要なプロジェクトチームを特定する。</li>
+<li>ベンダーから購入するか、社内で構築するかの選択肢を評価する。</li>
+<li>実現可能性を評価するため、できるだけ範囲を絞った導入計画を作る。</li>
+<li>試行を実施し、あらかじめ定めた基準に基づいて評価する。</li>
+</ul></li>
+<li><strong>本番へ拡大する</strong>
+<ul>
+<li>拡大するのに必要な、人とシステムの両方の長期的な資源を定める。</li>
+<li>フィードバックのループを含め、継続的なパフォーマンスを見守るための測定項目と頻度を決める。</li>
+<li>AIソリューションがデータのプライバシー、セキュリティ、規制上の要件を尊重することを確実にするため、ガバナンスとコンプライアンスの枠組みを検証する。</li>
+</ul></li>
+</ul>
+<p>試行は、価値の証明を確立し、信頼を築き、費用のかかる想定外の事態を避けるためにリスクを浮かび上がらせるのに役立つ。AIがより多くのワークフローとやり取りに広がるにつれて、大規模に生じる意図しない結果を見つけて和らげるには、継続的な監督とフィードバックが欠かせない。試作を本番に移して拡大するには、他のどのアプリケーションとも同じガバナンス、管理、サポートが必要である。</p>
+<h3
+id="改善の繰り返し継続的に改善するiterate--continuously-improve">改善の繰り返し：継続的に改善する（Iterate
+– Continuously Improve）</h3>
+<ul>
+<li><strong>戦略を維持する</strong>
+<ul>
+<li>事業目標、組織のAIへの取り組み方、プログラムの戦略のあいだで、継続的に足並みをそろえる。</li>
+<li>チームが新しいシステムを扱い、最適化できる状態を保つため、AIの進化に合わせて従業員の研修に投資する。</li>
+<li>計画と導入のすべての段階で、実験を取り入れて評価する。</li>
+</ul></li>
+<li><strong>テクノロジーを維持する</strong>
+<ul>
+<li>AIツールと自動化のワークフローのパフォーマンスを継続的に見守り、最適化する。</li>
+<li>必要に応じてモデルとデータソースを調整する。</li>
+<li>競争上の優位を高め、ソリューションを最新に保つため、進化するAIの動向とテクノロジーを追う。</li>
+</ul></li>
+</ul>
+<p>継続的な進化によって、AIの取り組みが事業の必要に沿い、混乱に強く、持続的な価値を届けられる状態が保たれる。改善の繰り返しとは、壊れたものを直すことだけではなく、AIへの取り組み方を先回りして強化し、将来に備えることでもある。</p>
+<h2 id="aiが動かす未来に加わる">AIが動かす未来に加わる</h2>
+<p>Consortiumのメンバーは、業務プロセス、利用場面、業務の変革に焦点を当てた、よく考えられたAI導入の取り組みを続けている。会話に加わろう。</p>
+<ul>
+<li><a
+href="https://www.serviceinnovation.org/mailing-list/">Consortiumのメーリングリスト</a>に登録する</li>
+<li><a
+href="https://www.serviceinnovation.org/events">イベント</a>に参加する</li>
+<li><a
+href="https://www.serviceinnovation.org/member-activities/">Consortiumのメンバーシップ</a>について知る</li>
+</ul>
+<h3 id="メンバー限定の資料">メンバー限定の資料</h3>
+<ul>
+<li><a
+href="https://library.serviceinnovation.org/wiki/Featured_Member_Resources/AI_Blueprint">AI
+Blueprint</a>：詳しい例とテンプレートを含む実践ガイド</li>
+<li>Consortiumのメンバー用 Slack の <a
+href="https://consortiummembers.slack.com/archives/C04S5QT3B6Y">#ml-llm-ai
+チャンネル</a>に参加する</li>
+<li><a
+href="https://library.serviceinnovation.org/wiki/Predictive_Customer_Engagement/Thoughtful_and_Strategic_Automation_Team_Meeting_2024">Thoughtful
+and Strategic Automation</a></li>
+<li><a
+href="https://library.serviceinnovation.org/wiki/KCS/Team_Meetings/ML-LLM-AI_and_KCS_Team_Meeting_2024">The
+Intersection of ML-LLM-AI and KCS</a></li>
+</ul>
+<p><a
+href="https://www.serviceinnovation.org/current-members/">Consortiumのメンバー</a>でログインに助けが必要な場合は、<a
+href="mailto:support@serviceinnovation.org"><span>support@serviceinnovation.org</span></a>
+に連絡すること。</p>
+<h2 id="出典の表示attribution">出典の表示（Attribution）</h2>
+<p>KCS^(®)の方法論は、Consortium for Service Innovation
+のサービスマークである。</p>
+<p>文書でKCSに初めて言及するときは、上付きの^(®)を付けなければならない。また、次の文を脚注または括弧書きで添えること：「KCS®
+is a service mark of the Consortium for Service Innovation^(TM).」</p>
+<p>KCSは形容詞として使うのが正しい。例えば「[会社名] は KCS®
+の方法論を支持している……」のように使う。</p>
+<p>Consortium for Service Innovation
+の書面による明示的な許可なく、KCSを提供物の名称に使うことはできない。質問は
+<a href="mailto:info@serviceinnovation.org">Consortium
+へ問い合わせる</a> こと。</p>
+</body>
+</html>

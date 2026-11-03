@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>教訓と避けるべき落とし穴・プラクティスの目的（Lessons Learned and the Purpose Behind the Practices）</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style>
+  body { max-width: 52rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.8;
+         font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif; color: #222; }
+  img { max-width: 100%; height: auto; border: 1px solid #ddd; }
+  table { border-collapse: collapse; } td, th { border: 1px solid #ccc; padding: .3rem .5rem; }
+  blockquote { color: #555; border-left: 4px solid #ccc; margin-left: 0; padding-left: 1rem; }
+  em { color: #444; }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">教訓と避けるべき落とし穴・プラクティスの目的（Lessons
+Learned and the Purpose Behind the Practices）</h1>
+</header>
+<blockquote>
+<p>出典: Consortium for Service Innovation, <em>Knowledge-Centered
+Success: Practices Guide (2027)</em> — <a
+href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC
+4.0</a>（原文を日本語に翻訳し、ページを章ごとにまとめ直したもの）
+元のページ:</p>
+<ul>
+<li><a
+href="https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/401-Lessons_Learned_and_Ditches_to_Avoid">Lessons
+Learned and Ditches to Avoid</a></li>
+<li><a
+href="https://library.serviceinnovation.org/KCS/Knowledge-Centered_Success_Practices_Guide/402-Purpose_Behind_the_Practices">The
+Purpose Behind the Practices</a></li>
+</ul>
+</blockquote>
+<p><a id="page-7153"></a></p>
+<h2
+id="教訓と避けるべき落とし穴lessons-learned-and-ditches-to-avoid">教訓と避けるべき落とし穴（Lessons
+Learned and Ditches to Avoid）</h2>
+<p>KCSは、問題を解決することに加えて行う何かではない。KCSは、問題を解決するやり方そのものになる。</p>
+<p>組織がナレッジを重要な資産として活かし、依頼者と顧客により高い価値を届けるには、価値の源泉、つまり人とナレッジに焦点を当てなければならない。処理件数中心のモデルから、ナレッジ中心の、関係に基づくモデルへと移行しなければならない。単なる活動ではなく、価値の創出を測るよう、測定の仕組みを調整し直さなければならない。組織の経験とやり取りから生まれるナレッジを十分に活かすため、情報、ナレッジワーカー、マネージャー、依頼者の役割を考え直さなければならない。</p>
+<p>本ガイドでは、KCSを構成する中核のプラクティスを取り入れるためのテクニックについて、現時点でわかっている最善のことをまとめようとしてきた。個人に焦点を当てた
+Solve Loop と、システムに焦点を当てた Evolve Loop
+に整理されたこれらのプラクティスは、KCSの本質を表している。</p>
+<p>Solve Loop：</p>
+<ul>
+<li>ナレッジの利用・維持・作成を問題解決のプロセスに組み込む</li>
+<li>ナレッジを「解決に足りる」ものにする</li>
+<li>どのナレッジを改善し、どのナレッジを作成するかの焦点は、需要に決めさせる</li>
+</ul>
+<p>Evolve Loop：</p>
+<ul>
+<li>セルフサービスを通じてナレッジを届ける</li>
+<li>記事の再利用に基づいて、価値の高いコンテンツを見つける</li>
+<li>依頼者のパターンと傾向に基づいて、影響の大きい改善（プロセス、方針、製品、サービス）の機会を見つける</li>
+</ul>
+<p>これらの考え方は、学術的な研究で十分に確立されている。KCSの考え方の多くは、Deming
+博士の品質の考え方に沿っている（<a
+href="https://en.wikipedia.org/wiki/W._Edwards_Deming#Key_principles">Deming
+の14の原則</a>を参照）。野中郁次郎と竹内弘高の著書 <a
+href="http://amzn.to/2CPV3C1">The Knowledge-Creating
+Company</a>（邦題『知識創造企業』）は、KCSの形成期を通じて常に参照されてきた。</p>
+<p>では、なぜ組織はKCSの導入に苦労するのか。KCSの導入を成功させるには、従来のプロセス、構造、測定、マネジメントの慣行を考え直す必要があるからである。チェンジマネジメントと、良い判断が必要である。</p>
+<h3 id="教訓">教訓</h3>
+<p>実績のある成功要因が、KCSの導入に違いを生む。</p>
+<ul>
+<li>KCSの経営層のスポンサーは、KCSのワークフローを支える目標でインパクトマップを埋める必要がある。基盤と資源に資金を出し、チームへの支援を維持しながら、KCSプログラムの効果・戦略的な影響・進み具合を（継続的に）伝える必要がある。同僚へ、上の経営層へ、そして下のチームへと向けたこうしたコミュニケーションが、リーダーシップを発揮し、チームを動機付ける。</li>
+<li>経営層からのコミュニケーションとチーム内のコミュニケーションは、各利害関係者のグループ、つまり依頼者・対応者・組織が移行を理解し支えるのを助ける正式な仕組みの一部であるべきだ。不具合や落とし穴はつきものであり、コミュニケーションは期待を管理し、反対意見を乗り越え、例外に対処するのに役立つ。対象者にふさわしいメッセージを複数のコミュニケーションの経路で届けることで、導入が円滑になり、人が「自分にとって何の得があるのか」を理解する助けになる。コミュニケーション計画を短すぎるものや表面的なものにしないこと。コミュニケーションはチェンジマネジメントの中心であり、本当の影響を持つには、よく考えられ、継続されたものである必要がある。</li>
+<li>多くのチームにとって新しいコーチの役割は、非常に大きな効果を持つ。適切な人が（理想的には同僚によって）選ばれ、コーチングの時間と支援が与えられれば、KCSは繁栄する。コーチは、強い対人スキルと影響力のスキル、そしてKCSのプラクティスについての実務的な理解を持っていなければならない。</li>
+<li>正しい測定項目は、成果や結果についての目標に基づき、先行指標、つまり活動の傾向分析を可能にする。活動に目標を設定しないこと。インパクトマップを通じて、個人の活動と組織の目標との明確な結び付きを示すことで、ナレッジワーカー（とマネージャー）に力を与え、動機付ける。測定項目と傾向分析の釣り合いの取れた見方が、継続的改善とパフォーマンスの把握を可能にするはずである。</li>
+<li>パフォーマンスは、個人とチームによる価値の創出に焦点を当てるべきである。定性的な測定と定量的な測定の両方を考慮し、活動に基づくモデルから価値に基づくモデルへの移行を強めなければならない。</li>
+<li>チームと、それを支える人たちと利害関係者は、KCSを単なるツールではなく、組織の変化として捉えなければならない。ナレッジマネジメントとKCSは、テクノロジーではなく人についてのものである。KCSはテクノロジーに支えられうる（そしてテクノロジーを支えうる）が、成功ははるかに多くを、組織の価値観・やり取り・プロセスの変化に依存している。KCSは、ナレッジの価値について考え、それを管理するための異なる方法を提供する。</li>
+</ul>
+<h4 id="判断が必要である">判断が必要である</h4>
+<p>良いナレッジベースがあれば、組織はスキルの低い、低コストの資源を使って答えを届けられる、という考えは誤りである。再利用・改善・作成という
+Solve Loop
+のプラクティスには、一貫して良い判断を働かせる人が必要である。課題を解決する過程で、課題を解決すると思うKCS記事を見つけたら、それが関係していて正確であることを確かめるために記事を確認すべきである。私たちは判断を働かせなければならず、自分が与える助言に責任を持つ。状況に確信が持てなければ、KCS以前と同じように、別の意見を求める必要がある。ナレッジベースは、良い判断の必要を減らさない。それどころか、良い判断の必要は増すのである。</p>
+<h4 id="kcsの導入から何を学んだか">KCSの導入から何を学んだか</h4>
+<p>経験豊富なKCSプログラムマネージャーたちの考えをいくつか紹介する。</p>
+<ul>
+<li>「ナレッジワーカーへの売り込み方が重要だ。彼らは全体像と、自分にとっての得の両方を理解する必要がある。」</li>
+<li>「明確な説明責任。マネージャーがKCSの成功に責任を持たなければならない。スタッフ部門の機能とみなされたり、インシデント対応に加えて行う余分なものとみなされたりしてはいけない。KCSは、事業に欠かせない中核的な能力にならなければならない。」</li>
+<li>「ツールを買いに行く前に、成功に何が必要かをもっとよく理解していればよかった。」</li>
+<li>「新しいツールに切り替える前に、エンジニアのワークフローを理解すること。」</li>
+<li>「新しいツールを購入する前に、すでに持っていたツールでプロセスとコンテンツ標準を試行してよかった。」</li>
+<li>「変化と改善を続けなければ、KCSは持続できない。」</li>
+<li>「資源の足並みをそろえること。KCSが何のためのもので、なぜそれをするのかは、いくら伝えても伝えすぎることはない。」</li>
+<li>「最大の懐疑派が、結局は最大の伝道者になった……効果を実感してからは。」</li>
+<li>「再利用回数のおかげで、セルフサービスのWebサイトに正しい情報を載せられた。」</li>
+<li>「KCS Practices Workshop
+は影響が大きく、私たちの成功の重要な要素だった。」</li>
+</ul>
+<h3 id="よくある落とし穴">よくある「落とし穴」</h3>
+<p>以下は、KCSの導入で最もよくある失敗の原因である。</p>
+<h4
+id="マネジメントの当事者意識の欠如">マネジメントの当事者意識の欠如</h4>
+<ul>
+<li>KCSの導入を支える強いスタッフや KCS Council
+を持つことは重要である。最終的には、KCSの成功の責任はマネージャーが負わなければならない。あるドメインが「ウェーブに分けた導入」から「習熟度の構築」へと移るにつれて、KCSの成功の説明責任を、KCS
+Council
+からマネージャーへと明示的に移す必要がある。KCSは、ナレッジワーカーにとってよりも、マネジメントにとってより大きな変化である。マネージャーをコーチングする計画を持つことが、この移行に役立つことがある。</li>
+</ul>
+<h4
+id="効果的でないコーチングの仕組み">効果的でないコーチングの仕組み</h4>
+<ul>
+<li>適切なコーチを選ぶ効果的な方法の1つは、誰を信頼しているかを組織に調査することである。コーチは、KCSへの信念と、強い影響力と対人スキルを持っている必要がある。必ずしも専門家である必要はない。</li>
+<li>コーチにコーチングの時間を与えよう。それは報われる投資である。</li>
+</ul>
+<h4
+id="ワークフローとコンテンツ標準をナレッジワーカーに設計させていない">ワークフローとコンテンツ標準をナレッジワーカーに設計させていない</h4>
+<ul>
+<li>仕事をしている人たち（ナレッジワーカー）にワークフローとコンテンツ標準を所有させ、どちらも単純に保とう。KCS
+Council
+にはマネジメントの代表がいるべきだが、マネジメントがワークフローとコンテンツ標準の所有者になるべきではない。マネジメントがそれらを所有すると、作り込みすぎることが多い。</li>
+</ul>
+<h4
+id="習熟度の構築から最適化とイノベーションへと広げるときに測定項目を変えていない">「習熟度の構築」から「最適化とイノベーション」へと広げるときに測定項目を変えていない</h4>
+<ul>
+<li>組織でKCSが実践されたら、その組織は測定を、処理件数に基づくものから価値に基づくものへと変えなければならない。生み出されている価値の健全性と貢献は、もはや処理した件数と時間では測れない。価値は、組織の従来の境界をあらゆる方向に越えた、ナレッジの流れと協働の効果という観点で測らなければならない。</li>
+<li>従来のサポートの測定項目は、導入の初期段階では劇的な改善を示す。わかっていることの大部分をセルフサービスを通じて届け始めると、従来の出来事に基づく測定項目はすべて「悪い」方向に動く。従来の測定項目について経営層の期待と理解を設定し直し、顧客によるセルフサービスの利用と成功を含む測定項目を導入しなければならない。</li>
+</ul>
+<h4 id="釣り合いの問題">釣り合いの問題</h4>
+<p>序文で述べたように、KCSの導入は変革を意味する。組織の文化・価値観・焦点の転換を必要とする。それには次のものの釣り合いが必要である。</p>
+<ul>
+<li>個人 と チーム</li>
+<li>活動 と 成果</li>
+<li>完成 と 進化</li>
+<li>コンテンツ と コンテキスト</li>
+<li>知っていること と 学ぶこと</li>
+<li>マネジメント と リーダーシップ</li>
+</ul>
+<p>本ガイドが、あなたのKCSの道のりの出発を助けたことを願っている。KCSの導入は簡単な取り組みではない。忍耐と粘り強さの両方が必要である。変化は難しいのだ。</p>
+<p><em>KCS Practices Guide</em> は、Consortium for Service Innovation
+を構成する多くの献身的な個人と組織の集合的な経験と考え、そして<a
+href="https://library.serviceinnovation.org/Archive/KCS_v6_FOR_RETHINKING/KCS_Principles_and_Core_Concepts/040">ここに反映されている</a>学術的な研究を反映している。私たちは学び続け、理解を進化させ続けている。その進化は、変化の難題に取り組むために、新しい、したがって実証されていない方法を試すメンバーの勇気の産物である。KCSのプラクティスに共感し、その継続的な進化に貢献したいと思ったら、ぜひ<a
+href="http://www.serviceinnovation.org/">参加してほしい</a>。道のりは続く。</p>
+<p>本ガイドは、Consortium for Service Innovation
+のメンバーの集合的な経験を通じて学んだ教訓から生まれたものである。メンバーは
+<a
+href="https://library.serviceinnovation.org/wiki/Featured_Member_Resources/A_Field_Guide_for_KCS_Program_Management">Field
+Guide for KCS Program Management</a>
+も作っている（メンバーのログインが必要）。</p>
+<p>KCSは進化し続ける。KCSの次の版を作ることに加わりたいなら、<a
+href="https://www.serviceinnovation.org">Consortium for Service
+Innovation</a> のメンバーになってほしい。</p>
+<p><a id="page-8246"></a></p>
+<h2
+id="プラクティスの目的the-purpose-behind-the-practices">プラクティスの目的（The
+Purpose Behind the Practices）</h2>
+<h3 id="solve-loop">Solve Loop</h3>
+<p><strong>ワークフローの中で再利用し、改善し、記録し、構造化することで、既存のナレッジを活かし、それを正確で使える状態に保つ。</strong></p>
+<h4 id="再利用reuse">再利用（Reuse）</h4>
+<p><strong>ナレッジを再利用して手戻りを避け、是正措置が必要な広範な課題を見つけ出す。</strong></p>
+<h5
+id="早めに探し何度も探すsearch-early-search-often">早めに探し、何度も探す（Search
+Early, Search Often）</h5>
+<p><strong>どんな情報があり、どんな答えが現時点で手に入るのかを、絶えず見つけ出す。</strong></p>
+<h5
+id="私たちが集合的に知っていることを理解しようとするseek-to-understand-what-we-collectively-know">私たちが集合的に知っていることを理解しようとする（Seek
+to Understand What We Collectively Know）</h5>
+<p><strong>既存の経験とナレッジを活かして、新しい依頼に応える。</strong></p>
+<h5 id="再利用を記録するtrack-reuse">再利用を記録する（Track
+Reuse）</h5>
+<p><strong>ナレッジの再利用についての情報を集め、届けている価値についての知見を得る。</strong></p>
+<h4 id="改善improve">改善（Improve）</h4>
+<p><strong>既存のナレッジを使いながら改善し、タイムリーで正確な状態に保つ。</strong></p>
+<h5
+id="再利用はレビューであるreuse-is-review">再利用はレビューである（Reuse
+is Review）</h5>
+<p><strong>ナレッジを使う過程で、改善するためのコンテキストがあるうちにレビューする。</strong></p>
+<h5 id="指摘するか直すかflag-it-or-fix-it">指摘するか、直すか（Flag It
+or Fix It）</h5>
+<p><strong>必要なナレッジの改善を仕事の流れの中で行い、後からの監査や整理を不要にする。</strong></p>
+<h5
+id="改善する権限を与えるempower-to-improve">改善する権限を与える（Empower
+to Improve）</h5>
+<p><strong>権限を持つ人とシステムが、やり取りの最中にナレッジを更新できるようにし、重複を減らし、内容を最新に保ち、高い質と価値を確保する。</strong></p>
+<h4 id="記録capture">記録（Capture）</h4>
+<p><strong>ナレッジは、その場で、依頼者のコンテキストの中で記録し共有する。そうしなければ、後から解決策を見つける（あるいは作り直す）のが難しくなる。</strong></p>
+<h5
+id="その場でナレッジを記録するcapture-knowledge-in-the-moment">その場でナレッジを記録する（Capture
+Knowledge in the Moment）</h5>
+<p><strong>コンテキストが最もはっきりしているのは、暗黙知にアクセスできる、使われるその瞬間である。</strong></p>
+<h5
+id="依頼者のコンテキストを記録するcapture-the-requestors-context">依頼者のコンテキストを記録する（Capture
+the Requestor's Context）</h5>
+<p><strong>依頼者の視点を依頼者自身の言葉で記録し、見つけやすさを高める。</strong></p>
+<h5
+id="検索することは記録することであるto-search-is-to-capture">検索することは記録することである（To
+Search is To Capture）</h5>
+<p><strong>ナレッジを探す活動とそのコンテキストを記録することで、改善の機会を見つける。</strong></p>
+<h5
+id="新しい記事は需要に応じて作成するnew-articles-are-created-on-demand">新しい記事は需要に応じて作成する（New
+Articles are Created on Demand）</h5>
+<p><strong>コンテキストを記録する。作成するのは必要なときだけにする。</strong></p>
+<h4 id="構造化structure">構造化（Structure）</h4>
+<p><strong>人と機械の両方がナレッジを効果的に使えるよう、ナレッジを構造化する。</strong></p>
+<h5
+id="単純なテンプレートを使うuse-a-simple-template">単純なテンプレートを使う（Use
+A Simple Template）</h5>
+<p><strong>単純なテンプレートを使って、人のワークフローと自動化されたワークフローの両方で、コンテンツを見つけられ、行動に移せるものにする。</strong></p>
+<h5
+id="完全な文ではなく完結した考えをcomplete-thoughts-not-complete-sentences">完全な文ではなく、完結した考えを（Complete
+Thoughts Not Complete Sentences）</h5>
+<p><strong>ナレッジを行動に移せるものにするのに十分な情報を記録する。個別の、完結した考えは、読みやすさと検索のしやすさを高める。</strong></p>
+<h3 id="evolve-loop">Evolve Loop</h3>
+<p><strong>Evolve Loop は、Solve Loop
+での活動を定義し、振り返り、そこから学ぶ。</strong></p>
+<h4 id="コンテンツの健全性content-health">コンテンツの健全性（Content
+Health）</h4>
+<p><strong>コンテンツの健全性は、私たちが作ろうとしているもの、つまり特定の対象者が見つけられ、使えるナレッジを定義する。</strong></p>
+<h5 id="kcs記事の構造kcs-article-structure">KCS記事の構造（KCS Article
+Structure）</h5>
+<p><strong>一貫した構造は、見つけやすさと分析を支え、コンテンツをさらなる処理に備えさせる。</strong></p>
+<h5 id="kcs記事の状態kcs-article-state">KCS記事の状態（KCS Article
+State）</h5>
+<p><strong>記事の状態の選択肢は、ライフサイクルを通じて、記事の公開範囲・確度・ガバナンスを示す。</strong></p>
+<h5
+id="ナレッジの最適化knowledge-optimization">ナレッジの最適化（Knowledge
+Optimization）</h5>
+<p><strong>KCSのシステムから知見を見つけ出し、それに基づいて行動する。</strong></p>
+<h5
+id="コンテンツの健全性指標content-health-indicators">コンテンツの健全性指標（Content
+Health Indicators）</h5>
+<p><strong>コンテンツ標準とワークフローを使って、記事の質を見極め、改善する。</strong></p>
+<h4 id="プロセスの統合process-integration">プロセスの統合（Process
+Integration）</h4>
+<p><strong>プロセスの統合は、ワークフローの中でナレッジとどう関わるかを定義する。正しいことを、簡単なことにする。</strong></p>
+<h5
+id="構造化されたワークフローへの統合structured-workflow-integration">構造化されたワークフローへの統合（Structured
+Workflow Integration）</h5>
+<p><strong>問題解決のプロセスを定義し、ワークフローの中でのナレッジの利用と発展を強化する。</strong></p>
+<h5
+id="テクノロジーの統合technology-integration">テクノロジーの統合（Technology
+Integration）</h5>
+<p><strong>構造化されたナレッジ中心のワークフローを促すツールを設計し、統合する。</strong></p>
+<h5
+id="プロセス整合性レビューprocess-alignment-review">プロセス整合性レビュー（Process
+Alignment Review）</h5>
+<p><strong>ナレッジワーカーが Solve Loop
+にどれだけうまく、どれだけ頻繁に貢献しているかを評価する。</strong></p>
+<h5
+id="kcsの役割と習熟度モデルkcs-roles-and-the-proficiency-model">KCSの役割と習熟度モデル（KCS
+Roles and the Proficiency Model）</h5>
+<p><strong>一貫した健全なナレッジの実践を築くため、KCSの能力を定義し、それに向けて訓練する。</strong></p>
+<h5
+id="成功のためのコーチングcoaching-for-success">成功のためのコーチング（Coaching
+for Success）</h5>
+<p><strong>変化を定着させるため、コーチングを受けながら仕事の中で新しいスキルを実践する。</strong></p>
+<h4
+id="パフォーマンスの把握performance-insight">パフォーマンスの把握（Performance
+Insight）</h4>
+<p><strong>パフォーマンスの把握によって、個人とチームの学習と成長を促し、KCSプログラムの成功を評価できる。</strong></p>
+<h5
+id="正しいものを測るmeasure-the-right-things">正しいものを測る（Measure
+the Right Things）</h5>
+<p><strong>三角測量によって、システムで起きていることの全体のコンテキストを理解する。</strong></p>
+<h5
+id="個人とチームの測定measures-for-individuals-and-teams">個人とチームの測定（Measures
+for Individuals and Teams）</h5>
+<p><strong>正しいことを行い、意図した成果に貢献している個人とチームを見つける。</strong></p>
+<h5
+id="kcsプログラムの効果とroikcs-program-benefits-and-roi">KCSプログラムの効果とROI（KCS
+Program Benefits and ROI）</h5>
+<p><strong>システムが意図したとおりに機能し、提供するために作られた価値を届けていることを示す。</strong></p>
+<h4
+id="チェンジマネジメントchange-management">チェンジマネジメント（Change
+Management）</h4>
+<p><strong>チェンジマネジメントは、KCSがなぜ重要なのかを伝え、自分の参加がより大きな全体像にどう貢献するかを全員が確実に理解するようにする。</strong></p>
+<h5
+id="内発的な動機を活かすtap-into-internal-motivators">内発的な動機を活かす（Tap
+into Internal Motivators）</h5>
+<p><strong>自律性・熟達・目的という内発的な動機を活かして、変化を持続させる。</strong></p>
+<h5
+id="ビジョンを作り伝えるdevelop-and-communicate-a-vision">ビジョンを作り、伝える（Develop
+and Communicate a Vision）</h5>
+<p><strong>共通の目標を定め、組織の足並みをそろえ、持続可能にする。</strong></p>
+<h5
+id="インパクトマップを作るcreate-an-impact-map">インパクトマップを作る（Create
+an Impact Map）</h5>
+<p><strong>KCSの成果が組織の目標の達成にどう役立つかを記述する。</strong></p>
+<h5 id="チームワークを促すpromote-teamwork">チームワークを促す（Promote
+Teamwork）</h5>
+<p><strong>うまくいっていることを称える。</strong></p>
+<h5
+id="コミュニケーションが鍵であるcommunication-is-the-key">コミュニケーションが鍵である（Communication
+is the Key）</h5>
+<p><strong>充実したコミュニケーション計画によって、変化を引き起こし、持続させる。</strong></p>
+</body>
+</html>

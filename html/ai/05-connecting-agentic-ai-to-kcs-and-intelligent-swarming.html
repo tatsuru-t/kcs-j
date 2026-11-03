@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>エージェント型AIをKCS®と Intelligent Swarming® に結び付ける（Connecting Agentic AI to KCS® and Intelligent Swarming®）</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style>
+  body { max-width: 52rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.8;
+         font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif; color: #222; }
+  img { max-width: 100%; height: auto; border: 1px solid #ddd; }
+  table { border-collapse: collapse; } td, th { border: 1px solid #ccc; padding: .3rem .5rem; }
+  blockquote { color: #555; border-left: 4px solid #ccc; margin-left: 0; padding-left: 1rem; }
+  em { color: #444; }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">エージェント型AIをKCS®と Intelligent Swarming®
+に結び付ける（Connecting Agentic AI to KCS® and Intelligent
+Swarming®）</h1>
+</header>
+<blockquote>
+<p>出典: Consortium for Service Innovation, <em>Connecting Agentic AI to
+KCS® and Intelligent
+Swarming®</em>（ブログ記事、2026年2月11日、Christina Roosen）—
+ページにクリエイティブ・コモンズの表示なし（© Consortium for Service
+Innovation）。原文を日本語に翻訳したもの。個人の学習用で、共有しない<br />
+元のページ:</p>
+<ul>
+<li><a
+href="https://www.serviceinnovation.org/connecting-agentic-ai-to-kcs-and-intelligent-swarming/">Connecting
+Agentic AI to KCS® and Intelligent Swarming®</a></li>
+</ul>
+</blockquote>
+<p>エージェント型AIの機能が急速に登場する中で、私たちは発見と実験の絶え間ないサイクルの中にいる。何が可能かを試し、うまくいくものを磨き上げ、知能を日々の仕事の構造の中にどう組み込むかを考え直している。</p>
+<p><a href="https://youtu.be/e6NqDAF65ok?si=0hCtQ3cEFo67zubq">YouTube
+で「Connecting Agentic AI to KCS® and Intelligent
+Swarming®」を見る</a></p>
+<p><a href="https://blogs.oracle.com/authors/jeff-elser/">Oracle
+のコンテンツインテリジェンス担当シニアプロダクトマネージャー、Jeff
+Elser</a> が登壇した、Consortium for Service Innovation
+のメンバー限定の3回シリーズのウェビナーでは、参加者が集まり、AIについての表面的な議論を超えたセッションが行われた。これらの会話は、ナレッジマネジメントが、より広く戦略的なもの、つまりコンテンツインテリジェンス（Content
+Intelligence）へとどう進化しつつあるかを探った。このセッションで示された考え方は、ConsortiumのメンバーがAI、価値の提供、仕事の未来についてどう考えるかを形作る助けになっている。</p>
+<p>大まかに言えば、セッションは1つの中心的なテーマに焦点を当てていた。AIエージェントの効果は、それを支えるコンテンツ、実践、ガバナンスで決まる、というものである。主な要点をいくつか紹介する。</p>
+<h2 id="ナレッジマネジメントを超えて">ナレッジマネジメントを超えて</h2>
+<p>考え方の転換が起きている。長いあいだ主に顧客サービスと結び付けられてきたナレッジマネジメントは、企業全体へと急速に広がっている。コンテンツは、調達、方針の徹底、研修、運用といった事業のあらゆる領域で、AIエージェントの燃料になっている。ナレッジは今や、組織全体でより賢い自動化とより良い意思決定を可能にする戦略的な資産である。</p>
+<h2
+id="aiエージェントは道具ではなく働き手である">AIエージェントは道具ではなく働き手である</h2>
+<p>AIエージェントは、裏で動くテクノロジーにとどまらず、仕事の参加者である。しかし、人と同等ではない。エージェントは、定型的な意思決定を扱い、人が見落としうるパターンを見つけ、人とも他のエージェントとも協働できる。曖昧さ、リスク、倫理、例外を扱うには、引き続き人が欠かせない。価値は、エージェントと人が効果的に一緒にスウォーム（群れとなって協働）するシステムを設計することにある。</p>
+<h2
+id="kcsの原則を新しい形で当てはめる">KCSの原則を新しい形で当てはめる</h2>
+<p>Knowledge-Centered
+Service（KCS）の原則は、このAIが動かす世界で、これまで以上に意味を持つ。信頼、需要主導のコンテンツ、再利用、検証されたナレッジは、人にとってと同じくらい、AIエージェントにとっても欠かせない。KCSのプラクティスは、エージェントの振る舞いを導き、AIの出力のばらつきを減らし、時間をかけて一貫性と質を高めることができる。</p>
+<p><a
+href="https://library.serviceinnovation.org/KCS/KCS_v6/KCS_Principles_and_Core_Concepts">KCSの原則</a>はすべて今も当てはまる。中でも信頼は大きい……ナレッジがAIを根拠付け（グラウンディング）、その根拠付けがAIエージェントの出力への信頼を育てる。</p>
+<p><em>– Jeff Elser, Oracle</em></p>
+<h2 id="活動だけでなく価値を測る">活動だけでなく価値を測る</h2>
+<p>AIを活用した企業で成功を測ることは、引用率やコンテンツの量といった従来の測定項目を超える。私たちは成果を見ることでパフォーマンスを評価する。エージェントはコンテンツをどう使っているか。どの意思決定が再利用されているか。どこで価値が生まれ、あるいは損なわれているか。これらの問いは、コンテンツ、AI、事業の成果をそろえる、より成熟した測定の取り組み方を指し示している。</p>
+<h2 id="なぜこれが重要なのか">なぜこれが重要なのか</h2>
+<p>AIについての深い経験と、ナレッジ主導の組織がどう機能するかについての直接の経験が組み合わさっていることで、私たちを取り巻く世界が変わっていく中、これらのセッションは特に価値あるものになっている。Jeff
+は、エージェント型AIを現実の課題や既存の前提に結び付け、まだ生まれつつある考え方を探っている。その結果は、Consortiumのメンバーが変化の先を行き、実用的で、説明でき、組織の目標に沿った形でAIを当てはめる助けになる、共有された思考である。</p>
+<h3
+id="私たちと一緒に顧客との関わりの未来を形作ろう">私たちと一緒に顧客との関わりの未来を形作ろう</h3>
+<ul>
+<li><a
+href="https://www.serviceinnovation.org/events/">今後のConsortiumのイベント</a>に参加する</li>
+<li><a
+href="https://www.serviceinnovation.org/event/annual-summit-2026/">Service
+Innovation Summit</a> で直接つながる</li>
+<li>AIの取り組みを進めている？ <a
+href="01-ai-implementation-essentials.html">AI Implementation
+Essentials</a>（AI導入の要点）を見てほしい</li>
+</ul>
+<p><strong>Consortium for Service Innovation のメンバー：</strong> <a
+href="https://library.serviceinnovation.org/wiki/Predictive_Customer_Engagement%C2%AE/One_Hour_Web_Sessions/Agentic_AI_Series_Agentic_AI_Meets_Knowledge_Management_2025">セッションの録画</a>を見て、<a
+href="https://library.serviceinnovation.org/wiki/Featured_Member_Resources/AI_Blueprint">AI
+Blueprint</a>
+で経験に基づくAIプログラムの指針を得てほしい（メンバーのログインが必要）</p>
+</body>
+</html>
