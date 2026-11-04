@@ -143,6 +143,8 @@ serviceinnovation.org の、AIに関するページとブログ記事。`scripts
 
 **HTML版**：[`html/index.html`](html/index.html) から本編・別冊の全章をブラウザで読める（図と説明入り）。
 GitHub の画面ではページとして表示されないので、clone か「Download ZIP」をして手元で開く。
+SharePoint に置くときは `package.py --aspx` で作る `dist/kcs-j-aspx-*.zip` を使う（.html はダウンロードに
+なるので拡張子を .aspx にしたもの。`aspx/index.aspx` から開く）。テナントの設定によってはアップロードできない。
 
 ## 学習用スライド（`slides/`）
 
