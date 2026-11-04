@@ -1,4 +1,4 @@
-<!-- footer: 個人の学習用（共有しない）｜出典: Consortium for Service Innovation, serviceinnovation.org -->
+<!-- footer: 出典: Consortium for Service Innovation, serviceinnovation.org -->
 <!-- class: title -->
 # AI × KCS
 
@@ -6,7 +6,7 @@
 
 AI導入の要点・事例・失敗の理由・エージェント型AI
 
-個人の学習用（訳文 `ai/ja/01〜05` の要約）
+（訳文 `ai/ja/01〜05` の要約）
 
 ---
 
@@ -141,5 +141,3 @@ AI Implementation Essentials／Knowledge-Powered AI／AI Case Studies／Why AI P
 いずれもクリエイティブ・コモンズの表示なし（© Consortium for Service Innovation）
 
 KCS® is a service mark of the Consortium for Service Innovation™.
-
-個人の学習用。共有しない。

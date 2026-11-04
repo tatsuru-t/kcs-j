@@ -1,6 +1,6 @@
 # AIの事例（AI Case Studies）
 
-> 出典: Consortium for Service Innovation, *AI Case Studies* — ページにクリエイティブ・コモンズの表示なし（© Consortium for Service Innovation）。原文を日本語に翻訳したもの。個人の学習用で、共有しない  
+> 出典: Consortium for Service Innovation, *AI Case Studies* — ページにクリエイティブ・コモンズの表示なし（© Consortium for Service Innovation）。原文を日本語に翻訳したもの  
 > 元のページ:
 > - [AI Case Studies](https://www.serviceinnovation.org/ai-case-studies/)
 

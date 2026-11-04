@@ -1,6 +1,6 @@
 # KCSの原則とコアコンセプト（KCS Principles and Core Concepts）
 
-> 出典: Consortium for Service Innovation, *KCS Principles and Core Concepts* — [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)（原文を日本語に翻訳し、ページを章ごとにまとめ直したもの。個人の学習用で、共有しない）  
+> 出典: Consortium for Service Innovation, *KCS Principles and Core Concepts* — [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)（原文を日本語に翻訳し、ページを章ごとにまとめ直したもの）  
 > 元のページ:
 > - [KCS Principles and Core Concepts](https://library.serviceinnovation.org/KCS/Principles_and_Core_Concepts)
 > - [KCS Principles](https://library.serviceinnovation.org/KCS/Principles_and_Core_Concepts/101-Principles)

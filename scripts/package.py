@@ -8,12 +8,12 @@
 
 zip に入るもの:
 - html/  各章をブラウザで読めるHTMLにしたもの（pandoc。--no-html で省く）。
-         index.html の目次は本編とAI関連（html/ai/）の2部に分かれる。
+         index.html の目次は scripts/toc.py --html で作る（本編とAI関連（html/ai/）の2部、節まで）。
          --publish のときはリポジトリの html/ にも置く（作り直すたびに前の出力は消す）
 - ja/    本編の訳文の Markdown（ja/parts は入れない）
 - ai/ja/ AI関連（別冊）の訳文の Markdown
 - images/ 図
-- glossary.md、README.md、NOTICE.txt（利用条件の注意）
+- glossary.md、README.md（利用条件は README.md に書いてある）
 - slides/ 学習用スライドのPDFと原稿の Markdown（PDFは slides/*.md から scripts/slides.py で
           作り直してから入れる。--with-slides を付けたときだけ）
 - en/・ai/en/ 英語原文（--with-en を付けたときだけ）
@@ -30,25 +30,6 @@ import sys
 import tempfile
 import zipfile
 from pathlib import Path
-
-NOTICE = """\
-KCS ドキュメント 日本語訳（個人の学習用）
-
-この zip は Consortium for Service Innovation の KCS ライブラリ
-（https://library.serviceinnovation.org/KCS）を章ごとにまとめ直し、日本語に訳したものです。
-
-- 原文の著作権は Consortium for Service Innovation にあります。
-  KCS® is a service mark of the Consortium for Service Innovation™.
-- 一部の文書（原則とコアコンセプト、コーチ・リファレンスガイド、補足資料）は
-  CC BY-NC-ND 4.0（改変禁止）です。翻訳・再構成したものを他の人に配布・共有できません。
-- AI関連（別冊、ai/）は serviceinnovation.org のページとブログ記事で、クリエイティブ・コモンズの
-  表示がありません（通常の著作権）。翻訳したものを他の人に配布・共有できません。
-- Practices Guide (2027) と Measuring Self-Service Success (2027) は CC BY-NC 4.0 です。
-  共有する場合も非営利に限り、出典と変更した旨を示す必要があります。
-- 各章のライセンスは README.md の目次の表、各章の冒頭の出典欄にあります。
-
-自分で読むためのものとして扱い、社内での回覧・共有はしないでください。
-"""
 
 HTML_STYLE = """\
 <style>
@@ -80,20 +61,16 @@ def to_html(md: Path, out: Path) -> None:
 
 
 def build_html(html_dir: Path, chapters: list, ai_chapters: list) -> None:
-    """本編と別冊の各章、2部に分けた目次（index.html）を html_dir に作る。前の出力は消す。"""
+    """本編と別冊の各章、節まで入れた目次（index.html）を html_dir に作る。前の出力は消す。"""
     for old in html_dir.rglob("*.html") if html_dir.exists() else []:
         old.unlink()
     (html_dir / "ai").mkdir(parents=True, exist_ok=True)
-    index = ["# KCS ドキュメント 日本語訳", "",
-             "個人の学習用。利用条件は README.md（zip では NOTICE.txt）を読んでください。", "",
-             "## 本編（KCS ライブラリ）", ""]
-    for book, mds, sub in (("main", chapters, ""), ("ai", ai_chapters, "ai/")):
-        if book == "ai" and mds:
-            index += ["", "## AI関連（別冊）", ""]
-        for md in mds:
-            to_html(md, html_dir / sub / f"{md.stem}.html")
-            title = md.read_text(encoding="utf-8").splitlines()[0][2:]
-            index.append(f"- [{title}]({sub}{md.stem}.html)")
+    for md in chapters:
+        to_html(md, html_dir / f"{md.stem}.html")
+    for md in ai_chapters:
+        to_html(md, html_dir / "ai" / f"{md.stem}.html")
+    index = subprocess.run([sys.executable, "-I", "scripts/toc.py", "--html"],
+                           capture_output=True, text=True, check=True).stdout.splitlines()
     with tempfile.TemporaryDirectory() as tmp:
         idx_md = Path(tmp) / "index.md"
         idx_md.write_text("\n".join(index) + "\n", encoding="utf-8")
@@ -132,7 +109,6 @@ def main():
         def add(path: Path, arc: str):
             z.write(path, f"{name}/{arc}")
 
-        z.writestr(f"{name}/NOTICE.txt", NOTICE)
         add(Path("README.md"), "README.md")
         add(Path("glossary.md"), "glossary.md")
         for md in chapters:

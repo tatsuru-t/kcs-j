@@ -1,4 +1,4 @@
-<!-- footer: 個人の学習用（共有しない）｜出典: Consortium for Service Innovation, KCS Library -->
+<!-- footer: 出典: Consortium for Service Innovation, KCS Library -->
 <!-- class: title -->
 # KCS 本編の要点
 
@@ -6,7 +6,7 @@
 
 原則・ダブルループ・8つのプラクティス・役割・測定・落とし穴
 
-個人の学習用（訳文 `ja/01〜11` の要約）
+（訳文 `ja/01〜11` の要約）
 
 ---
 
@@ -332,5 +332,3 @@ Practices Guide (2027)・Measuring Self-Service Success (2027)：CC BY-NC 4.0
 Principles and Core Concepts・Coach Reference Guide・Supplemental Resources：CC BY-NC-ND 4.0
 
 KCS® is a service mark of the Consortium for Service Innovation™.
-
-個人の学習用。共有しない。

@@ -1,4 +1,4 @@
-"""Markdown のスライド原稿（slides/*.md）から、16:9 のHTMLとPDFを作る（個人の学習用）。
+"""Markdown のスライド原稿（slides/*.md）から、16:9 のHTMLとPDFを作る。
 
 使い方: python3 -I scripts/slides.py slides/01-kcs-overview.md [...]
 出力:   dist/slides/<名前>.html と dist/slides/<名前>.pdf
