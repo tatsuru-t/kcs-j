@@ -47,7 +47,7 @@ GitHub の画面ではページとして表示されないので、clone か「D
 
 訳文の要点をまとめた個人学習用のスライド。原稿は Markdown（`---` でスライドを区切る）で、
 `scripts/slides.py` が pandoc と Chromium（Playwright）だけで16:9のHTMLとPDFを作る（`dist/slides/`）。
-PDFと原稿は `package.py` の zip の `slides/` に入る。
+PDFと原稿は、`package.py` に `--with-slides` を付けたときだけ zip の `slides/` に入る（既定では入れない）。
 
 | 原稿 | 内容 |
 | --- | --- |
@@ -65,7 +65,7 @@ python3 -I scripts/assemble.py 01    # 分割して訳した ja/parts/01*.md を
 python3 -I scripts/fetch_web.py URL 01-slug "見出し" ai    # 別冊：serviceinnovation.org のページを ai/en/ に
 python3 -I scripts/assemble.py 01 ai # 別冊：ai/ja/parts/01*.md を ai/ja/ に
 python3 -I scripts/slides.py slides/01-kcs-overview.md    # スライドのHTMLとPDFを dist/slides/ に（はみ出しも検査する）
-python3 -I scripts/package.py --publish   # HTML版を html/ に作り直し、訳文（MD・HTML）・図・スライドを1つの zip にして packages/ に置く
+python3 -I scripts/package.py --publish   # HTML版を html/ に作り直し、訳文（MD・HTML）・図を1つの zip にして packages/ に置く（--with-slides でスライドも）
 ```
 
 必要なもの: Python 3、`beautifulsoup4`、`pandoc`。`work/` は作り直せるので git に入れていない。
@@ -77,7 +77,7 @@ python3 -I scripts/package.py --publish   # HTML版を html/ に作り直し、�
 - 図は `images/` に取り込んである（実体は `files.mtstatic.com` への転送の先にある）。図の中の英語は
   そのままにし、各図の直後に `ja/figures.json` の日本語の説明（ラベルの訳と要点）を差し込む
 - `package.py` の zip には、訳文の Markdown（`ja/`・`ai/ja/`）と HTML版（`html/index.html` から開く）、図、
-  学習用スライド（`slides/` のPDFと原稿）、利用条件の注意（`NOTICE.txt`）が入る。
+  利用条件の注意（`NOTICE.txt`）が入る。学習用スライドは `--with-slides` を付けたときだけ入る。
   最新の zip は [`packages/`](packages/) に置いてある（`--publish` で置き換わり、古い zip は消える）
 - 訳文は `ja/parts/` に分けて書き、`assemble.py` でまとめる。まとめるときに、ページの
   アンカーと見出しの数が英語版と一致するかを検査する

@@ -1,6 +1,6 @@
 """訳文と図を1つの zip にまとめる（メールで送って手元で読むため）。
 
-使い方: python3 -I scripts/package.py [--with-en] [--no-html] [--no-slides] [--publish]
+使い方: python3 -I scripts/package.py [--with-en] [--no-html] [--with-slides] [--publish]
 出力:   dist/kcs-j-YYYYMMDD.zip（訳文の Markdown と HTML版・図・学習用スライドをすべて1つに）
         --publish を付けると、HTML版をリポジトリの html/ に作り直し、できた zip を packages/ にコピーし、
         packages/ の古い zip を消す
@@ -15,7 +15,7 @@ zip に入るもの:
 - images/ 図
 - glossary.md、README.md、NOTICE.txt（利用条件の注意）
 - slides/ 学習用スライドのPDFと原稿の Markdown（PDFは slides/*.md から scripts/slides.py で
-          作り直してから入れる。--no-slides で省く）
+          作り直してから入れる。--with-slides を付けたときだけ）
 - en/・ai/en/ 英語原文（--with-en を付けたときだけ）
 
 本編は ../images/、別冊は ../../images/ を参照する（HTML版も同じ深さに置く）ので、
@@ -104,7 +104,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--with-en", action="store_true", help="英語原文も入れる")
     ap.add_argument("--no-html", action="store_true", help="HTML版を作らない")
-    ap.add_argument("--no-slides", action="store_true", help="スライドを入れない")
+    ap.add_argument("--with-slides", action="store_true", help="学習用スライドも入れる")
     ap.add_argument("--publish", action="store_true", help="HTML版を html/ に、zip を packages/ に置き、古い zip を消す")
     args = ap.parse_args()
 
@@ -114,7 +114,7 @@ def main():
     ai_chapters = sorted(Path("ai/ja").glob("[0-9][0-9]-*.md"))
 
     decks = sorted(Path("slides").glob("*.md"))
-    if decks and not args.no_slides:  # 原稿から作り直してから入れる（古いPDFを入れないため）
+    if decks and args.with_slides:  # 原稿から作り直してから入れる（古いPDFを入れないため）
         subprocess.run([sys.executable, "-I", "scripts/slides.py", *map(str, decks)], check=True)
 
     # HTML版：--publish ならリポジトリの html/ に、そうでなければ一時フォルダに作る。
@@ -146,7 +146,7 @@ def main():
                 add(md, f"en/{md.name}")
             for md in sorted(Path("ai/en").glob("*.md")):
                 add(md, f"ai/en/{md.name}")
-        if decks and not args.no_slides:
+        if decks and args.with_slides:
             for md in decks:
                 add(md, f"slides/{md.name}")
                 add(Path("dist/slides") / f"{md.stem}.pdf", f"slides/{md.stem}.pdf")
