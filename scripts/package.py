@@ -1,6 +1,6 @@
 """訳文と図を1つの zip にまとめる（メールで送って手元で読むため）。
 
-使い方: python3 -I scripts/package.py [--with-en] [--no-html] [--with-slides] [--publish]
+使い方: python3 -I scripts/package.py [--with-en] [--no-html] [--with-slides] [--aspx] [--publish]
 出力:   dist/kcs-j-YYYYMMDD.zip（訳文の Markdown と HTML版・図・学習用スライドをすべて1つに）
         --publish を付けると、HTML版をリポジトリの html/ に作り直し、できた zip を packages/ にコピーし、
         packages/ の古い zip を消す
@@ -17,6 +17,11 @@ zip に入るもの:
 - slides/ 学習用スライドのPDFと原稿の Markdown（PDFは slides/*.md から scripts/slides.py で
           作り直してから入れる。--with-slides を付けたときだけ）
 - en/・ai/en/ 英語原文（--with-en を付けたときだけ）
+
+--aspx を付けると、HTML版の拡張子を .aspx にしたものを別の zip（dist/kcs-j-aspx-YYYYMMDD.zip）にも作る。
+SharePoint のドキュメントライブラリでは .html はダウンロードされてしまうので、.aspx にしてブラウザで
+開かせるため（中身は同じHTMLで、章どうしのリンクだけ .aspx に付け替える）。テナントの設定（カスタム
+スクリプトの禁止）によってはアップロードできないか、開いてもダウンロードになる。packages/ には置かない
 
 本編は ../images/、別冊は ../../images/ を参照する（HTML版も同じ深さに置く）ので、
 zip を展開したフォルダの構成のまま開けば図が表示される。
@@ -77,11 +82,29 @@ def build_html(html_dir: Path, chapters: list, ai_chapters: list) -> None:
         to_html(idx_md, html_dir / "index.html")
 
 
+def build_aspx_zip(html_dir: Path, name: str) -> Path:
+    """HTML版を .aspx にして、図・README と一緒に zip にする（SharePoint にアップロードする用）。"""
+    zpath = Path("dist") / f"{name}.zip"
+    with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED) as z:
+        z.write("README.md", f"{name}/README.md")
+        for img in sorted(Path("images").iterdir()):
+            z.write(img, f"{name}/images/{img.name}")
+        for path in sorted(html_dir.rglob("*.html")):
+            text = path.read_text(encoding="utf-8")
+            if "<%" in text:  # ASP.NET の記法と誤解されると表示できない
+                sys.exit(f"{path} に <% がある。.aspx にできない")
+            text = re.sub(r'href="(?!https?:|mailto:)([^"#]*)\.html(#[^"]*)?"', r'href="\1.aspx\2"', text)
+            arc = path.relative_to(html_dir).with_suffix(".aspx").as_posix()
+            z.writestr(f"{name}/aspx/{arc}", text)
+    return zpath
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--with-en", action="store_true", help="英語原文も入れる")
     ap.add_argument("--no-html", action="store_true", help="HTML版を作らない")
     ap.add_argument("--with-slides", action="store_true", help="学習用スライドも入れる")
+    ap.add_argument("--aspx", action="store_true", help="SharePoint 用に .aspx 版の zip も作る")
     ap.add_argument("--publish", action="store_true", help="HTML版を html/ に、zip を packages/ に置き、古い zip を消す")
     args = ap.parse_args()
 
@@ -131,6 +154,8 @@ def main():
                 add(path, f"html/{path.relative_to(html_dir).as_posix()}")
 
     outputs = [zpath]
+    if args.aspx and not args.no_html:
+        outputs.append(build_aspx_zip(html_dir, f"kcs-j-aspx-{datetime.date.today():%Y%m%d}"))
 
     for path in outputs:
         size = path.stat().st_size / 1024 / 1024
