@@ -1,6 +1,6 @@
 # 補足資料（Supplemental KCS Resources）
 
-> 出典: Consortium for Service Innovation, *Supplemental KCS Resources* — [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)（一部ページに表示。原文を日本語に翻訳し、ページを章ごとにまとめ直したもの。個人の学習用で、共有しない）  
+> 出典: Consortium for Service Innovation, *Supplemental KCS Resources* — [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)（一部ページに表示。原文を日本語に翻訳し、ページを章ごとにまとめ直したもの）  
 > 元のページ:
 > - [Supplemental KCS Resources](https://library.serviceinnovation.org/KCS/KCS_Resources)
 > - [Appreciation & Acknowledgements](https://library.serviceinnovation.org/KCS/KCS_Resources/Appreciation_Acknowledgements)

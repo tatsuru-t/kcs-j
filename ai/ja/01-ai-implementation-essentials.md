@@ -1,6 +1,6 @@
 # AI導入の要点（AI Implementation Essentials）
 
-> 出典: Consortium for Service Innovation, *AI Implementation Essentials* — ページにクリエイティブ・コモンズの表示なし（© Consortium for Service Innovation）。原文を日本語に翻訳したもの。個人の学習用で、共有しない  
+> 出典: Consortium for Service Innovation, *AI Implementation Essentials* — ページにクリエイティブ・コモンズの表示なし（© Consortium for Service Innovation）。原文を日本語に翻訳したもの  
 > 元のページ:
 > - [AI Implementation Essentials](https://www.serviceinnovation.org/ai-implementation-essentials/)
 
